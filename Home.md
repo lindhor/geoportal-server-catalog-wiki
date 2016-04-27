@@ -1,12 +1,12 @@
 Welcome to the geoportal-server-catalog wiki!
 
-# Releases
+## Releases
 - 2.0.0.x - initial release of geoportal-server-catalog.
 
-# Downloads
+## Downloads
 
-# Installation
+## Installation
 - please refer to xxx for installation instruction
 
-# Documentation
+## Documentation
 - Please refer to the wiki
