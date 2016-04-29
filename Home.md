@@ -1,12 +1,10 @@
 Welcome to the geoportal-server-catalog wiki!
 
-## Releases
-- 2.0.0.x - initial release of geoportal-server-catalog.
-
-## Downloads
+## Releases and Downloads
+- 2.0.0 - Initial release of geoportal-server-catalog. Click [here](https://github.com/ArcGIS/geoportal-server-catalog/releases) for release notes and downloads.
 
 ## Installation
-- please refer to [here](https://github.com/ArcGIS/geoportal-server-catalog/blob/master/geoportal/doc/install.txt) for installation instruction
+- Click [here](https://github.com/ArcGIS/geoportal-server-catalog/blob/master/geoportal/doc/install.txt) for installation instruction.
 
 ## Documentation
-- Please refer to the wiki
+- Please refer to the wiki.
