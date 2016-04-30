@@ -16,7 +16,7 @@
      -- Signin as gptadmin/gptadmin (top right)
      -- Upload a few metadata records (top right)
      -- Perform search (left panel), if search return the matching records, then the basic installation is working
-  - Perform additional configuration as necessary (see below)
+  - Perform additional configuration as necessary
 
 # Configure Geoportal Server 2.0.0
 
