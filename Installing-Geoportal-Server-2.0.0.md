@@ -1,19 +1,27 @@
-Install Elasticsearch (2.3.1 of higher)
-Install Tomcat 8
+# Install Prerequisites
 
-Deploy geoportal.war to Tomcat then 
-  - Stop Tomcat
-  - Update your Geoportal essential configuration if needed (see below, ***)
-  - Restart Tomcat
+- Install Elasticsearch (2.3.1 or higher)
+- Install Tomcat 8
+
+# Deploy Geoportal Server 2.0.0
+
+- Deploy geoportal.war to Tomcat.
+- Update your Geoportal essential configuration
+  - [Main configuration file](#main-configuration-file)
+  - [Security](#security-configuration)
+  - [Logging](#logging)
+- Restart Tomcat
   - Run quick smoke test:
      -- Open geoportal web page (e.g. http://localhost:8080/geoportal)
      -- Signin as gptadmin/gptadmin (top right)
      -- Upload a few metadata records (top right)
      -- Perform search (left panel), if search return the matching records, then the basic installation is working
   - Perform additional configuration as necessary (see below)
-  
-----------------------------------------------------------------------------------------------  
-Main configuration file
+
+# Configure Geoportal Server 2.0.0
+
+## Main configuration file
+
 [Tomcat8]/webapps/geoportal/WEB-INF/classes/config/app-context.xml
 
 Set the cluster and node name(s) for Elasticsearch cluster, e.g.:
@@ -28,11 +36,11 @@ Set the cluster and node name(s) for Elasticsearch cluster, e.g.:
   </beans:bean>  
 ```
 
-Security configuration
+## Security configuration
 [Tomcat8]/webapps/geoportal/WEB-INF/classes/app-security.xml
 - configure various authentication options such as simple, LDAP, OAuth2.
 
-Logging
+## Logging
 [Tomcat8]/webapps/geoportal/WEB-INF/classes/log4j.properties
 Logging properties. You can modify the location of the log file by updating:
 log4j.appender.file.File
