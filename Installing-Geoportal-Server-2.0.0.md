@@ -11,12 +11,12 @@
   - [Security](#security-configuration)
   - [Logging](#logging)
 - Restart Tomcat
-  - Run quick smoke test:
-     -- Open geoportal web page (e.g. http://localhost:8080/geoportal)
-     -- Signin as gptadmin/gptadmin (top right)
-     -- Upload a few metadata records (top right)
-     -- Perform search (left panel), if search return the matching records, then the basic installation is working
-  - Perform additional configuration as necessary
+- Run quick smoke test
+  - Open geoportal web page (e.g. http://localhost:8080/geoportal)
+  - Signin as gptadmin/gptadmin (top right)
+  - Upload a few metadata records (top right)
+  - Perform search (left panel), if search return the matching records, then the basic installation is working
+- Perform additional configuration as necessary
 
 # Configure Geoportal Server 2.0.0
 
