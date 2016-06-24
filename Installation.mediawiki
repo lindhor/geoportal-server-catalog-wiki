@@ -1,0 +1,7 @@
+==='''Installation Information'''===
+
+* [[Installing-Geoportal-Server-2.0.1]]
+* [[Installing-Geoportal-Server-2.0.0]]
+
+==='''Upgrade Information'''===
+* [[Upgrade-Geoportal-Server-2.0.1]]
