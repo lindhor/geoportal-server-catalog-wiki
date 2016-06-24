@@ -38,14 +38,14 @@ Set the cluster and node name(s) for Elasticsearch cluster. By default, Geoporta
 ```
 If you have a cluster with multiple nodes, you can define it in one of two ways:
 
-   1. Add the following to [Tomcat8]/conf/catalina.properties, es_node is a comma separated list.	
+- Add the following to [Tomcat8]/conf/catalina.properties, es_node is a comma separated list.	
 ```
 # Geoportal
 es_cluster=myclustername
 es_node=host1,host2
 
 ```	
-   2. OR, update app-context.xml
+- OR, update app-context.xml
 ```	
   <beans:bean id="elasticContext" class="com.esri.geoportal.db.elastic.ElasticContext">
     <beans:property name="clusterName" value="myclustername" />
