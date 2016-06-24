@@ -55,7 +55,7 @@ es_node=host1,host2
       </beans:list>
     </beans:property>
   </beans:bean>  
-
+```	
 ## Security configuration
 [Tomcat8]/webapps/geoportal/WEB-INF/classes/app-security.xml
 - configure various authentication options such as simple, LDAP, OAuth2.
