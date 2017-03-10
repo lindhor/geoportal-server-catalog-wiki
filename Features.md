@@ -1,29 +1,43 @@
-##Harvester features
+##Geoportal Server 2.x features
 
-Following is a list of features for the Geoportal Server harvester:
+Following is a list of features for the Geoportal Server Catalog, for feature of Geoportal Server harvester, please see [Features](https://github.com/Esri/geoportal-server-harvester/wiki/Features):
 
-**1. Support harvesting from a variety of source types:**
-  * ArcGIS Server services
-  * Portal for ArcGIS/ArcGIS Online
-  * Geoportal Server 1.x (Migration tool)  
-  * Geoportal Server 2.x
-  * CSW 2.0.2
-  * CKAN 1.1
-  * WAF (Web Accessible Folder)
-  * Files Stored on a local folder
-                
-**2. Support harvesting to multiple destination repository types:**
-  * Geoportal Server 2.x
-  * Local folder
-  * Portal for ArcGIS/ArcGIS Online
-
+**1. Search :**
+  * Use of Elasticsearch for cataloging and indexing content
+  * Support for Elasticsearch 5.x  
+  * Changed the default Elasticsearch analyzer for the Geoportal index to use an English stemmer  
+  * A user interface for searching the catalog, viewing map services  
+  * Configuration options for search facets
+  * Enhancements for searching and aggregating by dates and temporal extents
+  * Display a spatial aggregation of search result in the search map  
+  * Ability to specify a default search filter on the url for the Geoportal  
+  * Filter search results by Source of origin for metadata files
+  * Search Widget providing federated search capabilities
+  * FGDC Service Status Checker integration
+  
+**2. Metadata Management :**
+  * Metadata editor, creating and edit metadata in ArcGIS Metadata, FGDC, ISO 19115 (Data), ISO 19119 (Service), ISO 19115-2 (Imagery and Gridded Data), INSPIRE (Data), INSPIRE (Service), GEMINI (Data), GEMINI (Service)
+  * Bulk ownership change
+  * Upload metadata records
+  * Delete metadata records
+  * Change record ownership  
+  
+**2. Supported Metadata Formats :**
+  * ISO 19115
+  * ISO 19115-2
+  * FGDC
+  * Dublin Core
+  * ArcGIS metadata format
+  
+**2. User Management :**
+  * LDAP
+  * OAuth2
+  * Simple list
+  * Ability to register new user, update profile and change password when using ArcGIS authentication  
+  
 **3. Extensibility:**
-  * API for creating custom protocol adaptors for both data source and destinations
-  * API for creating custom filters, processors, metadata analyzers or other elements of the workflow
-
-**4. Multiple deployment options:**
-  * Deploy and run as a web application inside Java web server like Apache Tomcat, Oracle Glassfish, etc.
-  * Run as stand alone, command line Java application
+  * A REST API for managing the content of the catalog
+  * Support for CSW 3.0.0 with OpenSearch  
   
 **5. Other:**
-  * Migration tool for migrating from Geoportal 1.2.x to Geoportal 2.5.x
+  * see features for the harvesting tool
