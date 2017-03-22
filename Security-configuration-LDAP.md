@@ -43,7 +43,7 @@ This section defines settings for the authentication manager
     </security:ldap-authentication-provider>
   </security:authentication-manager>
 ```  
-/beans:beans/security:authentication-manager/security:ldap-authentication-provider/@server-ref
+
 Parameter Name | Description
 -------------- | ------------
 @alias | Alias for the authentication manager
