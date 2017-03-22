@@ -35,11 +35,11 @@ This section defines settings for the authentication manager
       server-ref="ldapServer"
       role-prefix="ROLE_"
       user-search-base="ou=users,ou=system" 
-	    user-search-filter="(&amp;(objectclass=person)(uid={0}))" 
-	    group-search-base="ou=groups,ou=system"
-	    group-role-attribute="cn" 
-	    group-search-filter="(&amp;(objectclass=groupOfUniqueNames)(uniquemember={0}))"
-	    user-context-mapper-ref="ldapUserContextMapper">
+	  user-search-filter="(&amp;(objectclass=person)(uid={0}))" 
+	  group-search-base="ou=groups,ou=system"
+	  group-role-attribute="cn" 
+	  group-search-filter="(&amp;(objectclass=groupOfUniqueNames)(uniquemember={0}))"
+	  user-context-mapper-ref="ldapUserContextMapper">
     </security:ldap-authentication-provider>
   </security:authentication-manager>
 ```  
