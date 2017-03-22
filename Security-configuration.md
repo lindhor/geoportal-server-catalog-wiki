@@ -2,13 +2,13 @@
 
 In Progress
 
-**Configure geoportal to use LDAP:**
+###Configure Geoportal Server to use LDAP:
 
-*** 1. Uncomment the following line in app-security.xml to use file authentication-ldap.xml for authentication*** 
+#### 1. Uncomment the following line in app-security.xml to use file authentication-ldap.xml for authentication
   
     `<!-- <beans:import resource="authentication-ldap.xml"/> -->`
     
-*** 2. Update authentication-ldap.xml with parameters for the ldap server*** 
+#### 2. Update authentication-ldap.xml with parameters for the ldap server
 
 This section defines the ldap server connection parameters  
 ```  
@@ -19,7 +19,7 @@ This section defines the ldap server connection parameters
     manager-password="secret" />
 ```    
     
-Parameter name | Description
+Parameter Name | Description
 -------------- | ------------
 id | name for the ldap server
 url | url for the ldap server
