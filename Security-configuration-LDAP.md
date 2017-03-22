@@ -54,7 +54,7 @@ user-search-filter |
 group-search-base |
 group-role-attribute |
 group-search-filter |
-user-context-mapper-ref |
+user-context-mapper-ref | It references ldapserContextMapper below at /beans:beans/beans:bean/@id
 
 #### LDAP user context mapper settings
 This section defines settings for LDAP user context mapper 
@@ -72,7 +72,7 @@ This section defines settings for LDAP user context mapper
 ```  
 Parameter Name | Description
 -------------- | ------------
-@id | 
+@id | id for LDAP user context mapper 
 @class | 
 beans:property[1]/@name | 
 beans:property[1]/@value | 
