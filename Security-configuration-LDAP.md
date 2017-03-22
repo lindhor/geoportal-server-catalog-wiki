@@ -21,7 +21,7 @@ This section defines the ldap server connection parameters
     
 Parameter Name | Description
 -------------- | ------------
-id | id for the LDAP server, this is referenced by /beans:beans/security:authentication-manager/security:ldap-authentication-provider/@server-ref
+id | id for the LDAP server, this is referenced by /beans:beans/security:authentication-manager/security:ldap-authentication-provider/@server-ref below
 url | URL to the server on which the directory server management resides, and will include the port used for the LDAP connection. It can be any valid LDAP URL. i.e. ldap://machine:port. Common port numbers are 10389 or 19389 for Apache Directory Server, or 389 for Windows Active Directory. 
 manager-dn | Username with which to connect to the Directory Server. Its a LDAP distinguished name. Same value that was used to connect to the Directory Server, example: uid=admin,ou=system 
 manager-password | Password with which to connect to the Directory Server, it is a string representing a password. Same value that was used to connect to the Directory Server. Apache Directory Server default: 'secret' 
@@ -46,9 +46,9 @@ This section defines settings for the authentication manager
 
 Parameter Name | Description
 -------------- | ------------
-alias | alias for the authentication manager
-server-ref | It references /beans:beans/security:ldap-server/@id
-role-prefix | Used by /beans:beans/beans:bean/beans:property[2]/beans:map/beans:entry[1]/@key 
+alias | Alias for the authentication manager
+server-ref | It references /beans:beans/security:ldap-server/@id above
+role-prefix | Used by /beans:beans/beans:bean/beans:property[2]/beans:map/beans:entry[1]/@key as Prefix in front of the role name
 user-search-base | The path in the Directory Information Tree to search for users. LDAP DN representing the 'Users' organizational unit entry. Example: ou=users,ou=system 
 user-search-filter |The search pattern for the Directory Server to use when looking for users. String value representing a user entry pattern. Leave as default.  
 group-search-base |The path in the Directory Information Tree to search for groups. LDAP DN representing the 'Groups' organizational unit entry. Example: ou=groups,ou=system 
@@ -72,7 +72,7 @@ This section defines settings for LDAP user context mapper
 ```  
 Parameter Name | Description
 -------------- | ------------
-@id | id for LDAP user context mapper 
+@id | id for LDAP user context mapper, referenced by  /beans:beans/security:authentication-manager/security:ldap-authentication-provider/@user-context-mapper-ref
 @class | 
 beans:property[1]/@name | 
 beans:property[1]/@value | 
