@@ -2,11 +2,11 @@
 
 In Progress
 
-### Uncomment the following line in app-security.xml to use file authentication-ldap.xml for authentication
-  
-    `<!-- <beans:import resource="authentication-ldap.xml"/> -->`
+### 1. Uncomment the following line in app-security.xml to use file authentication-ldap.xml for authentication
+```<!-- <beans:import resource="authentication-ldap.xml"/> -->
+```
     
-### Update authentication-ldap.xml with parameters for the ldap server
+### Update authentication-ldap.xml with parameters for the LDAP server
 
 #### LDAP server settings
 This section defines the ldap server connection parameters  
@@ -20,8 +20,8 @@ This section defines the ldap server connection parameters
     
 Parameter Name | Description
 -------------- | ------------
-id | name for the ldap server
-url | url for the ldap server
+id | name for the LDAP server
+url | url for the LDAP server
 manager-dn | distinguished name for the manager account
 manager-password | password for the manager account
 
