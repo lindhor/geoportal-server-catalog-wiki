@@ -59,6 +59,7 @@ user-context-mapper-ref |
 #### LDAP user context mapper settings
 This section defines settings for LDAP user context mapper 
 
+```
   <beans:bean id="ldapUserContextMapper" class="com.esri.geoportal.base.security.LdapUserContextMapper">
     <beans:property name="defaultRole" value="USER" />
     <beans:property name="roleMap">
@@ -68,7 +69,7 @@ This section defines settings for LDAP user context mapper
       </beans:map>
     </beans:property>
   </beans:bean>
-  
+```  
 Parameter Name | Description
 -------------- | ------------
 @id | 
