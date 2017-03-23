@@ -1,6 +1,6 @@
 ## Configure Geoportal Server to use simple authentication
 
-Simple authentication is the default setting used by geoportal
+Simple authentication is the default setting used by Geoportal.
 
 ### 1. Uncomment the following line in app-security.xml to use file authentication-simple.xml for authentication
 ```
@@ -23,8 +23,6 @@ This section defines the settings for authentication manager
     </security:authentication-provider>
   </security:authentication-manager>
 ```    
-/beans:beans/security:authentication-manager/security:authentication-provider/security:user-service/security:user[1]
-/beans:beans/security:authentication-manager/security:authentication-provider/security:user-service/security:user[1]/@name
     
 Parameter Name | Description
 -------------- | ------------
