@@ -1,6 +1,7 @@
 ## Configure Geoportal Server to use LDAP
 
 In Progress
+This page describes how to configure Geoportal Server to use LDAP for authentication.
 
 ### 1. Uncomment the following line in app-security.xml to use file authentication-ldap.xml for authentication
 ```
@@ -16,7 +17,7 @@ This section defines the ldap server connection parameters
     id="ldapServer"  
     url="ldap://ldapservername:10389"
     manager-dn="uid=admin, ou=system" 
-    manager-password="secret" />
+    manager-password="" />
 ```    
     
 Parameter Name | Description
@@ -24,7 +25,7 @@ Parameter Name | Description
 @id | id for the LDAP server, this is referenced by /beans:beans/security:authentication-manager/security:ldap-authentication-provider/@server-ref below
 @url | URL to the server on which the directory server management resides, and will include the port used for the LDAP connection. It can be any valid LDAP URL. i.e. ldap://machine:port. Common port numbers are 10389 or 19389 for Apache Directory Server, or 389 for Windows Active Directory. 
 @manager-dn | Username with which to connect to the Directory Server. Its a LDAP distinguished name. Same value that was used to connect to the Directory Server, example: uid=admin,ou=system 
-@manager-password | Password with which to connect to the Directory Server, it is a string representing a password. Same value that was used to connect to the Directory Server. Apache Directory Server default: 'secret' 
+@manager-password | Password with which to connect to the Directory Server, it is a string representing a password. Same value that was used to connect to the Directory Server.
 
 #### LDAP authentication manager settings
 This section defines settings for the authentication manager  
@@ -74,10 +75,10 @@ Parameter Name | Description
 -------------- | ------------
 @id | id for LDAP user context mapper, referenced by  /beans:beans/security:authentication-manager/security:ldap-authentication-provider/@user-context-mapper-ref above
 @class | 
-beans:property[1]/@name | 
-beans:property[1]/@value | 
-beans:property[2]/@name | 
-beans:property[2]/beans:map/@key-type | 
-beans:property[2]/beans:map/@value-type | 
-beans:property[2]/beans:map/beans:entry[1]/@key | 
-beans:property[2]/beans:map/beans:entry[1]/@value |
+beans:property[1]/@name | name can be "defaultRole" or "roleMap", when name is defaultRole, it defines the default role the user will have when login to geportal
+beans:property[1]/@value | when name is "defaultRole", the value defines the default role the user will have, which is usually "USER" 
+beans:property[2]/@name | when name is "roleMap", the section defines the role mapping from LDAP groups to Geoportal 2.x roles 
+beans:property[2]/beans:map/@key-type | data type for key-type
+beans:property[2]/beans:map/@value-type | data type for value-type
+beans:property[2]/beans:map/beans:entry[1]/@key |  key is role-prefix + ldap group name, e.g. for LDAP group named GPT_ADMINISTRATORS the key would be "ROLE_GPT_ADMINISTRATORS", you will need an entry for each LDAP group used by geoportal.
+beans:property[2]/beans:map/beans:entry[1]/@value | value is a comma separated list of roles in geoportal 2, it can be "ADMIN", "PUBLISHER, "USER"

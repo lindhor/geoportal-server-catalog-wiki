@@ -15,10 +15,10 @@ This section defines the settings for authentication manager
   <security:authentication-manager alias="authenticationManager">
     <security:authentication-provider>
       <security:user-service>
-        <security:user name="gptadmin" password="gptadmin" authorities="ROLE_ADMIN,ROLE_PUBLISHER" />
-        <security:user name="admin" password="admin" authorities="ROLE_ADMIN,ROLE_PUBLISHER" />
-        <security:user name="publisher" password="publisher" authorities="ROLE_PUBLISHER" />
-        <security:user name="user" password="user" authorities="ROLE_USER" />
+        <security:user name="gptadmin" password="" authorities="ROLE_ADMIN,ROLE_PUBLISHER" />
+        <security:user name="admin" password="" authorities="ROLE_ADMIN,ROLE_PUBLISHER" />
+        <security:user name="publisher" password="" authorities="ROLE_PUBLISHER" />
+        <security:user name="user" password="" authorities="ROLE_USER" />
       </security:user-service>
     </security:authentication-provider>
   </security:authentication-manager>
