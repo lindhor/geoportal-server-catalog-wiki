@@ -76,9 +76,9 @@ Parameter Name | Description
 @id | id for LDAP user context mapper, referenced by  /beans:beans/security:authentication-manager/security:ldap-authentication-provider/@user-context-mapper-ref above
 @class | 
 beans:property[1]/@name | name can be "defaultRole" or "roleMap", when name is defaultRole, it defines the default role the user will have when login to geportal
-beans:property[1]/@value | when name is "defaultRole", the value defines the default role the user will have, which is usually "USER" 
-beans:property[2]/@name | when name is "roleMap", the section defines the role mapping from LDAP groups to Geoportal 2.x roles 
+beans:property[1]/@value | The value defines the default role the user will have, which is usually "USER" 
+beans:property[2]/@name | When name is "roleMap", the section defines the role mapping from LDAP groups to Geoportal 2.x roles 
 beans:property[2]/beans:map/@key-type | data type for key-type
 beans:property[2]/beans:map/@value-type | data type for value-type
-beans:property[2]/beans:map/beans:entry[1]/@key |  key is role-prefix + ldap group name, e.g. for LDAP group named GPT_ADMINISTRATORS the key would be "ROLE_GPT_ADMINISTRATORS", you will need an entry for each LDAP group used by geoportal.
-beans:property[2]/beans:map/beans:entry[1]/@value | value is a comma separated list of roles in geoportal 2, it can be "ADMIN", "PUBLISHER, "USER"
+beans:property[2]/beans:map/beans:entry[1]/@key |  key equal to role-prefix + ldap group name, e.g. for LDAP group named GPT_ADMINISTRATORS the key would be "ROLE_GPT_ADMINISTRATORS", you will need an entry for each LDAP group used by geoportal.
+beans:property[2]/beans:map/beans:entry[1]/@value | The role value for the LDAP groups, it is a comma separated list of roles in geoportal 2, it can be "ADMIN", "PUBLISHER, "USER".
