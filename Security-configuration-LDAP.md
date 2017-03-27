@@ -51,10 +51,10 @@ Parameter Name | Description
 security:ldap-authentication-provider/@server-ref | It references /beans:beans/security:ldap-server/@id above
 security:ldap-authentication-provider/@role-prefix | Used by /beans:beans/beans:bean/beans:property[2]/beans:map/beans:entry[1]/@key as Prefix in front of the role name
 security:ldap-authentication-provider/@user-search-base | The path in the Directory Information Tree to search for users. LDAP DN representing the 'Users' organizational unit entry. Example: ou=users,ou=system 
-security:ldap-authentication-provider/@user-search-filter |The search pattern for the Directory Server to use when looking for users. String value representing a user entry pattern. Leave as default.  
+security:ldap-authentication-provider/@user-search-filter |The search pattern for the Directory Server to use when looking for users. String value representing a user entry pattern. Leave as default, for Active Directory, the value would be something like "(&amp;(objectclass=person)(sAMAccountName={0}))".  
 security:ldap-authentication-provider/@group-search-base |The path in the Directory Information Tree to search for groups. LDAP DN representing the 'Groups' organizational unit entry. Example: ou=groups,ou=system 
 security:ldap-authentication-provider/@group-role-attribute | Attribute used for name of the Directory Server group that will be mapped to the named role
-security:ldap-authentication-provider/@group-search-filter | The search pattern for the Directory Server to use when looking for groups. String value representing a group entry pattern. Leave as default.  
+security:ldap-authentication-provider/@group-search-filter | The search pattern for the Directory Server to use when looking for groups. String value representing a group entry pattern. Leave as default, for Active Directory, the value would be something like "(&amp;(objectclass=group)(member:1.2.840.113556.1.4.1941:={0}))"  
 security:ldap-authentication-provider/@user-context-mapper-ref | It references ldapserContextMapper below at /beans:beans/beans:bean/@id
 
 #### LDAP user context mapper settings
