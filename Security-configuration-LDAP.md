@@ -1,6 +1,5 @@
 ## Configure Geoportal Server to use LDAP
 
-In Progress
 This page describes how to configure Geoportal Server to use LDAP for authentication.
 
 ### 1. Uncomment the following line in app-security.xml to use file authentication-ldap.xml for authentication
