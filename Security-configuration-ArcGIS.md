@@ -1,7 +1,5 @@
 ## Configure Geoportal Server to use Portal for ArcGIS authentication
 
-In Progress 
-
 This page describes how to configure Geoportal Server to use ArcGIS Online or Portal for ArcGIS for authentication.
 
 ### 1. Add and register geoportal as an application with Portal for ArcGIS/ArcGIS Online
@@ -34,15 +32,15 @@ This section defines the server connection parameters
     
 Parameter Name | Description
 -------------- | ------------
-name="appId" | Value is the appID of the geoportal application registered with Portal for ArcGIS or ArcGIS Online
-name="authorizeUrl" | For ArcGIS Online, the value is https://www.arcgis.com/sharing/rest/oauth2/authorize, for Portal for ArcGIS, the value would be something like https://portalServerName/arcgis/sharing/rest/oauth2/authorize.
-name="createAccountUrl" | For ArcGIS Online, the value is https://www.arcgis.com/home/createaccount.html,  for Portal for ArcGIS, the value would be something like https://portalServerName/arcgis/home/createaccount.html.
-name="expirationMinutes" | Duration for which the authentication will be valid, default is 120 minutes.
-name="geoportalAdministratorsGroupId" | Group name in ArcGIS Online or Portal for ArcGIS for Geoportal administrative users.
-name="geoportalPublishersGroupId" | Group name in ArcGIS Online or Portal for ArcGIS for Geoportal publishers.
-name="allUsersCanPublish" | Whether all users can publish, default is "true".
-name="rolePrefix" | Prefix of the role name, default is "ROLE_".
-name="showMyProfileLink" | Whether to show the My Profile link in Geoportal, default is "true".
+appId | Value is the appID of the geoportal application registered with Portal for ArcGIS or ArcGIS Online
+authorizeUrl | For ArcGIS Online, the value is https://www.arcgis.com/sharing/rest/oauth2/authorize, for Portal for ArcGIS, the value would be something like https://portalServerName/arcgis/sharing/rest/oauth2/authorize.
+createAccountUrl | For ArcGIS Online, the value is https://www.arcgis.com/home/createaccount.html,  for Portal for ArcGIS, the value would be something like https://portalServerName/arcgis/home/createaccount.html.
+expirationMinutes | Duration for which the authentication will be valid, default is 120 minutes.
+geoportalAdministratorsGroupId | Group name in ArcGIS Online or Portal for ArcGIS for Geoportal administrative users.
+geoportalPublishersGroupId | Group name in ArcGIS Online or Portal for ArcGIS for Geoportal publishers.
+allUsersCanPublish | Whether all users can publish, default is "true".
+rolePrefix | Prefix of the role name, default is "ROLE_".
+showMyProfileLink | Whether to show the My Profile link in Geoportal, default is "true".
 
 
 #### Authentication manager settings
@@ -56,7 +54,7 @@ This section defines settings for the authentication manager
 
 Parameter Name | Description
 -------------- | ------------
-@alias | Alias for the authentication manager
-/beans:beans/security:authentication-manager/security:authentication-provider/@ref | It references /beans:beans/beans:bean/@id above. Default value: arcgisAuthenticationProvider
+alias | Alias for the authentication manager
+ref | It references /beans:beans/beans:bean/@id above. Default value: arcgisAuthenticationProvider
 
 
