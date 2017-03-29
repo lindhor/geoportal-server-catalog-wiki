@@ -22,39 +22,8 @@
 
 ## Main configuration file
 
-[Tomcat8]/webapps/geoportal/WEB-INF/classes/config/app-context.xml
+The main configuration file for setting the cluster and node name(s) for Elasticsearch cluster is [Tomcat8]/webapps/geoportal/WEB-INF/classes/config/app-context.xml. By default, Geoportal is configured to look on the localhost for a cluster named elasticsearch. If you need to change any of the Elasticsearch related configuration, please see [Elasticsearch configuration](https://github.com/Esri/geoportal-server-catalog/wiki/Elasticsearch-configuration)
 
-Set the cluster and node name(s) for Elasticsearch cluster. By default, Geoportal is configured to look on the localhost for a cluster named elasticsearch. 
-```
-	<beans:bean id="elasticContext" class="com.esri.geoportal.lib.elastic.ElasticContext">
-		<beans:property name="clusterName" value="${es_cluster:elasticsearch}" />
-		<beans:property name="nodes">
-			<!-- The list of host names within the Elasticsearch cluster, one value element per host -->
-			<beans:list>
-				<beans:value>${es_node:localhost}</beans:value>
-			</beans:list>
-		</beans:property>
-	</beans:bean>  
-```
-If you have a cluster with multiple nodes, you can define it in one of two ways:
-
-- Add the following to [Tomcat8]/conf/catalina.properties, es_node is a comma separated list.	
-```
-# Geoportal
-es_cluster=myclustername
-es_node=host1,host2
-
-```	
-- OR, update app-context.xml
-```	
-  <beans:bean id="elasticContext" class="com.esri.geoportal.db.elastic.ElasticContext">
-    <beans:property name="clusterName" value="myclustername" />
-    <beans:property name="nodes">
-        <beans:value>host1</beans:value>
-        <beans:value>host2</beans:value>
-      </beans:list>
-    </beans:property>
-  </beans:bean>  
 ```	
 ## Security configuration
 You can configure various authentication options such as simple, LDAP, OAuth2 in Geoportal. The main configuration file for security is  [Tomcat8]/webapps/geoportal/WEB-INF/classes/app-security.xml.
