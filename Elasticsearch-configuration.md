@@ -33,7 +33,7 @@ Parameter Name | Description
 -------------- | ------------
 clusterName | The name of the cluster, default value is "elasticsearch", you can specify the name here directly, or you can have a system property named "es_cluster" that define the cluster name.
 indexName | The name of the index in Elasticsearch.
-indexNameIsAlias | It is an alias for the index name. When Geoportal starts for the first time, it will create an Elasticsearch index named "metadata_v1" and aliased as "metadata" by default. If you create a new index in Elasticsearch, just need to change the alias to point to the new index in Elasticsearch.
+indexNameIsAlias | If indexName is an alias for the index name. When Geoportal starts for the first time, it will create an Elasticsearch index named "metadata_v1" and aliased as "metadata" by default. If you create a new index in Elasticsearch, just need to change the alias to point to the new index in Elasticsearch.
 autoCreateIndex | If set to "true", index will be created when Geoportal starts.
 allowFileId | If set to "true", you can use the metadata file id as Elasticsearch id, the id will not be used if the id contains forward slash (e.g. in urls).
 mappingsFile | The location of Geoportal mapping defines Elasticsearch mappings.
