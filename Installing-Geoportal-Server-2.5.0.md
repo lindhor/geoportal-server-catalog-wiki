@@ -24,7 +24,6 @@
 
 The main configuration file for setting the cluster and node name(s) for Elasticsearch cluster is [Tomcat8]/webapps/geoportal/WEB-INF/classes/config/app-context.xml. By default, Geoportal is configured to look on the localhost for a cluster named elasticsearch. If you need to change any of the Elasticsearch related configuration, please see [Elasticsearch configuration](https://github.com/Esri/geoportal-server-catalog/wiki/Elasticsearch-configuration)
 
-```	
 ## Security configuration
 You can configure various authentication options such as simple, LDAP, OAuth2 in Geoportal. The main configuration file for security is  [Tomcat8]/webapps/geoportal/WEB-INF/classes/app-security.xml.
  * To configure geoportal to use simple authentication, see [Security configuration simple](https://github.com/Esri/geoportal-server-catalog/wiki/Security-configuration-Simple)
