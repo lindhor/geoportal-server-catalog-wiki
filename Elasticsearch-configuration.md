@@ -4,7 +4,7 @@ This page describes ElasticSearch related configuration within Geoportal Server.
 
 ### Elasticsearch related parameters within Geoportal
 
-This section describes Elasticsearch related parameters within geoportal, the parameters are located at [Tomcat8]/webapps/geoportal/WEB-INF/classes/config/app-context.xml
+This section describes Elasticsearch related parameters within geoportal, the parameters are located in [Tomcat8]/webapps/geoportal/WEB-INF/classes/config/app-context.xml
 
 
 ```
