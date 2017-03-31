@@ -31,9 +31,9 @@ Lets assume you would like to make the ISO metadata element `/gmd:MD_Metadata/gm
 3. Edit the line to make it like the following:
     `G.evalProps(task,item,root,"contact_role_s","//gmd:CI_ResponsibleParty/gmd:role/gmd:CI_RoleCode");` 
 
-  * Different functions are used depending on the element type,  for string use "evalProps", for date use "evalDate", for Codelist use "evalCode", for resource url use "evalResourceLinks".  
-  * "contact_role_s" is the Elasticsearch field name, suffix "_s" are used to tell the data type of the field, "_s" for string, "_txt" for text (tokenized), "_b" for boolean, "_i" for integer, etc. If a suffix is not explicitly specified, Elasticsearch will try to assign type based on the value. A full list of suffixes is defined in /geoportal/WEB-INF/classes/config/elastic-mappings.json. 
-  * "//gmd:CI_ResponsibleParty/gmd:role/gmd:CI_RoleCode" is the xpath of the element in the metadata.
+   * Different functions are used depending on the element type,  for string use "evalProps", for date use "evalDate", for Codelist use "evalCode", for resource url use "evalResourceLinks".  
+   * "contact_role_s" is the Elasticsearch field name, suffix "_s" are used to tell the data type of the field, "_s" for string, "_txt" for text (tokenized), "_b" for boolean, "_i" for integer, etc. If a suffix is not explicitly specified, Elasticsearch will try to assign type based on the value. A full list of suffixes is defined in /geoportal/WEB-INF/classes/config/elastic-mappings.json. 
+   * "//gmd:CI_ResponsibleParty/gmd:role/gmd:CI_RoleCode" is the xpath of the element in the metadata.
     
 4. Save the file.
 5. Restart Tomcat.
