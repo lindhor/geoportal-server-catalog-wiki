@@ -42,7 +42,7 @@ when Geoportal auto-creates the "metadata" index.
 Whenever you create a "metadata" index within Elasticsearch, you'll 
 need to include these mappings within your request "PUT" request.
 
-## Map additional metadata elements to Elasticsearch field and make it discoverable
+## Make additional metadata elements discoverable
 Click [here](https://github.com/Esri/geoportal-server-catalog/wiki/Mapping-XML-element-to-Elasticsearch-field) for details.
 
 ## Customize search panel
