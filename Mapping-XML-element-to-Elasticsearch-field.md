@@ -4,7 +4,7 @@ In Progress
 
 This page contains information about mapping metadata xml elements to Elasticsearch fields so that the mapped metadata element can be indexed and searched.
 
-### Main files related to the mapping of metadata xml elements to Elasticsearch fields
+### Main files related to the mapping of metadata XML elements to Elasticsearch fields
 
 The mapping is done through Javascript, the files are located at 
  [Tomcat8]/webapps/geoportal/WEB-INF/classes/metadata/js, it includes the following files:
@@ -30,9 +30,10 @@ Lets assume you would like to make the ISO metadata element `/gmd:MD_Metadata/gm
     
 3. Edit the line so it is like the following:
     `G.evalProps(task,item,root,"contact_role_s","//gmd:CI_ResponsibleParty/gmd:role/gmd:CI_RoleCode");` 
-    * **Note:**
+   * **Note:**
      * Different functions are used depending on the element type,  for string use "evalProps", for date use "evalDate", for Codelist use "evalCode", for resource url use "evalResourceLinks".  
-     * Where "contact_role_s" is the Elasticsearch field name, "//gmd:CI_ResponsibleParty/gmd:role/gmd:CI_RoleCode" is the xpath of the element in the metadata.
+     * "contact_role_s" is the Elasticsearch field name
+     * "//gmd:CI_ResponsibleParty/gmd:role/gmd:CI_RoleCode" is the xpath of the element in the metadata.
     
 4. Save the file
 5. Restart Tomcat
