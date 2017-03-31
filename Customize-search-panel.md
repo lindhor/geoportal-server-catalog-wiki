@@ -18,19 +18,19 @@ The search panel consists of many search facets, you can add, delete or update t
         data-dojo-props="field:'sys_owner_s',open:false,label:'${i18n.search.criteria.owner}'">
       </div>
 ```
-  * Copy and paste the `<div> ...</div>` block
-  * Perform necessary editing, for an explanation of the parameters, please see description for the parameters in the table below
+  * Copy and paste the `<div> ...</div>` block to the appropriate location
+  * Perform necessary editing, for a facet for "contact_role_s", it will be something like below. For an explanation of the parameters, please see description in the table below
 ```
          <div data-dojo-type="app/search/TermsAggregation"
         data-dojo-props="field:'contact_role_s',open:true,label:'contact_role'">
       </div>
 ```
-  * Save the file and refresh geoportal to verify if the facet is added to the search panel
+  * Save the file and refresh geoportal to verify the facet is added to the search panel
   
 * To update a search facet 
   * Open SearchPanel.html in a html editor
   * Find the `<div> ...</div>` block for the facets to be updated
-  * Make the necessary updates, for an explanation of the parameters, please see description for the parameters in the table below
+  * Make the necessary updates, for an explanation of the parameters, please see description in the table below
   * Save the file and refresh geoportal to verify if the facet is updated in the search panel
   
  * **Description for some of the parameters**
@@ -43,7 +43,7 @@ data-dojo-type | Template type
 field | Name of Elasticsearch field 
 interval | Units for clustering, counts per year/day etc., used in the temporal facet
 label | Label to be shown on the search panel, it can be either a string or variable pointing to a string. 
-nestedPath | Nested query in Elasticsearch, e.g. nestedPath:'timeperiod_nst' in time period facets,
+nestedPath | Nested query in Elasticsearch, e.g. nestedPath:'timeperiod_nst' in time period facets
 open | If set to true, the facet will be open when geoportal starts.
 pointField | Name of point field in Elasticsearch  
 toField | Name of field in Elasticsearch, e.g. for end date in time period facet
