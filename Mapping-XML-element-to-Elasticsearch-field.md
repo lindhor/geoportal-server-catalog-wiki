@@ -1,4 +1,4 @@
-## Mapping xml elements to Elasticsearch fields
+## Mapping XML elements to Elasticsearch fields
 
 In Progress  
 
@@ -19,7 +19,7 @@ The mapping is done through Javascript, the files are located at
  EvaluatorFor_ISO.js | contains mapping for converting ISO metadata to Elasticsearch JSON
  
 
-### Steps to map a metadata XML element to Elasticsearch field by using an example
+### Steps to map a metadata XML element to Elasticsearch field
 
 Lets assume you would like to make the ISO metadata element `/gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty/gmd:role/gmd:CI_RoleCode`  searchable, following are the steps: 
 
@@ -35,10 +35,10 @@ Lets assume you would like to make the ISO metadata element `/gmd:MD_Metadata/gm
      * "contact_role_s" is the Elasticsearch field name
      * "//gmd:CI_ResponsibleParty/gmd:role/gmd:CI_RoleCode" is the xpath of the element in the metadata.
     
-4. Save the file
-5. Restart Tomcat
-6. Upload an ISO metadata containing `/gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty/gmd:role/gmd:CI_RoleCode` value to Geoportal
-7. Search for the metadata > In the search result, click on the JSON link of the uploaded metadata > Verify the value for RoleCode is in "contact_role_s"
+4. Save the file.
+5. Restart Tomcat.
+6. Upload an ISO metadata containing `/gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty/gmd:role/gmd:CI_RoleCode` value to Geoportal.
+7. Search for the metadata > In the search result, click on the JSON link of the uploaded metadata > Verify RoleCode value is in "contact_role_s".
 8. You should be able to search for the Rolecode values in Geoportal, you can also create a search facet using the field in Geoportal.
 
 **Note:** 
