@@ -18,6 +18,7 @@ The search panel consists of many search facets, you can add, delete or update t
         data-dojo-props="field:'sys_owner_s',open:false,label:'${i18n.search.criteria.owner}'">
       </div>
 ```
+
   * Copy and paste the `<div> ...</div>` block to the appropriate location
   * Perform necessary editing, for a facet for "contact_role_s", it will be something like below. For an explanation of the parameters, please see description in the table below
 ```
@@ -25,6 +26,7 @@ The search panel consists of many search facets, you can add, delete or update t
         data-dojo-props="field:'contact_role_s',open:true,label:'contact_role'">
       </div>
 ```
+
   * Save the file and refresh geoportal to verify the facet is added to the search panel
   
 * To update a search facet 
