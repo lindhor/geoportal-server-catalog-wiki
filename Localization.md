@@ -9,7 +9,9 @@ Geoportal interface can be localized to display in other languages. Geoportal le
 * Open resources.js and localize the value of the variables to the specific language.
 * Remove text `root: {"` (near the top) and ` "}" `(near the bottom)
    ```
-     root: {                // just below line "define({"
+   ...
+   define({
+     root: {                
      ...
        }                    // second last line
    });       
