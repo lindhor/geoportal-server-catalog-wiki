@@ -7,7 +7,7 @@ Geoportal interface can be localized to display in other languages. Geoportal le
 * Create a folder  under [Tomcat8]/webapps/geoportal/app/nls and name it the same as the language code, e.g. "de" for German, "fr" for French, "es" for Spanish.
 * Copy resources.js from [Tomcat8]/webapps/geoportal/app/nls to the sub folder just created.
 * Open resources.js and localize the value of the variables to the specific language, save the file in proper encoding for the language.
-* Remove text `root: {"` (near the top) and ` "}" `(near the bottom)
+* Remove text `root: {` (near the top) and ` } `(near the bottom)
    ```
    ...
    define({
@@ -18,7 +18,7 @@ Geoportal interface can be localized to display in other languages. Geoportal le
    ```    
 * Save the updates
 * Open resource.js under folder nls
-* Update root and add the language reference ` "de": 1` (near the bottom of the file) and save the updates.
+* Update root and add the language reference ` "de": 1` (near the bottom of the file) to be like the following and save the updates.
    ```
    root: ({
    ...
