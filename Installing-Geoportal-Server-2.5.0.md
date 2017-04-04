@@ -47,3 +47,6 @@ Click [here](https://github.com/Esri/geoportal-server-catalog/wiki/Mapping-XML-e
 
 ## Customize search panel
 Click [here](https://github.com/Esri/geoportal-server-catalog/wiki/Customize-search-panel) for details.
+
+## Add support for another language in the interface 
+Click [here](https://github.com/Esri/geoportal-server-catalog/wiki/Localization) for details.
