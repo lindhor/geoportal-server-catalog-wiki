@@ -7,11 +7,11 @@ July 20, 2017
 Some Examples:
 
 - http://geoss.esri.com/csw3/csw
-- http://geoss.esri.com/geoportal-search/csw?service=CSW&request=GetCapabilities&version=3.0.0
-- http://geoss.esri.com/geoportal-search/csw?service=CSW&request=GetRecords&q=map
-- http://geoss.esri.com/geoportal-search/csw?service=CSW&request=GetRecords&q=map&target=arcgis
-- http://geoss.esri.com/geoportal-search/csw?service=CSW&request=GetRecords&q=map&target={"type":"portal","url":"http://myArcGISPortal/arcgis"}
-- http://geoss.esri.com/csw?service=CSW&request=GetRecordById&id=
+- http://geoss.esri.com/csw3/csw?service=CSW&request=GetCapabilities&version=3.0.0
+- http://geoss.esri.com/csw3/csw?service=CSW&request=GetRecords&q=map
+- http://geoss.esri.com/csw3/csw?service=CSW&request=GetRecords&q=map&target=arcgis
+- http://geoss.esri.com/csw3/csw?service=CSW&request=GetRecords&q=map&target={"type":"portal","url":"http://myArcGISPortal/arcgis"}
+- http://geoss.esri.com/csw3/csw?service=CSW&request=GetRecordById&id=
 
 - http://geoss.esri.com/csw/opensearch/description
 - http://geoss.esri.com/csw/opensearch?q=map
