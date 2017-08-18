@@ -16,14 +16,14 @@ Some Examples:
 
 ### OpenSearch
 
-- http://geoss.esri.com/csw3/csw/opensearch/description
-- http://geoss.esri.com/csw3/csw/opensearch?q=map
-- http://geoss.esri.com/csw3/csw/opensearch?q=map&bbox=&time=&from=&size=
-- http://geoss.esri.com/csw3/csw/opensearch?q=map&f=json
-- http://geoss.esri.com/csw3/csw/opensearch?q=map&f=atom
-- http://geoss.esri.com/csw3/csw/opensearch?q=map&f=csw
-- http://geoss.esri.com/csw3/csw/opensearch?q=map&f=json&target=arcgis&orgid=myOrgId
-- http://geoss.esri.com/csw3/csw/opensearch?q=map&f=json&target=[{"type":"portal","url":"https://www.arcgis.com/"},{"key":"abc","type":"geoportal","url":"http://geoss.esri.com/geoportal2/elastic/metadata/item/_search"}]
+- http://geoss.esri.com/csw3/opensearch/description
+- http://geoss.esri.com/csw3/opensearch?q=map
+- http://geoss.esri.com/csw3/opensearch?q=map&bbox=&time=&from=&size=
+- http://geoss.esri.com/csw3/opensearch?q=map&f=json
+- http://geoss.esri.com/csw3/opensearch?q=map&f=atom
+- http://geoss.esri.com/csw3/opensearch?q=map&f=csw
+- http://geoss.esri.com/csw3/opensearch?q=map&f=json&target=arcgis&orgid=myOrgId
+- http://geoss.esri.com/csw3/opensearch?q=map&f=json&target=[{"type":"portal","url":"https://www.arcgis.com/"},{"key":"abc","type":"geoportal","url":"http://geoss.esri.com/geoportal2/elastic/metadata/item/_search"}]
 
 ### Installation
 * Deploy geoportal-search.war to a java application server such as Apache Tomcat 8.x by dropping the war file in the webapps folder
