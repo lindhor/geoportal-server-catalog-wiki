@@ -7,20 +7,20 @@ July 20, 2017
 Some Examples:
 
 - http://geoss.esri.com/csw3/csw
-- http://server:port/geoportal-search/csw?service=CSW&request=GetCapabilities&version=3.0.0
-- http://server:port/geoportal-search/csw?service=CSW&request=GetRecords&q=map
-- http://server:port/geoportal-search/csw?service=CSW&request=GetRecords&q=map&target=arcgis
-- http://server:port/geoportal-search/csw?service=CSW&request=GetRecords&q=map&target={"type":"portal","url":"http://myArcGISPortal/arcgis"}
-- http://server:port/geoportal-search/csw?service=CSW&request=GetRecordById&id=
+- http://geoss.esri.com/geoportal-search/csw?service=CSW&request=GetCapabilities&version=3.0.0
+- http://geoss.esri.com/geoportal-search/csw?service=CSW&request=GetRecords&q=map
+- http://geoss.esri.com/geoportal-search/csw?service=CSW&request=GetRecords&q=map&target=arcgis
+- http://geoss.esri.com/geoportal-search/csw?service=CSW&request=GetRecords&q=map&target={"type":"portal","url":"http://myArcGISPortal/arcgis"}
+- http://geoss.esri.com/csw?service=CSW&request=GetRecordById&id=
 
-- http://server:port/geoportal-search/opensearch/description
-- http://server:port/geoportal-search/opensearch?q=map
-- http://server:port/geoportal-search/opensearch?q=map&bbox=&time=&from=&size=
-- http://server:port/geoportal-search/opensearch?q=map&f=json
-- http://server:port/geoportal-search/opensearch?q=map&f=atom
-- http://server:port/geoportal-search/opensearch?q=map&f=csw
-- http://server:port/geoportal-search/opensearch?q=map&f=json&target=arcgis&orgid=myOrgId
-- http://server:port/geoportal-search/opensearch?q=map&f=json&target=[{"type":"portal","url":"http://myArcGISPortal/arcgis"},{"key":"abc","type":"geoportal","url":"http://myGeoportal2:8080/geoportal/elastic/metadata/item/_search"}]
+- http://geoss.esri.com/csw/opensearch/description
+- http://geoss.esri.com/csw/opensearch?q=map
+- http://geoss.esri.com/csw/opensearch?q=map&bbox=&time=&from=&size=
+- http://geoss.esri.com/csw/opensearch?q=map&f=json
+- http://geoss.esri.com/csw/opensearch?q=map&f=atom
+- http://geoss.esri.com/csw/opensearch?q=map&f=csw
+- http://geoss.esri.com/csw/opensearch?q=map&f=json&target=arcgis&orgid=myOrgId
+- http://geoss.esri.com/csw/opensearch?q=map&f=json&target=[{"type":"portal","url":"http://myArcGISPortal/arcgis"},{"key":"abc","type":"geoportal","url":"http://myGeoportal2:8080/geoportal/elastic/metadata/item/_search"}]
 
 Installation:
 * Deploy geoportal-search.war to a java application server such as Apache Tomcat 8.x by dropping the war file in the webapps folder
