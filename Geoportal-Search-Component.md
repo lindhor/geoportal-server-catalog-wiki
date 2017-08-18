@@ -6,7 +6,7 @@ July 20, 2017
 
 Some Examples:
 
-- http://server:port/geoportal-search/csw
+- http://geoss.esri.com/csw3/csw
 - http://server:port/geoportal-search/csw?service=CSW&request=GetCapabilities&version=3.0.0
 - http://server:port/geoportal-search/csw?service=CSW&request=GetRecords&q=map
 - http://server:port/geoportal-search/csw?service=CSW&request=GetRecords&q=map&target=arcgis
