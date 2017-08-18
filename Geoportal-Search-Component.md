@@ -10,7 +10,7 @@ Some Examples:
 - http://geoss.esri.com/csw3/csw?service=CSW&request=GetCapabilities&version=3.0.0
 - http://geoss.esri.com/csw3/csw?service=CSW&request=GetRecords&q=map
 - http://geoss.esri.com/csw3/csw?service=CSW&request=GetRecords&q=map&target=arcgis
-- http://geoss.esri.com/csw3/csw?service=CSW&request=GetRecords&q=map&target={"type":"portal","url":"http://myArcGISPortal/arcgis"}
+- http://geoss.esri.com/csw3/opensearch?q=map&f=json&target=%7b%22type%22:%22geoportal%22,%22url%22:%22http://geoss.esri.com/geoportal2/elastic/metadata/item/_search%22%7d
 - http://geoss.esri.com/csw3/csw?service=CSW&request=GetRecordById&id=6d9fa6d159ae4a1f80b9e296ed300767
 
 - http://geoss.esri.com/csw3/csw/opensearch/description
