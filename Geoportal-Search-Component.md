@@ -23,7 +23,7 @@ Some Examples:
 - http://geoss.esri.com/csw3/opensearch?q=map&f=atom
 - http://geoss.esri.com/csw3/opensearch?q=map&f=csw
 - http://geoss.esri.com/csw3/opensearch?q=map&f=json&target=arcgis&orgid=myOrgId
-- http://geoss.esri.com/csw3/opensearch?q=map&f=json&target=%5B%7B%22key%22%3A%22ArcGIS%2520Online%22%2C%2520%22type%22%3A%22portal%22%2C%22url%22%3A%22https%3A%2F%2Fwww.arcgis.com%2F%22%7D%2C%7B%22key%22%3A%22Geoportal2%22%2C%22type%22%3A%22geoportal%22%2C%22url%22%3A%22http%3A%2F%2Fgeoss.esri.com%2Fgeoportal2%2Felastic%2Fmetadata%2Fitem%2F_search%22%7D%5D
+- http://geoss.esri.com/csw3/opensearch?q=map&f=json&target=[{"key":"ArcGIS%20Online",%20"type":"portal","url":"https://www.arcgis.com/"},{"key":"Geoportal2","type":"geoportal","url":"http://geoss.esri.com/geoportal2/elastic/metadata/item/_search"}]
 
 ### Installation
 * Deploy geoportal-search.war to a java application server such as Apache Tomcat 8.x by dropping the war file in the webapps folder
