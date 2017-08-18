@@ -11,7 +11,7 @@ Some Examples:
 - http://geoss.esri.com/csw3/csw?service=CSW&request=GetRecords&q=map
 - http://geoss.esri.com/csw3/csw?service=CSW&request=GetRecords&q=map&target=arcgis
 - http://geoss.esri.com/csw3/csw?service=CSW&request=GetRecords&q=map&target={"type":"portal","url":"http://myArcGISPortal/arcgis"}
-- http://geoss.esri.com/csw3/csw?service=CSW&request=GetRecordById&id=
+- http://geoss.esri.com/csw3/csw?service=CSW&request=GetRecordById&id=6d9fa6d159ae4a1f80b9e296ed300767
 
 - http://geoss.esri.com/csw3/csw/opensearch/description
 - http://geoss.esri.com/csw3/csw/opensearch?q=map
