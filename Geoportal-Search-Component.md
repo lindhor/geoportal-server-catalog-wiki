@@ -20,11 +20,11 @@ Some Examples:
 - [OpenSearch Descriptor](http://geoss.esri.com/csw3/opensearch/description)
 - [Search for 'map'](http://geoss.esri.com/csw3/opensearch?q=map)
 - [Search for 'map' with additional search parameters](http://geoss.esri.com/csw3/opensearch?q=map&bbox=&time=&from=&size=)
-- [](http://geoss.esri.com/csw3/opensearch?q=map&f=json)
-- [](http://geoss.esri.com/csw3/opensearch?q=map&f=atom)
-- [](http://geoss.esri.com/csw3/opensearch?q=map&f=csw)
-- [](http://geoss.esri.com/csw3/opensearch?q=map&f=json&target=arcgis&orgid=RhGiohBHzSBKt1MS)
-- [](http://geoss.esri.com/csw3/opensearch?q=map&f=json&target=[{"key":"ArcGIS%20Online",%20"type":"portal","url":"https://www.arcgis.com/"},{"key":"Geoportal2","type":"geoportal","url":"http://geoss.esri.com/geoportal2/elastic/metadata/item/_search"}])
+- [Search for 'map' and return as JSON](http://geoss.esri.com/csw3/opensearch?q=map&f=json)
+- [Search for 'map' and return as ATOM feed](http://geoss.esri.com/csw3/opensearch?q=map&f=atom)
+- [Search for 'map' and return as CSW records](http://geoss.esri.com/csw3/opensearch?q=map&f=csw)
+- [Search for 'map' in SDI Team ArcGIS Online subscription](http://geoss.esri.com/csw3/opensearch?q=map&f=json&target=arcgis&orgid=RhGiohBHzSBKt1MS)
+- [Search for 'map' from ArcGIS Online as well as from our Geoportal Server 2 demo site](http://geoss.esri.com/csw3/opensearch?q=map&f=json&target=[{"key":"ArcGIS%20Online",%20"type":"portal","url":"https://www.arcgis.com/"},{"key":"Geoportal2","type":"geoportal","url":"http://geoss.esri.com/geoportal2/elastic/metadata/item/_search"}])
 
 ### Installation
 * Deploy geoportal-search.war to a java application server such as Apache Tomcat 8.x by dropping the war file in the webapps folder
