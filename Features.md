@@ -1,4 +1,4 @@
-##Geoportal Server Catalog Features
+## Geoportal Server Catalog Features
 
 Following is a list of features for the Geoportal Server Catalog, for feature of Geoportal Server Harvester, please see [Features](https://github.com/Esri/geoportal-server-harvester/wiki/Features):
 
