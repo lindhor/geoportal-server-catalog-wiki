@@ -26,4 +26,4 @@ Welcome to the geoportal-server-catalog wiki!
   * How to map metadata XML elements to Elasticsearch field - [Mapping XML element to Elasticsearch field](https://github.com/Esri/geoportal-server-catalog/wiki/Mapping-XML-element-to-Elasticsearch-field).
 
 ## Usage
-  * How to configure and use Geoportal Search Component - [Geoportal Search Component](https://github.com/Esri/geoportal-server-catalog/wiki/Geoportal-Search-Component).  
+  * How to install and use Geoportal Search Component - [Geoportal Search Component](https://github.com/Esri/geoportal-server-catalog/wiki/Geoportal-Search-Component).  
