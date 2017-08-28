@@ -6,5 +6,21 @@ Welcome to the geoportal-server-catalog wiki!
 - 2.0.1 - released June 24, 2016, click [here](https://github.com/ArcGIS/geoportal-server-catalog/releases) for release notes and downloads.
 - 2.0.0 - released May 5, 2016, initial release of geoportal-server-catalog. Click [here](https://github.com/ArcGIS/geoportal-server-catalog/releases) for release notes and downloads.
 
-## Installation
-- Click [here](https://github.com/Esri/geoportal-server-catalog/wiki/Installation) for installation instruction.
+
+## Features
+  * What features are supported by Geoportal Server Catalog - [Features](https://github.com/Esri/geoportal-server-catalog/wiki/Features)
+  
+  
+## Installation and Upgrade
+- How to install Geoportal Server Catalog - [Installation](https://github.com/Esri/geoportal-server-catalog/wiki/Installation).
+- How to upgrade from Geportal Server 2.0.0 to 2.0.1 - [Upgrade to Geoportal Server 2.0.1](https://github.com/Esri/geoportal-server-catalog/wiki/Upgrade-to-Geoportal-Server-2.0.1).
+
+## Configuration and Customization
+  * How to configure Elasticsearch - [Elasticsearch configuration](https://github.com/Esri/geoportal-server-catalog/wiki/Elasticsearch-configuration).
+  * How to configure security for Geoportal Server Catalog
+    * [Security configuration Simple](https://github.com/Esri/geoportal-server-catalog/wiki/Security-configuration-Simple).
+  	 * [Security-configuration-LDAP](https://github.com/Esri/geoportal-server-catalog/wiki/Security-configuration-LDAP).
+     * [Security-configuration-ArcGIS](https://github.com/Esri/geoportal-server-catalog/wiki/Security-configuration-ArcGIS).
+  * How to localize Geoportal Server Catalog - [localization] (https://github.com/Esri/geoportal-server-catalog/wiki/Localization).
+  * How to customize search panel - [Customize search panel] (https://github.com/Esri/geoportal-server-catalog/wiki/Customize-search-panel).
+  * How to map metadata XML elements to Elasticsearch field - [Mapping XML element to Elasticsearch field] (https://github.com/Esri/geoportal-server-catalog/wiki/Mapping-XML-element-to-Elasticsearch-field).
