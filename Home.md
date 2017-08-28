@@ -21,6 +21,6 @@ Welcome to the geoportal-server-catalog wiki!
     * [Security configuration Simple](https://github.com/Esri/geoportal-server-catalog/wiki/Security-configuration-Simple).
   	 * [Security-configuration-LDAP](https://github.com/Esri/geoportal-server-catalog/wiki/Security-configuration-LDAP).
      * [Security-configuration-ArcGIS](https://github.com/Esri/geoportal-server-catalog/wiki/Security-configuration-ArcGIS).
-  * How to localize Geoportal Server Catalog - [localization] (https://github.com/Esri/geoportal-server-catalog/wiki/Localization).
-  * How to customize search panel - [Customize search panel] (https://github.com/Esri/geoportal-server-catalog/wiki/Customize-search-panel).
-  * How to map metadata XML elements to Elasticsearch field - [Mapping XML element to Elasticsearch field] (https://github.com/Esri/geoportal-server-catalog/wiki/Mapping-XML-element-to-Elasticsearch-field).
+  * How to localize Geoportal Server Catalog - [localization](https://github.com/Esri/geoportal-server-catalog/wiki/Localization).
+  * How to customize search panel - [Customize search panel](https://github.com/Esri/geoportal-server-catalog/wiki/Customize-search-panel).
+  * How to map metadata XML elements to Elasticsearch field - [Mapping XML element to Elasticsearch field](https://github.com/Esri/geoportal-server-catalog/wiki/Mapping-XML-element-to-Elasticsearch-field).
