@@ -1,7 +1,8 @@
 # Install Prerequisites
 
 - Install Elasticsearch (5.1.1 or higher, this version of Geoportal will only work with a 5.X version of Elasticsearch)
-- Install Tomcat 8
+- Install JRE/JDK 8.x
+- Install Tomcat 8.x
 
 # Deploy Geoportal Server
 
