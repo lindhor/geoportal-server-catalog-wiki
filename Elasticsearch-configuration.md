@@ -62,3 +62,13 @@ es_node=host1,host2
     </beans:property>
   </beans:bean>  
 ```
+
+### Configure Geoportal to use secured Elasticsearch 
+If you need to configure Geoportal to use secured Elasticsearch through x-pack, you can uncomment the section related to x-pack within app-context.xml and update parameters with proper value.
+ * Please see https://www.elastic.co/guide/en/x-pack/current/java-clients.html for discussion on some of the parameters used 
+ * The user used for accessing secured Elasticsearch need to have "manage" privilege
+ * If using ssl, the ssl key, certificates and authority has to be from Elasticsearch
+
+
+
+
