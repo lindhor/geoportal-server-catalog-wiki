@@ -7,7 +7,8 @@ In Progress!
 
 ### CSW 3.0
 
-- base: http://servername/geoportal/csw
+- base: 
+  * http://servername/geoportal/csw
 - GetCapabilities: http://servername/geoportal/csw?service=CSW&request=GetCapabilities&version=3.0.0
 - GetRecords for 'map' from default catalog: http://servername/geoportal/csw?service=CSW&request=GetRecords&q=map
 - GetRecords for 'map' from catalog named 'arcgis' (This is ArcGIS Online):
