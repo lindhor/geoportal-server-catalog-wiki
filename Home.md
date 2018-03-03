@@ -1,6 +1,7 @@
 Welcome to the geoportal-server-catalog wiki!
 
 ## Releases and Downloads
+- 2.5.2 - released March 2, 2017, click [here](https://github.com/ArcGIS/geoportal-server-catalog/releases) for release notes and downloads.
 - 2.5.1 - released September 28, 2017, click [here](https://github.com/ArcGIS/geoportal-server-catalog/releases) for release notes and downloads.
 - 2.5.0 - released January 6, 2017, click [here](https://github.com/ArcGIS/geoportal-server-catalog/releases) for release notes and downloads.
 - 2.0.2 - released December 21, 2016, click [here](https://github.com/ArcGIS/geoportal-server-catalog/releases) for release notes and downloads.
@@ -28,3 +29,4 @@ Welcome to the geoportal-server-catalog wiki!
 
 ## Usage
   * How to install and use Geoportal Search Component - [Geoportal Search Component](https://github.com/Esri/geoportal-server-catalog/wiki/Geoportal-Search-Component).  
+  * How to use CSW and Opensearch with Geoportal - [CSW and Opensearch with Geoportal](https://github.com/Esri/geoportal-server-catalog/wiki/CSW-and-Opensearch-with-Geoportal).  

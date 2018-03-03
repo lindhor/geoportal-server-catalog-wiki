@@ -5,9 +5,8 @@ In Progress!
   - Geoportal catalog can provide CSW 2.0.2, CSW 3 and Opensearch services for Geoportal 2.5.x and Elasticsearch catalogs
   - Geoportal catalog can provide CSW 2.0.2, CSW 3 and Opensearch services for ArcGIS Online and ArcGIS Enterprise 
 
-Some examples:
-
 ### CSW 3.0
+Support standard based CSW 3.0.0 operations, following are some examples:
 
 - base: 
   * http://servername/geoportal/csw
@@ -44,6 +43,7 @@ Support for CSW 2.0.2 are currently limited to very basic operations, see below 
   * http://servername/geoportal/csw?service=CSW&request=GetRecordById&id=6d9fa6d159ae4a1f80b9e296ed300767
 	
 ### OpenSearch
+Support OpenSearch operations as in CSW 3.0.0 specification, following are some examples:
 
 - OpenSearch Descriptor
   * http://servername/geoportal/opensearch/description
