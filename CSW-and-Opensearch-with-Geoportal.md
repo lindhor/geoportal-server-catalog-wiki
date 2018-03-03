@@ -15,7 +15,7 @@ Some examples:
   * http://servername/geoportal/csw?service=CSW&request=GetCapabilities&version=3.0.0
 - GetRecords for 'map' from default catalog: 
   * http://servername/geoportal/csw?service=CSW&request=GetRecords&q=map
-  - GetRecords with bbox for 'map' from default catalog: 
+- GetRecords with bbox for 'map' from default catalog: 
   * http://servername/geoportal/csw?service=CSW&request=GetRecords&q=map&bbox=-180,-90,180,90
 - GetRecords for 'map' from catalog named 'arcgis' (search ArcGIS Online and return CSW 3.0.0 records):
   * http://servername/geoportal/csw?service=CSW&request=GetRecords&q=map&target=arcgis
@@ -28,7 +28,7 @@ Some examples:
 
 ### CSW 2.0.2
 
-Support for CSW 2.0.2 are limited to basic operations currently, see below for some examples:
+Support for CSW 2.0.2 are currently limited to very basic operations, see below for some examples:
 
 - base: 
   * http://servername/geoportal/csw
