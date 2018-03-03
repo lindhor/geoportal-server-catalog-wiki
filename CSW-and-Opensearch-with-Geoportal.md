@@ -23,7 +23,7 @@ Some examples:
   * http://servername/geoportal/csw?service=CSW&request=GetRecords&q=map&target=arcgis&orgid=RhGiohBHzSBKt1MS
 - GetRecords for 'map' from ArcGIS Online as well as from our Geoportal Server 2 demo site, This is an example of federated search.	
   * http://servername/geoportal/csw?service=CSW&request=GetRecords&q=map&target=[{"key":"ArcGIS%20Online",%20"type":"portal","url":"https://www.arcgis.com/"},{"key":"Geoportal2","type":"geoportal","url":"http://geoss.esri.com/geoportal2/elastic/metadata/item/_search"}]. 
-- Get an individual record]
+- Get an individual record
   * http://servername/geoportal/csw?service=CSW&request=GetRecordById&id=6d9fa6d159ae4a1f80b9e296ed300767
 
 ### CSW 2.0.2
@@ -40,7 +40,7 @@ Support for CSW 2.0.2 are currently limited to very basic operations, see below 
   * http://servername/geoportal/csw?service=CSW&request=GetRecords&version=2.0.2&q=map
 - GetRecords for 'map' from catalog named 'arcgis' (This is search ArcGIS Online and return CSW results!):
   * http://servername/geoportal/csw?service=CSW&request=GetRecords&q=map&target=arcgis
-- Get an individual record]
+- Get an individual record
   * http://servername/geoportal/csw?service=CSW&request=GetRecordById&id=6d9fa6d159ae4a1f80b9e296ed300767
 	
 ### OpenSearch
@@ -58,7 +58,7 @@ Support for CSW 2.0.2 are currently limited to very basic operations, see below 
 - Search for 'map' and return as CSW records]
   * http://servername/geoportal/opensearch?q=map&f=csw
 - Search for 'map' in SDI Team ArcGIS Online subscription
-  * http://servername/geoportal/opensearch?q=map&f=json&target=arcgis&orgid=RhGiohBHzSBKt1MS (example)
+  * http://servername/geoportal/opensearch?q=map&f=json&target=arcgis&orgid=RhGiohBHzSBKt1MS
 - Search for 'map' from ArcGIS Online as well as from our Geoportal Server 2 demo site
   * http://servername/geoportal/opensearch?q=map&f=json&target=[{"key":"ArcGIS%20Online",%20"type":"portal","url":"https://www.arcgis.com/"},{"key":"Geoportal2","type":"geoportal","url":"http://geoss.esri.com/geoportal2/elastic/metadata/item/_search"}]
 
