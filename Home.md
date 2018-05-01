@@ -26,6 +26,7 @@ Welcome to the geoportal-server-catalog wiki!
   * How to localize Geoportal Server Catalog - [localization](https://github.com/Esri/geoportal-server-catalog/wiki/Localization).
   * How to customize search panel - [Customize search panel](https://github.com/Esri/geoportal-server-catalog/wiki/Customize-search-panel).
   * How to map metadata XML elements to Elasticsearch field - [Mapping XML element to Elasticsearch field](https://github.com/Esri/geoportal-server-catalog/wiki/Mapping-XML-element-to-Elasticsearch-field).
+  * How to configure Geoportal Server for Group Access - [Group-Access-Configuration].(https://github.com/Esri/geoportal-server-catalog/wiki/Mapping-XML-element-to-Elasticsearch-field).
 
 ## Usage
   * How to install and use Geoportal Search Component - [Geoportal Search Component](https://github.com/Esri/geoportal-server-catalog/wiki/Geoportal-Search-Component).  
