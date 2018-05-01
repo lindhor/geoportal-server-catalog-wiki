@@ -6,7 +6,7 @@
  * Administrator can give the metadata access to any of the groups that the administrator is part of.
  * Metadata owner can give access to any of the groups that the owner is part of.
  * Administraotr/owner has the option to apply the access change to one item only, all items owned by the same user, all items harvestered from same source, or all selected items (you must make a select before this option is visible, for non-administrators, you must select "My Content"). 
- * Two additional facets (Access and Acess Groups) will appear on the search panel to help user search for metadata with access control enabled.
+ * Two additional facets (Access and Acess Groups) will appear on the search panel to help user search for metadata when access control is enabled.
  
 
 ### Enable group access 
