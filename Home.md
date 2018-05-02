@@ -27,7 +27,8 @@ Welcome to the geoportal-server-catalog wiki!
   * How to customize search panel - [Customize search panel](https://github.com/Esri/geoportal-server-catalog/wiki/Customize-search-panel).
   * How to map metadata XML elements to Elasticsearch field - [Mapping XML element to Elasticsearch field](https://github.com/Esri/geoportal-server-catalog/wiki/Mapping-XML-element-to-Elasticsearch-field).
   * How to configure Geoportal Server to use Group Access - [Group-Access-Configuration](https://github.com/Esri/geoportal-server-catalog/wiki/Group-Access-Configuration).
-
+  * How to configure Everything else for Geoportal Server - [Other-Configurations-For-Geoportal](https://github.com/Esri/geoportal-server-catalog/wiki/Other-Configurations-For-Geoportal).
+  
 ## Usage
   * How to install and use Geoportal Search Component - [Geoportal Search Component](https://github.com/Esri/geoportal-server-catalog/wiki/Geoportal-Search-Component).  
   * How to use CSW and Opensearch with Geoportal - [CSW and Opensearch with Geoportal](https://github.com/Esri/geoportal-server-catalog/wiki/CSW-and-Opensearch-with-Geoportal).  
