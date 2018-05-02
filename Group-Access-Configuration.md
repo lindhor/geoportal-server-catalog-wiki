@@ -1,4 +1,3 @@
-## Configure Geoportal Server to use Group Access
 
  Group access allow metadata to be accessed only by certain group of users. This page describes group access related configuration within Geoportal Server.
 
