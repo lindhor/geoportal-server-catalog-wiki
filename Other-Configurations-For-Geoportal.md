@@ -1,4 +1,4 @@
-## Other configurations for Geoportal Server
+
 
  This page describes other Geoportal Server configurations that has not been described by a separate page.
 
