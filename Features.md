@@ -12,15 +12,14 @@ Following is a list of features for the Geoportal Server Catalog, for feature of
   * Ability to specify a default search filter on the url for the Geoportal  
   * Filter search results by source of origin for metadata files
   * Envelope based queries for spatial filter
-  * Search by paleo dates (e.g. geological dates)<br /><br />
+  * Search by paleo dates (e.g. geological dates)  <br /><br />
   * "Preview" of map services and shapefiles  
   * Html view of FGDC, ISO and ArcGIS metadata
   * FGDC Service Status Checker integration  <br /><br />
-
   * Support for CSW 3.0.0 with OpenSearch  
   * Initial support for CSW 2.0.2 
   * Support output formats: CSV, KML, RSS
-  * geoportal-search CSW and OpenSearch provider<br /><br />
+  * geoportal-search CSW and OpenSearch provider  <br /><br />
   * Search Widget providing federated search capabilities for CSW, Elasticsearch, Geoportal2, ArcGIS Online and Portal for ArcGIS sites
 
 **2. Metadata Management:**
