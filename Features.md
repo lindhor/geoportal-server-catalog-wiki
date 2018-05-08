@@ -1,27 +1,42 @@
-## Geoportal Server Catalog Features
-
 Following is a list of features for the Geoportal Server Catalog, for feature of Geoportal Server Harvester, please see [Features](https://github.com/Esri/geoportal-server-harvester/wiki/Features):
 
 **1. Search:**
   * Use of Elasticsearch for cataloging and indexing content
-  * Support for Elasticsearch 5.x  
+  * Support for Elasticsearch 5.x 
+  * Option for geoportal to access password protected Elasticsearch 
   * Changed the default Elasticsearch analyzer for the Geoportal index to use an English stemmer  
+  
   * A user interface for searching the catalog, viewing map services  
   * Configuration options for search facets
   * Enhancements for searching and aggregating by dates and temporal extents
-  * Display a spatial aggregation of search result in the search map  
+  * Display a spatial aggregation of search result in the search map 
+   
   * Ability to specify a default search filter on the url for the Geoportal  
-  * Filter search results by Source of origin for metadata files
-  * Search Widget providing federated search capabilities
-  * FGDC Service Status Checker integration
-  * Support for CSW 3.0.0 with OpenSearch    
+  * Filter search results by source of origin for metadata files
+  * Envelope based queries for spatial filter
+  * Search by paleo dates (e.g. geological dates)
   
+  * "Preview" of map services and shapefiles  
+  * Html view of FGDC, ISO and ArcGIS metadata
+  * FGDC Service Status Checker integration  
+  
+  * geoportal-search CSW and OpenSearch provider
+  * Support for CSW 3.0.0 with OpenSearch  
+  * Support output formats: CSV, KML, RSS
+  * Initial support for CSW 2.0.2
+  
+  * Search Widget providing federated search capabilities for CSW, Elasticsearch, Geoportal2, ArcGIS Online and Portal for ArcGIS sites
+
 **2. Metadata Management:**
   * Metadata editor, creating and edit metadata in ArcGIS Metadata, FGDC, ISO 19115 (Data), ISO 19119 (Service), ISO 19115-2 (Imagery and Gridded Data), INSPIRE (Data), INSPIRE (Service), GEMINI (Data), GEMINI (Service)
   * Bulk ownership change
   * Upload metadata records
-  * Delete metadata records
+  * Delete and bulk delete of metadata records
   * Change record ownership  
+  * Group based access for metadata
+  * Metadata approval status change
+  * Tags for metadata
+  * Allow administrator to add fields for custom use
   
 **3. Supported Metadata Formats:**
   * ISO 19115
@@ -29,6 +44,7 @@ Following is a list of features for the Geoportal Server Catalog, for feature of
   * INSPIRE
   * FGDC
   * Dublin Core
+  * OAI_DC
   * ArcGIS metadata format
   
 **4. User Management:**
