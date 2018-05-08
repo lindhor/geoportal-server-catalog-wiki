@@ -2,8 +2,8 @@ Following is a list of features for the Geoportal Server Catalog, for feature of
 
 **1. Search:**
   * Use of Elasticsearch for cataloging and indexing content
-  * Support for Elasticsearch 5.x 
-  * Option for geoportal to access password protected Elasticsearch 
+  * Support for Elasticsearch 5.x
+  * Option for geoportal to access password protected Elasticsearch
   * Changed the default Elasticsearch analyzer for the Geoportal index to use an English stemmer  
   
   * A user interface for searching the catalog, viewing map services  
