@@ -6,7 +6,7 @@
 - Install JRE/JDK 8.x
   - Download link: http://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase8-2177648.html
   - Geoportal was tested with JRE version 8u161
-  - We suggest to use JRE version 8u161, ElasticSearch might have problem with later versions of JRE on windows OS, please see https://discuss.elastic.co/t/cannot-start-elasticsearch/129779/11
+  - We suggest to use JRE version 8u161, Elasticsearch might have problem with later versions of JRE on windows OS, please see https://discuss.elastic.co/t/cannot-start-elasticsearch/129779
 - Install Tomcat 8.x
   - Download link: https://tomcat.apache.org/download-80.cgi#8.5.33
   - Installation guide: https://tomcat.apache.org/tomcat-8.5-doc/setup.html
