@@ -1,4 +1,3 @@
-(in progress)
 # Install Prerequisites
 
 - Install JRE/JDK 8.x
@@ -18,8 +17,9 @@
 # Deploy Geoportal Server
 
 - Deploy geoportal.war to Tomcat (e.g. by copying geoportal.war file to the webapps folder).
-- Quick updates of configuration, 
-  - It is noticed that in some cases you need to update the nodes in app-context.xml to the machine name to connect to Elasticsearch, e.g. 
+- Quick updates of configuration 
+  - It is noticed that in some cases you need to update the nodes in app-context.xml in geoportal\WEB-INF\classes\config to the machine name to connect to Elasticsearch, e.g.
+   
   ```
   		<beans:property name="nodes">
 			<beans:list>
