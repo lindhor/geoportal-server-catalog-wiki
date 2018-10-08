@@ -18,6 +18,16 @@
 # Deploy Geoportal Server
 
 - Deploy geoportal.war to Tomcat (e.g. by copying geoportal.war file to the webapps folder).
+- Quick updates of configuration, 
+  - It is noticed that in some cases you need to update the nodes in app-context.xml to the machine name to connect to Elasticsearch, e.g. 
+  ```
+  		<beans:property name="nodes">
+			<beans:list>
+				<beans:value>gptsrv12r2</beans:value>
+			</beans:list>
+		</beans:property>
+  ```
+
 - Update your Geoportal essential configuration
   - [Main configuration file](#main-configuration-file)
   - [Security](#security-configuration)

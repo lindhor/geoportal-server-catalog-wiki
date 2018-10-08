@@ -43,7 +43,7 @@ This option enable metadata translation when publishing metadata, for example, w
  
   ### To show custom links 
   (available from 2.6.1) 
-This option enable custom links (e.g. thumbnail, project metadata, granules, ftp_download, http_download, etc.) to be shown separately for iso metadata instead of just one "links" in search results
+This option enable custom links (e.g. thumbnail, project metadata, granules, ftp_download, http_download, etc.) to be shown separatelyinstead of just one "links" in search results for iso metadata 
 
  * Open geoportal\app\context\app-config.js
  * Set the following parameter to desired value:
