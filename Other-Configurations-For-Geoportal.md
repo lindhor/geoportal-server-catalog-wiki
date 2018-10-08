@@ -34,16 +34,16 @@ This option enable metadata owner/administrator to add tags for a metadata recor
  * Set allow to "true" to enable add tags and set fields. By enabling it, administrator/owner will be able to add tags (comma separated) for metadata, and add custom JSON fields to the metadata. 
  * Set adminOnly to "true" make the option only available to administrators.  
  
- ### To add posting processing when harvesting metadata 
+ ### To enable metadata translation when publishing metadata 
  (available from 2.6.1) 
-This option enable post processing when harvesting metadata, for example, when harvesting a dublin core metadata, instead of saving as dublin core format, you have have the metadata to be translated and saved in iso format instead.
+This option enable metadata translation when publishing metadata, for example, when upload/harvesting a dublin core metadata, instead of saving as dublin core format directly, you can have the metadata translated to iso and saved it in iso format instead.
 
  * Open geoportal\WEB-INF\classes\metadata\js\evaluator.js
- * Uncomment     //toKnownXslt: "metadata/xslt/qualifiedDCToISO19139v1.0.xslt" for dc and oai_dc.
+ * Uncomment     //toKnownXslt: "metadata/xslt/qualifiedDCToISO19139v1.0.xslt" in the dc and oai_dc section.
  
   ### To show custom links 
   (available from 2.6.1) 
-This option enable custom links (e.g. zip, ftp, website, download, etc.) to be shown instead of just "links"
+This option enable custom links (e.g. thumbnail, project metadata, granules, ftp_download, http_download, etc.) to be shown separately for iso metadata instead of just one "links" in search results
 
  * Open geoportal\app\context\app-config.js
  * Set the following parameter to desired value:
@@ -51,4 +51,4 @@ This option enable custom links (e.g. zip, ftp, website, download, etc.) to be s
     showLinks: true,
     showCustomLinks: true
 ```    
- 
+* It is also possible to customize this.
