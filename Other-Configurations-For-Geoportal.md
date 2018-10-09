@@ -41,6 +41,10 @@ This option enable metadata translation when publishing metadata, for example, w
  * Open geoportal\WEB-INF\classes\metadata\js\evaluator.js
  * Uncomment     //toKnownXslt: "metadata/xslt/qualifiedDCToISO19139v1.0.xslt" in the dc and oai_dc section.
  
+ It is possible to create/customize existing translator by
+ * Create a xslt translator and save it to geoportal\WEB-INF\classes\metadata\xslt
+ * In geoportal\WEB-INF\classes\metadata\js\evaluator.js, find the section for the metadata format where translation is desired, add "toKnownXslt" entry for the particular format to be translated. 
+ 
   ### To show custom links 
   (available from 2.6.1) 
 This option enable custom links (e.g. thumbnail, project metadata, granules, ftp_download, http_download, etc.) to be shown separatelyinstead of just one "links" in search results for iso metadata 
