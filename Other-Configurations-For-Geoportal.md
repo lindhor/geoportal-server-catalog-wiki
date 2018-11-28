@@ -56,3 +56,27 @@ This option enable custom links (e.g. thumbnail, project metadata, granules, ftp
     showCustomLinks: true
 ```    
 * It is also possible to customize this.
+
+ ### To configure Geoportal to work in a disconnected environment
+ * Setup a local version of ArcGIS JavaScript API (3.22) 
+   * Please visit https://developers.arcgis.com/javascript/3/jshelp/intro_accessapi.html for more information about the API, and download and installation instructions.
+ * Update geoportal\app\context\AppContext.js
+   * Get the lastest AppContext.js from github (https://github.com/Esri/geoportal-server-catalog/blob/master/geoportal/src/main/webapp/app/context/AppContext.js) and copy it to ...\geoportal\app\context\
+ * Update geoportal\app\context\app-config.js  
+   * Open app-config.js, update value for "basemap" to a ArcGIS map service url, for example: 
+```    
+    basemap: "http://servername/arcgis/rest/services/SampleWorldCities/MapServer",
+```    
+ * Update ..\geoportal\index.html
+   * Replace Url to JavaScript API to local instance, for example: https://servername/arcgis_js_api/library/3.22/3.22/
+ ```
+ ...
+<link rel="stylesheet" href="//js.arcgis.com/3.22/esri/themes/calcite/dijit/calcite.css">
+<link rel="stylesheet" href="//js.arcgis.com/3.22/esri/themes/calcite/esri/esri.css">
+<link rel="stylesheet" href="//js.arcgis.com/3.22/esri/dijit/metadata/css/gxe.css"/>
+<link rel="stylesheet" href="//js.arcgis.com/3.22/esri/dijit/metadata/css/gxe-calcite.css"/>
+...
+<script src="//js.arcgis.com/3.22/"></script>
+...
+
+ ``` 
