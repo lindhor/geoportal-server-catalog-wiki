@@ -78,5 +78,9 @@ This option enable custom links (e.g. thumbnail, project metadata, granules, ftp
 ...
 <script src="//js.arcgis.com/3.22/"></script>
 ...
-
- ``` 
+ ```
+ * Set Map Viewer for disconnected environment (in progress)
+   * Setup a local ArcGIS Enterprise (include ArcGIS Server and Portal for ArcGIS) instance, publish a AGS service (for use as basemap), configure Portal for ArcGIS to use local AGS service as basemap.
+   * Update env.js
+   * Update config.json
+   * Update widgets/GeoportalSearch/config.json     
