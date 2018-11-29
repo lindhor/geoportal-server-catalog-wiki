@@ -65,7 +65,7 @@ This option enable custom links (e.g. thumbnail, project metadata, granules, ftp
    * Get the lastest AppContext.js from github (https://github.com/Esri/geoportal-server-catalog/blob/master/geoportal/src/main/webapp/app/context/AppContext.js) and copy it to ...\geoportal\app\context\
  * Update geoportal\app\context\app-config.js  
    * Open app-config.js, update value for "basemap" to a local ArcGIS map service url, for example: 
-```    
+ ```    
     basemap: "http://servername/arcgis/rest/services/SampleWorldCities/MapServer",
 ```    
  * Update ..\geoportal\index.html
@@ -80,21 +80,21 @@ This option enable custom links (e.g. thumbnail, project metadata, granules, ftp
 <script src="//js.arcgis.com/3.22/"></script>
 ...
 
- ```
+```
  * Configure Map Viewer for disconnected environment (in progress)
    * Setup a local ArcGIS Enterprise (include ArcGIS Server and Portal for ArcGIS) instance, publish AGS service for using as basemap, configure Portal for ArcGIS basemap to use local AGS service.
    * Update ..\geoportal\viewer\env.js, replace ArcGIS JavaScript url with url for the local instance of JavaScript API, for example: https://servername/arcgis_js_api/library/3.25/3.25/
    
-   ```
+ ```
      apiUrl = 'https://js.arcgis.com/3.25';
      ...
      apiUrl = 'https://js.arcgis.com/' + apiVersion;
 	 ...     
      
-   ```
+```
    * Update ..\geoportal\viewer\config.json, replace value for portalUrl, geometryService and itemId with equivalent local instance values
-   ```
+ ```
      "portalUrl": "http://www.arcgis.com",
      "geometryService": "https://utility.arcgisonline.com/arcgis/rest/services/Geometry/GeometryServer",
     "itemId": "6e03e8c26aad4b9c92a87c1063ddb0e3",       
-   ```  
+```  
