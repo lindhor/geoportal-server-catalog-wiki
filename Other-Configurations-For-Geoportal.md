@@ -81,7 +81,7 @@ This option enable custom links (e.g. thumbnail, project metadata, granules, ftp
 ...
 
  ```
- * Set Map Viewer for disconnected environment (in progress)
+ * Configure Map Viewer for disconnected environment (in progress)
    * Setup a local ArcGIS Enterprise (include ArcGIS Server and Portal for ArcGIS) instance, publish AGS service for using as basemap, configure Portal for ArcGIS basemap to use local AGS service.
    * Update ..\geoportal\viewer\env.js, replace ArcGIS JavaScript url with url for the local instance of JavaScript API, for example: https://servername/arcgis_js_api/library/3.25/3.25/
    
