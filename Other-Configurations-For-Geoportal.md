@@ -78,9 +78,21 @@ This option enable custom links (e.g. thumbnail, project metadata, granules, ftp
 ...
 <script src="//js.arcgis.com/3.22/"></script>
 ...
+
  ```
  * Set Map Viewer for disconnected environment (in progress)
    * Setup a local ArcGIS Enterprise (include ArcGIS Server and Portal for ArcGIS) instance, publish a AGS service (for use as basemap), configure Portal for ArcGIS to use local AGS service as basemap.
-   * Update env.js
-   * Update config.json
-   * Update widgets/GeoportalSearch/config.json     
+   * Update ..\geoportal\viewer\env.js, replace ArcGIS JavaScript url with the local instance
+   ```
+     apiUrl = 'https://js.arcgis.com/3.25';
+     ...
+      apiUrl = 'https://js.arcgis.com/' + apiVersion;
+		...     
+     
+   ```
+   * Update ..\geoportal\viewer\config.json, replace value for portalUrl, geometryService and itemId with local instance values
+   ```
+     "portalUrl": "http://www.arcgis.com",
+     "geometryService": "https://utility.arcgisonline.com/arcgis/rest/services/Geometry/GeometryServer",
+    "itemId": "6e03e8c26aad4b9c92a87c1063ddb0e3",       
+   ```  
