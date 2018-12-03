@@ -81,6 +81,15 @@ This option enable custom links (e.g. thumbnail, project metadata, granules, ftp
 ...
 
 ```
+ * Update ..\geoportal\app\preview\PreviewUtil.js
+   * Replace url for geometry service, for example: http://servername:6080/arcgis/rest/services/Utilities/Geometry/GeometryServer
+   * Replace url for generate preview features, for example: http://servername/arcgis/sharing/rest/content/features/generate
+ ```
+  var _gs = new GeometryService("https://utility.arcgisonline.com/ArcGIS/rest/services/Geometry/GeometryServer");
+  ...
+  url: "http://www.arcgis.com/sharing/rest/content/features/generate",
+
+```
  * Configure Map Viewer for disconnected environment (in progress)
    * Setup a local ArcGIS Enterprise (include ArcGIS Server and Portal for ArcGIS) instance, publish AGS service for using as basemap, configure Portal for ArcGIS basemap to use local AGS service.
    * Update ..\geoportal\viewer\env.js, replace ArcGIS JavaScript url with url for the local instance of JavaScript API, for example: https://servername/arcgis_js_api/library/3.25/3.25/
