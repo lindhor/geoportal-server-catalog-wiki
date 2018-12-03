@@ -52,3 +52,5 @@
      "geometryService": "https://utility.arcgisonline.com/arcgis/rest/services/Geometry/GeometryServer",
     "itemId": "6e03e8c26aad4b9c92a87c1063ddb0e3",       
 ```  
+
+For instruction about configuring harvester for disconnected environment, please visit [Geoportal Harvester installation Wiki ](https://github.com/Esri/geoportal-server-harvester/wiki/Installation-guide).
