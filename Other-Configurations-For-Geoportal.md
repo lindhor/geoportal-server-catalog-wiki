@@ -60,7 +60,7 @@ This option enable custom links (e.g. thumbnail, project metadata, granules, ftp
  ### To configure Geoportal to work in a disconnected environment
  * Setup a local version of ArcGIS JavaScript API 
    * Please visit https://developers.arcgis.com/javascript/3/jshelp/intro_accessapi.html for more information about the API, and download and installation instructions.
-   * Make sure the version downloaded is consistent with the version that geoportal uses.
+   * It is suggested to use version 3.25.
  * Update geoportal\app\context\AppContext.js
    * Get the lastest AppContext.js from github (https://github.com/Esri/geoportal-server-catalog/blob/master/geoportal/src/main/webapp/app/context/AppContext.js) and copy it to ...\geoportal\app\context\
  * Update geoportal\app\context\app-config.js  
@@ -69,7 +69,7 @@ This option enable custom links (e.g. thumbnail, project metadata, granules, ftp
     basemap: "http://servername/arcgis/rest/services/SampleWorldCities/MapServer",
 ```    
  * Update ..\geoportal\index.html
-   * Replace url to JavaScript API with url for the local instance of JavaScript API, for example: https://servername/arcgis_js_api/library/3.22/3.22/
+   * Replace url to JavaScript API with url for the local instance of JavaScript API, for example: https://servername/arcgis_js_api/library/3.25/3.25/
  ```
  ...
 <link rel="stylesheet" href="//js.arcgis.com/3.22/esri/themes/calcite/dijit/calcite.css">
