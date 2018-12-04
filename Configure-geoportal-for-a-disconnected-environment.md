@@ -1,6 +1,6 @@
 
 
- This page describes steps to configure geoportal in a disconnected environment.
+ This page describes steps to configure geoportal for use in a disconnected environment.
 
  ### To configure Geoportal to work in a disconnected environment
  * Setup a local version of ArcGIS JavaScript API 
