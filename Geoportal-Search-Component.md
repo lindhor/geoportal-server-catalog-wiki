@@ -13,7 +13,7 @@ Some Examples:
 - [GetRecords for 'map' from catalog named 'arcgis'](http://geoss.esri.com/geoportal2/csw?service=CSW&request=GetRecords&q=map&target=arcgis) - This is ArcGIS Online
 - [GetRecords for 'map' from the SDI Team subscription in ArcGIS Online](http://geoss.esri.com/geoportal2/csw?service=CSW&request=GetRecords&q=map&target=arcgis&orgid=RhGiohBHzSBKt1MS) (!)
 - [GetRecords for 'map' from ArcGIS Online as well as from our Geoportal Server 2 demo site](http://geoss.esri.com/geoportal2/csw?service=CSW&request=GetRecords&q=map&target=[{"key":"ArcGIS%20Online",%20"type":"portal","url":"https://www.arcgis.com/"},{"key":"Geoportal2","type":"geoportal","url":"http://geoss.esri.com/geoportal2/elastic/metadata/item/_search"}]). This is federated search!
-- [Get an individual record](http://geoss.esri.com/geoportal2/csw?service=CSW&request=GetRecordById&id=6d9fa6d159ae4a1f80b9e296ed300767)
+- [Get an individual record](http://geoss.esri.com/geoportal2/csw?service=CSW&request=GetRecordById&id=e02ab82b32264844b3f1e5cd354731d4)
 
 ### OpenSearch
 
