@@ -2,8 +2,6 @@
 
 Starting from Esri Geoportal Server 2.6.2, it is possible to search other catalogs including geoportal 1.x & 2.x, ArcGIS Online, Portal for ArcGIS, CSW 2.0.2, and CSW 3.0.0 end points within the map viewer. This page describes steps to configure geoportal search widget for them.
 
-Generally it involves update file config.json in ..\geoportal2\viewer\configs\GeoportalSearch
-
  ### To configure search for ArcGIS Online/Portal for ArcGIS
   * Copy the following block of code to config.json in ..\geoportal2\viewer\configs\GeoportalSearch
  
@@ -48,7 +46,7 @@ Generally it involves update file config.json in ..\geoportal2\viewer\configs\Ge
       * useProxy: indicate if the url will go through a proxy
       * disableContentType: set to true to disable contentType in the header      
      
- ### To configure search for csw 3 end point
+ ### To configure search for CSW 3.0.0 end point
   * Copy the following block of code to config.json in ..\geoportal2\viewer\configs\GeoportalSearch
  
  ```
@@ -68,7 +66,7 @@ Generally it involves update file config.json in ..\geoportal2\viewer\configs\Ge
       * useProxy: indicate if the url will go through a proxy
       * disableContentType: set to true to disable contentType in the header      
 
- ### To configure search for csw 2 end point (including geoportal 1.x & 2.x)
+ ### To configure search for CSW 2.0.2 end point (including geoportal 1.x & 2.x)
   * Copy the following block of code to config.json in ..\geoportal2\viewer\configs\GeoportalSearch
  
  ```
