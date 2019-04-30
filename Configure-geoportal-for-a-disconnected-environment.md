@@ -5,6 +5,7 @@
  ### To configure Geoportal to work in a disconnected environment
  * Setup a local version of ArcGIS JavaScript API 
    * Please visit https://developers.arcgis.com/javascript/3/jshelp/intro_accessapi.html for more information about the API, and download and installation instructions.
+   * Ensure the init.js is set as the default file for the virtual directory for the JS API. For IIS, the instructions are [online](https://support.microsoft.com/en-us/help/320051/how-to-configure-the-default-document-in-internet-information-services).
    * It is suggested to use version 3.25.
  * Update geoportal\app\context\AppContext.js
    * Get the lastest AppContext.js from github (https://github.com/Esri/geoportal-server-catalog/blob/master/geoportal/src/main/webapp/app/context/AppContext.js) and copy it to ...\geoportal\app\context\
@@ -15,6 +16,8 @@
 ```    
  * Update ..\geoportal\index.html
    * Replace url to JavaScript API with url for the local instance of JavaScript API, for example: https://servername/arcgis_js_api/library/3.25/3.25/
+   * If you did not make init.js the default document (see above), include it in the link instead:
+https://servername/arcgis_js_api/library/3.25/3.25/init.js
  ```
  ...
 <link rel="stylesheet" href="//js.arcgis.com/3.22/esri/themes/calcite/dijit/calcite.css">
