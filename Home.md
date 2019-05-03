@@ -1,6 +1,7 @@
 Welcome to the geoportal-server-catalog wiki!
 
 ## Releases and Downloads
+- 2.6.2 - released May 3, 2019, click [here](https://github.com/ArcGIS/geoportal-server-catalog/releases) for release notes and downloads.
 - 2.6.1 - released October 9, 2018, click [here](https://github.com/ArcGIS/geoportal-server-catalog/releases) for release notes and downloads.
 - 2.6.0 - released May 7, 2018, click [here](https://github.com/ArcGIS/geoportal-server-catalog/releases) for release notes and downloads.
 - 2.5.2 - released March 2, 2018, click [here](https://github.com/ArcGIS/geoportal-server-catalog/releases) for release notes and downloads.
