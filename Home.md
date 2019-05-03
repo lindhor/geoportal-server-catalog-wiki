@@ -30,6 +30,7 @@ Welcome to the geoportal-server-catalog wiki!
   * How to map metadata XML elements to Elasticsearch field - [Mapping XML element to Elasticsearch field](https://github.com/Esri/geoportal-server-catalog/wiki/Mapping-XML-element-to-Elasticsearch-field).
   * How to configure Geoportal Server to use Group Access - [Group-Access-Configuration](https://github.com/Esri/geoportal-server-catalog/wiki/Group-Access-Configuration).
   * [How to configure Geoportal Server for a disconnected environment](https://github.com/Esri/geoportal-server-catalog/wiki/Configure-geoportal-for-a-disconnected-environment).
+  * [How to configure Geoportal Server to search other catalogs](https://github.com/Esri/geoportal-server-catalog/wiki/Configure-geoportal-to-search-other-catalogs).
   * How to configure Everything else for Geoportal Server - [Other-Configurations-For-Geoportal](https://github.com/Esri/geoportal-server-catalog/wiki/Other-Configurations-For-Geoportal).
   
 ## Usage
