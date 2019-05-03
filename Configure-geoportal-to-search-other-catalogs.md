@@ -20,9 +20,9 @@ Starting from 2.6.2, it is possible to configure  Esri Geoportal Server to searc
  
    * Update parameters to proper value.
      * url: For Portal for Arcgis, the url should be similar to http://www.arcgis.com/arcgis
-     * type: the type should be "portal" for ArcGIS Online and Portal for ArcGIS
-     * enabled: if enabled, check box will be checked in the search drop down list by default
-     * useProxy: indicate if the url will go through a proxy
+     * type: The type should be "portal" for ArcGIS Online and Portal for ArcGIS
+     * enabled: If enabled, check box will be checked in the search drop down list by default
+     * useProxy: It indicates whether the url will go through a proxy
      
  ### To configure search for other geoportal 2.x instance
   * Copy the following block of code to config.json in ..\geoportal2\viewer\configs\GeoportalSearch
@@ -42,10 +42,10 @@ Starting from 2.6.2, it is possible to configure  Esri Geoportal Server to searc
  
    * Update parameters to proper value.
       * url: url to the geoportal 2.x search instance 
-      * type: the type should be "geoportal" for Esri Geoportal Server 2.x
-      * enabled: if enabled, check box will be checked in the search drop down list by default
-      * useProxy: indicate if the url will go through a proxy
-      * disableContentType: set to true to disable contentType in the header      
+      * type: The type should be "geoportal" for Esri Geoportal Server 2.x
+      * enabled: If enabled, check box will be checked in the search drop down list by default
+      * useProxy: It indicates whether the url will go through a proxy
+      * disableContentType: Set the value to true to disable contentType in the header      
      
  ### To configure search for CSW 3.0.0 end point
   * Copy the following block of code to config.json in ..\geoportal2\viewer\configs\GeoportalSearch
@@ -66,7 +66,7 @@ Starting from 2.6.2, it is possible to configure  Esri Geoportal Server to searc
       * type: the type should be "csw3" for CSW 3.0.0
       * enabled: if enabled, check box will be checked in the search drop down list by default
       * useProxy: indicate if the url will go through a proxy
-      * disableContentType: set to true to disable contentType in the header      
+      * disableContentType: Set the value to true to disable contentType in the header      
 
  ### To configure search for CSW 2.0.2 end point (including geoportal 1.x & 2.x)
   * Copy the following block of code to config.json in ..\geoportal2\viewer\configs\GeoportalSearch
@@ -84,11 +84,11 @@ Starting from 2.6.2, it is possible to configure  Esri Geoportal Server to searc
  
    * Update parameters to proper value.
       * url: url for the CSW 2.0.2 GetRecords request
-      * type: the type should be "csw2" for CSW 2.0.2
-      * enabled: if enabled, check box will be checked in the search drop down list by default
-      * useProxy: indicate if the url will go through a proxy
-      * profile: use CSW2_Geoportal1 for profile      
-      * disableContentType: set to true to disable contentType in the header     
+      * type: The type should be "csw2" for CSW 2.0.2
+      * enabled: If enabled, check box will be checked in the search drop down list by default
+      * useProxy: It indicates whether the url will go through a proxy
+      * profile: Use CSW2_Geoportal1 for as profile name for Esri Geoportal Server
+      * disableContentType: Set the value to true to disable contentType in the header     
 
               
      
