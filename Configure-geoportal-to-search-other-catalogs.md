@@ -19,8 +19,8 @@ Starting from Esri Geoportal Server 2.6.2, it is possible to search other catalo
  ```
  
    * Update parameters to proper value.
-     * url: for portal for arcgis, the url should be similar to http://www.arcgis.com/arcgis for portal for ArcGIS
-     * type: should be "portal" for ArcGIS Online and Portal for ArcGIS
+     * url: For Portal for Arcgis, the url should be similar to http://www.arcgis.com/arcgis
+     * type: the type should be "portal" for ArcGIS Online and Portal for ArcGIS
      * enabled: if enabled, check box will be checked in the search drop down list by default
      * useProxy: indicate if the url will go through a proxy
      
@@ -42,6 +42,7 @@ Starting from Esri Geoportal Server 2.6.2, it is possible to search other catalo
  
    * Update parameters to proper value.
       * url: url to the geoportal 2.x search instance 
+      * type: the type should be "geoportal" for Esri Geoportal Server 2.x
       * enabled: if enabled, check box will be checked in the search drop down list by default
       * useProxy: indicate if the url will go through a proxy
       * disableContentType: set to true to disable contentType in the header      
@@ -51,7 +52,7 @@ Starting from Esri Geoportal Server 2.6.2, it is possible to search other catalo
  
  ```
     {
-      "name": "CSW3 Geoportal2 gptsrv08r2)",
+      "name": "CSW3 Geoportal2)",
       "url": "http://servername:8080/geoportal2/csw?service=CSW&request=GetRecords",
       "type": "csw3",
       "profile": null,
@@ -62,6 +63,7 @@ Starting from Esri Geoportal Server 2.6.2, it is possible to search other catalo
  
    * Update parameters to proper value.
       * url: url for the CSW 3.0.0 GetRecords request
+      * type: the type should be "csw3" for CSW 3.0.0
       * enabled: if enabled, check box will be checked in the search drop down list by default
       * useProxy: indicate if the url will go through a proxy
       * disableContentType: set to true to disable contentType in the header      
@@ -71,7 +73,7 @@ Starting from Esri Geoportal Server 2.6.2, it is possible to search other catalo
  
  ```
     {
-      "name": "CSW2 Geoportal2 (gptsrv08r2)",
+      "name": "CSW2 Geoportal2",
       "url": "http://servername:8080/geoportal2/csw?service=CSW&request=GetRecords",
       "type": "csw2",
       "profile": "CSW2_Geoportal1",
@@ -82,6 +84,7 @@ Starting from Esri Geoportal Server 2.6.2, it is possible to search other catalo
  
    * Update parameters to proper value.
       * url: url for the CSW 2.0.2 GetRecords request
+      * type: the type should be "csw2" for CSW 2.0.2
       * enabled: if enabled, check box will be checked in the search drop down list by default
       * useProxy: indicate if the url will go through a proxy
       * profile: use CSW2_Geoportal1 for profile      
