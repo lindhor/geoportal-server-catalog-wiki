@@ -1,6 +1,6 @@
 
 
-Starting from Esri Geoportal Server 2.6.2, it is possible to search other catalogs including geoportal 1.x & 2.x, ArcGIS Online, Portal for ArcGIS, CSW 2.0.2, and CSW 3.0.0 end points within the map viewer. This page describes steps to configure geoportal search widget for them.
+Starting from 2.6.2, it is possible to configure  Esri Geoportal Server to search other catalogs including geoportal 1.x & 2.x, ArcGIS Online, Portal for ArcGIS, CSW 2.0.2, and CSW 3.0.0 end points within the map viewer. This page describes steps to configure geoportal search widget for them.
 
  ### To configure search for ArcGIS Online/Portal for ArcGIS
   * Copy the following block of code to config.json in ..\geoportal2\viewer\configs\GeoportalSearch
