@@ -15,7 +15,7 @@ This option enable metadata owner/administrator to change the status of a metada
  * Set supportsApprovalStatus to "true" to enable approval status
  * Set defaultApprovalStatus to one of these values (approved|reviewed|disapproved|incomplete|posted|draft).
  
- * Administrator/owner has the option to apply the status change to one item only, all items owned by the same user, all items harvestered from same source, or all selected items (you must make a selection before this option is visible, for non-administrators, you must select "My Content"). 
+ * Administrator/owner has the option to apply the status change to one item only, all items owned by the same user, all items harvested from same source, or all selected items (you must make a selection before this option is visible, for non-administrators, you must select "My Content"). 
 
 ### Enable tags and set fields for metadata 
 This option enable metadata owner/administrator to add tags for a metadata record, it can even be used to add custom JSON fields, the configuration parameters is located at 
@@ -47,7 +47,7 @@ This option enable metadata translation when publishing metadata, for example, w
  
   ### To show custom links 
   (available from 2.6.1) 
-This option enable custom links (e.g. thumbnail, project metadata, granules, ftp_download, http_download, etc.) to be shown separatelyinstead of just one "links" in search results for iso metadata 
+This option enable custom links (e.g. thumbnail, project metadata, granules, ftp_download, http_download, etc.) to be shown separately instead of just one "links" in search results for iso metadata 
 
  * Open geoportal\app\context\app-config.js
  * Set the following parameter to desired value:
