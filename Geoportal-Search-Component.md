@@ -30,3 +30,18 @@ Some Examples:
 * Deploy geoportal-search.war to a java application server such as Apache Tomcat 8.x by dropping the war file in the webapps folder
 * You can change the defaultTarget within: geoportal-search/WEB-INF/classes/gs/config/Config.js
 
+### Provide a CSW "proxy" for ArcGIS Online or Portal for ArcGIS records
+  
+Geoportal Catalog and Geoportal Search can be used as a CSW "proxy" for ArcGIS Online or Portal for ArcGIS records. CSW capability for ArcGIS Online is already enabled by default, and within geoportal-search/WEB-INF/classes/gs/config/Config.js there are some example configurations for ArcGIS Online with orgid and for Portal for ArcGIS instances, it can be modified to suit your needs, example CSW capabilities:
+* For ArcGIS Online:
+** https://server:port/geoportal-search/csw?request=GetCapabilities&service=CSW&version=3.0.0
+** https://server:port/geoportal-search/csw?request=GetCapabilities&service=CSW&version=3.0.0&target=arcgis 
+ - "&target=arcgis" is optional
+
+* For ArcGIS Online with a particular organization ID:
+** http://gptsrv08r2.esri.com:8080/geoportal-search/csw?request=GetCapabilities&service=CSW&version=3.0.0&orgid=RhGiohBHzSBKt1MS
+* For ArcGIS Online with a particular organization and a particular group
+** http://gptsrv08r2.esri.com:8080/geoportal-search/csw?request=GetCapabilities&service=CSW&version=3.0.0&orgid=RhGiohBHzSBKt1MS&group=12345
+* For Portal for ArcGIS instances
+** http://gptsrv08r2.esri.com:8080/geoportal-search/csw?request=GetCapabilities&service=CSW&version=3.0.0&target=portal1
+
