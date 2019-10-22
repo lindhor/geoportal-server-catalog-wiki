@@ -32,7 +32,7 @@ Some Examples:
 
 ### Use Geoportal-search as a CSW "proxy" for ArcGIS Online and Portal for ArcGIS records
   
-Geoportal Catalog and Geoportal Search can be used as a CSW "proxy" for ArcGIS Online or Portal for ArcGIS records. CSW capability for ArcGIS Online is already enabled as the default target, and within geoportal-search/WEB-INF/classes/gs/config/Config.js there are some example configurations for ArcGIS Online with orgid and for Portal for ArcGIS instances, they can be modified to suit your needs, example CSW capabilities:
+Geoportal Catalog and Geoportal Search can be used as a CSW "proxy" for ArcGIS Online or Portal for ArcGIS records. With the out of box deployment of Geoportal-search, the CSW capability for ArcGIS Online is already enabled as the default target, and within geoportal-search/WEB-INF/classes/gs/config/Config.js there are some example configurations for ArcGIS Online with orgid and for Portal for ArcGIS instances, they can be modified to suit your needs, example CSW capabilities:
 * For ArcGIS Online:
   * https://server:port/geoportal-search/csw?request=GetCapabilities&service=CSW&version=3.0.0
   * https://server:port/geoportal-search/csw?request=GetCapabilities&service=CSW&version=3.0.0&target=arcgis 
