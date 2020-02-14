@@ -36,7 +36,7 @@ Geoportal Catalog and Geoportal Search can be used as a CSW "proxy" for ArcGIS O
 * For ArcGIS Online:
   * https://server:port/geoportal-search/csw?request=GetCapabilities&service=CSW&version=3.0.0
   * https://server:port/geoportal-search/csw?request=GetCapabilities&service=CSW&version=3.0.0&target=arcgis 
-  * https://server:port/geoportal-search/csw?&service=CSW&request=GetRecords&q=map
+  * https://server:port/geoportal-search/csw?service=CSW&request=GetRecords&q=map
 * For ArcGIS Online with a particular organization ID:
   * https://server:port/geoportal-search/csw?request=GetCapabilities&service=CSW&version=3.0.0&orgid=RhGiohBHzSBKt1MS
 * For ArcGIS Online with a particular organization and a particular group
