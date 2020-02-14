@@ -33,6 +33,7 @@ Welcome to the geoportal-server-catalog wiki!
   * [How to configure Geoportal Server for a disconnected environment](https://github.com/Esri/geoportal-server-catalog/wiki/Configure-geoportal-for-a-disconnected-environment).
   * [How to configure Geoportal Server to search other catalogs](https://github.com/Esri/geoportal-server-catalog/wiki/Configure-geoportal-to-search-other-catalogs).
   * How to configure Everything else for Geoportal Server - [Other-Configurations-For-Geoportal](https://github.com/Esri/geoportal-server-catalog/wiki/Other-Configurations-For-Geoportal).
+  * How to customize and use DCAT - [Customize-and-Use-DCAT](https://github.com/Esri/geoportal-server-catalog/wiki/Customize-and-Use-DCAT).  
   
 ## Usage
   * How to install and use Geoportal Search Component - [Geoportal Search Component](https://github.com/Esri/geoportal-server-catalog/wiki/Geoportal-Search-Component).  
