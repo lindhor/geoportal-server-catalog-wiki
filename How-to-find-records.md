@@ -6,11 +6,11 @@ Geoportal Server provides multiple methods to search for records in Geoportal Se
 
 In addition to the free text search, it is possible to conduct advanced search using Elasticsearch syntax with specific fields and logic operators, for example:
 
- * title:Paleoclimatology - It will return records that its title contains word Paleoclimatology.
- * -title:Paleoclimatology - It will return records that its title does NOT contain word Paleoclimatology.
- * Paleoclimatology AND environment* ->  it will return records that contains both word "Paleoclimatology" and word start with environment.
- * Paleoclimatology OR environment* ->  it will return records that contains either word "Paleoclimatology" or word start with environment.
- * keywords_s:"Spatial data" ->  it will return records that its keyword contains exact word "Spatial data".
+ * _title:Paleoclimatology_ - It will return records that its title contains word Paleoclimatology.
+ * _-title:Paleoclimatology_ - It will return records that its title does NOT contain word Paleoclimatology.
+ * _Paleoclimatology AND environment*_ -  it will return records that contains both word "Paleoclimatology" and word start with environment.
+ * _Paleoclimatology OR environment*_ -  it will return records that contains either word "Paleoclimatology" or word start with environment.
+ * _keywords_s:"Spatial data"_ -  it will return records that its keyword contains exact word "Spatial data".
  
 Please note the field names such as title, keywords_s can be found by clicking on the JSON link in the search result
 
@@ -27,7 +27,7 @@ For spatial search including "Intersects" and "Within", the map extent will be u
 Clicking on "Web" link in the lower right of the search result page will open the page with the url shown in Elasticsearch DSL pattern, it is possible to further narrow down the results by changing the fields and parameters in the esdsl section of the url (need knowledge of Elasticsearch DSL).
 
 ### Searching for records using federated search in Geoportal Server map viewer
-If Geoportal Server has been configured for federated search, it is possible to search for records in other repositories within Geoportal Server map viewer, the steps include: Click on "Map" tab > Click on "Geoportal Search" button in map viewer > Enter search text, Click search, select the external catalog to view the results.
+If Geoportal Server has been configured for federated search, it is possible to search for records in other repositories within Geoportal Server map viewer, the steps include: Click on "Map" tab > Click on "Geoportal Search" button in map viewer > Enter search text > click search > select the external catalog to view the results.
 
 ### Searching for records using Opensearch end point
 Please see [CSW and Opensearch with Geoportal Server](https://github.com/Esri/geoportal-server-catalog/wiki/CSW-and-Opensearch-with-Geoportal).  
