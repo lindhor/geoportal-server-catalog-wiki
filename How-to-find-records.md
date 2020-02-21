@@ -27,7 +27,7 @@ For spatial search including "Intersects" and "Within", the map extent will be u
 Clicking on "Web" link in the lower right of the search result page will open the page with the url shown in Elasticsearch DSL pattern, it is possible to further narrow down the results by changing the fields and parameters in the esdsl section of the url (need knowledge of Elasticsearch DSL).
 
 ### Searching for records using federated search in Geoportal Server map viewer
-If Geoportal Server has been configured for federated search, it is possible to search for records in other repositories through Geoportal Server map viewer, the steps include Click on "Map" tab > Click on "Geoportal Search" button in map viewer > Enter search text, Click search, select the external catalog to view the results.
+If Geoportal Server has been configured for federated search, it is possible to search for records in other repositories within Geoportal Server map viewer, the steps include: Click on "Map" tab > Click on "Geoportal Search" button in map viewer > Enter search text, Click search, select the external catalog to view the results.
 
 ### Searching for records using Opensearch end point
 Please see [CSW and Opensearch with Geoportal Server](https://github.com/Esri/geoportal-server-catalog/wiki/CSW-and-Opensearch-with-Geoportal).  
