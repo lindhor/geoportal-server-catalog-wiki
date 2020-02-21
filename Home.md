@@ -37,5 +37,6 @@ Welcome to the geoportal-server-catalog wiki!
 
   
 ## Usage
+  * How to find records in Geoportal - [How to find records](https://github.com/Esri/geoportal-server-catalog/wiki/How-to-find-records).  
   * How to install and use Geoportal Search Component - [Geoportal Search Component](https://github.com/Esri/geoportal-server-catalog/wiki/Geoportal-Search-Component).  
   * How to use CSW and Opensearch with Geoportal - [CSW and Opensearch with Geoportal](https://github.com/Esri/geoportal-server-catalog/wiki/CSW-and-Opensearch-with-Geoportal).  
