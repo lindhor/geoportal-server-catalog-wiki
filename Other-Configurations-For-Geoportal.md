@@ -57,3 +57,15 @@ This option enable custom links (e.g. thumbnail, project metadata, granules, ftp
 ```    
 * It is also possible to customize this.
 
+  ### To configure INSPIRE Discovery Service 
+  (available from 2.6.3) 
+This option enable Discovery Services for INSPIRE.
+
+ * Stop application server (e.g. Tomcat) 
+ * Go to folder \geoportal\WEB-INF\classes\gs\config
+ * Rename csw2-capabilities.xml to csw2-capabilities_backup.xml
+ * Rename csw2-INSPIRE-capabilities.xml to csw2-capabilities.xml
+ * Restart application server (e.g. Tomcat) 
+ * Test INSPIRE discvoery service end point http://server:port/geoportal/csw?service=csw&request=getcapabilities&version=2.0.2
+
+  
