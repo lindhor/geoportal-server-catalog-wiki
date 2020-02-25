@@ -1,8 +1,8 @@
 # Install Prerequisites
 
 - Install AdoptOpenJDK 11
-  - Download link: https://adoptopenjdk.net/
-  - Geoportal was tested with AdoptOpenJDK 11
+  - Download link: https://adoptopenjdk.net/.
+  - Geoportal was tested with AdoptOpenJDK 11.
   
 - Install Elasticsearch (6.x or higher)
   - Download link: https://www.elastic.co/downloads/elasticsearch
@@ -11,7 +11,9 @@
 - Install Tomcat 9.x
   - Download link: https://tomcat.apache.org/download-90.cgi
   - Installation guide: https://tomcat.apache.org/tomcat-9.0-doc/setup.html
-  - Geoportal was tested with Tomcat 9.0.29
+  - Geoportal was tested with Tomcat 9.0.29.
+
+We have built and tested Geoportal Server with the system environment above, it might work with other similar environment.
 
 # Deploy Geoportal Server
 
