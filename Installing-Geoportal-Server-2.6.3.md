@@ -73,3 +73,5 @@ Click [here](https://github.com/Esri/geoportal-server-catalog/wiki/Customize-sea
 
 ## Add support for another language in the interface 
 Click [here](https://github.com/Esri/geoportal-server-catalog/wiki/Localization) for details.
+
+There are many other configuration options in geoportal, please visit the [Configuration and Customization] (https://github.com/Esri/geoportal-server-catalog/wiki) section of wiki home for more details.
