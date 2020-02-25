@@ -1,5 +1,6 @@
 ==='''Installation Information'''===
 
+* [[Installing-Geoportal-Server-2.6.3]]
 * [[Installing-Geoportal-Server-2.6.1]]
 * [[Installing-Geoportal-Server-2.5.0]]
 * [[Installing-Geoportal-Server-2.0.2]]
