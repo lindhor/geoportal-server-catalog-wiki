@@ -8,6 +8,7 @@
 * [[Installing-Geoportal-Server-2.0.0]]
 
 ==='''Upgrade Information'''===
+* [[Upgrade-from-Geportal-Server-1.x-to-2.x]]
 * [[Upgrade-to-Geoportal-Server-2.0.1]]
 
 For information on installation of Geoportal Server 1.x, please go [https://github.com/Esri/geoportal-server/wiki/Installation here]. 
