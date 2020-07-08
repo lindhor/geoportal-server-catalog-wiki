@@ -7,11 +7,13 @@ If you have an existing Esri Geoportal Server 1.x instance that needs to be migr
 - Harvest the metadata from the geoportal 1.x instance to the new geoportal instance: 
   - Create an output broker for geoportal 2.x in Harvester
   - Create input broker, there are multiple options:
-    - you can create an "Catalog Service for the Web" type input broker.
-    - you can create an "Migration Tool" type input broker, the JNDI is the geoportal 1.x instance JNDI information, (make sure you have the proper JDBC driver)
+    - you can create a "Catalog Service for the Web" type input broker.
+    - you can create a "Migration Tool" type input broker, the JNDI is the geoportal 1.x instance JNDI information (make sure you have the proper JDBC driver). more instruction at https://github.com/Esri/geoportal-server-harvester/wiki/Migration-tool
     - You can export the metadata in Geoportal 1.x to a folder, then create an "UNC Path" type input broker.
   - Create a harvest task that matches the input and output destination
   - Click "run" on the Harvester task list to harvest the metadata records.  
+
+More information on Geoportal Server Harvester is available at https://github.com/Esri/geoportal-server-harvester/wiki
 
 For INSPIRE metadata administrators/publishers, it is possible to edit the harvested INSPIRE metadata in geoportal 2.x to make it compliant to INSPIRE Metadata 2.0.1 standard.
 
