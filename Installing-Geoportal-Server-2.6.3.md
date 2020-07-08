@@ -7,6 +7,7 @@
 - Install Elasticsearch (6.x or higher)
   - Download link: https://www.elastic.co/downloads/elasticsearch
   - Geoportal was tested with Elasticsearch version 7.5.0.
+  - Avoid Elasticsearch 7.8.0, it has a geometry related bug (see https://github.com/elastic/elasticsearch/pull/58786) that will cause issue with geoportal
   
 - Install Tomcat 9.x
   - Download link: https://tomcat.apache.org/download-90.cgi
