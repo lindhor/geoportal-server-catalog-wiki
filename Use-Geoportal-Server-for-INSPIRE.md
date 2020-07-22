@@ -19,12 +19,12 @@ This page contains information about configuring and using Geoportal Server for 
   * Login as geoportal administrator or publisher
   * Go to geoportal > Admin > Create metadata > New Document
   * Choose INSPIRE 2.0 (Service) or INSPIRE 2.0 (Data)
-  * Fill in all the metadata content
+  * Fill in all the required metadata content
   * Save
   * Optionally, you can open an existing INSPIRE metadata, edit it, and save it into Geoportal Catalog.
 
-* To Harvest metadata into geoportal catalog, please see [Geoportal Server Harvester Quick Start Guide](https://github.com/Esri/geoportal-server-harvester/wiki/Quick-start-guide)
+* To harvest metadata into geoportal catalog, please see [Geoportal Server Harvester Quick Start Guide](https://github.com/Esri/geoportal-server-harvester/wiki/Quick-start-guide).
 
-* To search for metadata records please see [[How-to-find-records]]
+* To search for metadata records please see [[How-to-find-records]].
 
   
