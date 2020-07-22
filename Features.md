@@ -36,7 +36,7 @@ Following is a list of features for the Geoportal Server Catalog, for feature of
 **3. Supported Metadata Formats:**
   * ISO 19115
   * ISO 19115-2
-  * INSPIRE
+  * INSPIRE metadata 2.0.1
   * FGDC
   * Dublin Core
   * OAI_DC
