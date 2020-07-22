@@ -1,7 +1,5 @@
 ## Customize search panel
 
-In Progress  
-
 The search panel consists of many search facets, you can add, delete or update the search facets by editing a html file named SearchPanel.html in [Tomcat8]/webapps/geoportal/app/main/templates/. Each search facets is included in a `<div> ...</div>` block.
 
 * To delete a search facet
@@ -40,9 +38,9 @@ Parameter Name | Description
 allowAggregation | Showing aggregation of records
 data-dojo-props | List of properties for the facet
 data-dojo-type | Template type
-field | Name of Elasticsearch field 
+field | Name of Elasticsearch field, an easy way to find the field name is to look at the json output in search results  
 interval | Units for clustering, counts per year/day etc., used in the temporal facet
-label | Label to be shown on the search panel, it can be either a string or variable pointing to a string. 
+label | Label to be shown on the search panel, it can be either a string or variable pointing to a string
 nestedPath | Nested query in Elasticsearch, e.g. nestedPath:'timeperiod_nst' in time period facets
 open | If set to true, the facet will be open when geoportal starts.
 pointField | Name of point field in Elasticsearch  
