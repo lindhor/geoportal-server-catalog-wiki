@@ -5,7 +5,7 @@ This page contains information about configuring and using Geoportal Server for 
 
 ### Configure Geoportal Server for INSPIRE
 
-* If you are installing a new instance of Geoportal Server, you should get Geoportal Server Catalog 2.6.4 and Geoportal Server Harvester 2.6.4 for INSPIRE. For installation instructions, please see [[Installation]] for Geoportal Server catalog, and [https://github.com/Esri/geoportal-server-harvester/wiki/Installation-guide here] for Geoportal Server Harvester. 
+* If you are installing a new instance of Geoportal Server, you should get Geoportal Server Catalog 2.6.4 and Geoportal Server Harvester 2.6.4 for INSPIRE. For installation instructions, please see [[Installation]] for Geoportal Server catalog, and [here](https://github.com/Esri/geoportal-server-harvester/wiki/Installation-guide) for Geoportal Server Harvester. 
 
 * If you are migrating from Geoportal Server 1.x to 2.x, please see [[Upgrade-from-Geportal-Server-1.x-to-2.x]].
 
@@ -23,7 +23,7 @@ This page contains information about configuring and using Geoportal Server for 
   * Save
   * Optionally, you can open an existing INSPIRE metadata, edit it, and save it into Geoportal Catalog.
 
-* To Harvest metadata into geoportal catalog, please see [https://github.com/Esri/geoportal-server-harvester/wiki/Quick-start-guide Geoportal Server Harvester Quick Start Guide]
+* To Harvest metadata into geoportal catalog, please see [Geoportal Server Harvester Quick Start Guide](https://github.com/Esri/geoportal-server-harvester/wiki/Quick-start-guide)
 
 * To search for metadata records please see [[How-to-find-records]]
 
