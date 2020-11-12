@@ -1,5 +1,5 @@
 
-Hierarchical structure is very common in metadata, from organizational structures to primary/secondary/tertiary subject categories, from geographic (e.g. World |US | California | Los Angeles...) to folder structure in data and metadata storage, it is possible to configure geoportal to use this hierarchical structure for releases after 2.6.4, the hierarchical structure will help user to quickly narrow down to the desired records.
+Hierarchical structure is very common in metadata, from organizational structures to primary/secondary/tertiary subject categories, from geographic (e.g. World |US | California | Los Angeles...) to folder structure in data and metadata storage, it is possible to configure geoportal to use this hierarchical structure (for releases after 2.6.4), the hierarchical structure will help user to quickly narrow down to the desired records.
 
 ## Configure hierarchical search
 
@@ -31,7 +31,9 @@ Following are the steps to add a hierarchical search facet to geoportal:  * Up
 * Open geoportal to verify the facet is in the search panel. 
 ## Manage/update the hierarchy field
 
-In some cases, there might be situation that the metadata itself does not contain all the hierarchy information, or the hierarchy information need to be updated after the metadata has been harvested, geoportal make it possible to dynamically manage the hierarchy field, following are the steps (in addition to the steps above):
+In some cases, there might be situation that the metadata itself does not contain all the hierarchy information, or the hierarchy information need to be updated after the metadata has been harvested, geoportal make it possible to dynamically manage the value of hierarchy field.
+
+ Following are the steps (in addition to the steps above):
 
 * Enable setField editing
   * Open geoportal/src/main/webapp/app/context/app-config.js in editor
@@ -49,10 +51,10 @@ In some cases, there might be situation that the metadata itself does not contai
   * Set adminOnly to true
   * Save the changes
 * Update hierarchy values for records
-  * Open Geoportal > login as a administrator
+  * Open Geoportal > login as an administrator
   * Find the record to be updated
   * Go to Options >   Set Field > Advanced
-  * Enter the field whose value will be updated, e.g. src_category_cat
+  * Enter the hierarchy field whose value will be updated, e.g. src_category_cat
   * Enter the value for that field, e.g. Category|Human|Economy|Recreation
   * Select one of the update option > Update
 * Open geoportal to verify the hierarchy information has been updated for the record. 
