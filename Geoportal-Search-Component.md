@@ -7,28 +7,28 @@ Some Examples:
 
 ### CSW 2.0.2
 
-- [GetCapabilities](http://geoss.esri.com/geoportal2/csw?service=CSW&request=GetCapabilities&version=2.0.2)
+- [GetCapabilities](https://geoss.esri.com/geoportal_264/csw?service=CSW&request=GetCapabilities&version=2.0.2)
 
 
 ### CSW 3.0
 
-- [GetCapabilities](http://geoss.esri.com/geoportal2/csw?service=CSW&request=GetCapabilities&version=3.0.0)
-- [GetRecords for 'map' from default catalog](http://geoss.esri.com/geoportal2/csw?service=CSW&request=GetRecords&version=3.0.0&q=map)
-- [GetRecords for 'map' from catalog named 'arcgis'](http://geoss.esri.com/geoportal2/csw?service=CSW&request=GetRecords&version=3.0.0&q=map&target=arcgis) - This is ArcGIS Online
-- [GetRecords for 'map' from the SDI Team subscription in ArcGIS Online](http://geoss.esri.com/geoportal2/csw?service=CSW&request=GetRecords&version=3.0.0&q=map&target=arcgis&orgid=RhGiohBHzSBKt1MS) (!)
-- [GetRecords for 'map' from ArcGIS Online as well as from our Geoportal Server 2 demo site](http://geoss.esri.com/geoportal2/csw?service=CSW&request=GetRecords&version=3.0.0&q=map&target=[{"key":"ArcGIS%20Online",%20"type":"portal","url":"https://www.arcgis.com/"},{"key":"Geoportal2","type":"geoportal","url":"http://geoss.esri.com/geoportal2/elastic/metadata/item/_search"}]). This is federated search!
-- [Get an individual record](http://geoss.esri.com/geoportal2/csw?service=CSW&request=GetRecordById&version=3.0.0&id=e02ab82b32264844b3f1e5cd354731d4)
+- [GetCapabilities](https://geoss.esri.com/geoportal_264/csw?service=CSW&request=GetCapabilities&version=3.0.0)
+- [GetRecords for 'map' from default catalog](https://geoss.esri.com/geoportal_264/csw?service=CSW&request=GetRecords&version=3.0.0&q=map)
+- [GetRecords for 'map' from catalog named 'arcgis'](https://geoss.esri.com/geoportal_264/csw?service=CSW&request=GetRecords&version=3.0.0&q=map&target=arcgis) - This is ArcGIS Online
+- [GetRecords for 'map' from the SDI Team subscription in ArcGIS Online](https://geoss.esri.com/geoportal_264/csw?service=CSW&request=GetRecords&version=3.0.0&q=map&target=arcgis&orgid=RhGiohBHzSBKt1MS) (!)
+- [GetRecords for 'map' from ArcGIS Online as well as from our Geoportal Server 2 demo site](https://geoss.esri.com/geoportal_264/csw?service=CSW&request=GetRecords&version=3.0.0&q=map&target=[{"key":"ArcGIS%20Online",%20"type":"portal","url":"https://www.arcgis.com/"},{"key":"Geoportal2","type":"geoportal","url":"https://geoss.esri.com/geoportal_264/elastic/metadata/item/_search"}]). This is federated search!
+- [Get an individual record](https://geoss.esri.com/geoportal_264/csw?service=CSW&request=GetRecordById&version=3.0.0&id=e02ab82b32264844b3f1e5cd354731d4)
 
 ### OpenSearch
 
-- [OpenSearch Descriptor](http://geoss.esri.com/geoportal2/opensearch/description)
-- [Search for 'map'](http://geoss.esri.com/geoportal2/opensearch?q=map)
-- [Search for 'map' with additional search parameters](http://geoss.esri.com/geoportal2/opensearch?q=map&bbox=&time=&from=&size=)
-- [Search for 'map' and return as JSON](http://geoss.esri.com/geoportal2/opensearch?q=map&f=json)
-- [Search for 'map' and return as ATOM feed](http://geoss.esri.com/geoportal2/opensearch?q=map&f=atom)
-- [Search for 'map' and return as CSW records](http://geoss.esri.com/geoportal2/opensearch?q=map&f=csw)
-- [Search for 'map' in SDI Team ArcGIS Online subscription](http://geoss.esri.com/geoportal2/opensearch?q=map&f=json&target=arcgis&orgid=RhGiohBHzSBKt1MS)
-- [Search for 'map' from ArcGIS Online as well as from our Geoportal Server 2 demo site](http://geoss.esri.com/geoportal2/opensearch?q=map&f=json&target=[{"key":"ArcGIS%20Online",%20"type":"portal","url":"https://www.arcgis.com/"},{"key":"Geoportal2","type":"geoportal","url":"http://geoss.esri.com/geoportal2/elastic/metadata/item/_search"}])
+- [OpenSearch Descriptor](https://geoss.esri.com/geoportal_264/opensearch/description)
+- [Search for 'map'](https://geoss.esri.com/geoportal_264/opensearch?q=map)
+- [Search for 'map' with additional search parameters](https://geoss.esri.com/geoportal_264/opensearch?q=map&bbox=&time=&from=&size=)
+- [Search for 'map' and return as JSON](https://geoss.esri.com/geoportal_264/opensearch?q=map&f=json)
+- [Search for 'map' and return as ATOM feed](https://geoss.esri.com/geoportal_264/opensearch?q=map&f=atom)
+- [Search for 'map' and return as CSW records](https://geoss.esri.com/geoportal_264/opensearch?q=map&f=csw)
+- [Search for 'map' in SDI Team ArcGIS Online subscription](https://geoss.esri.com/geoportal_264/opensearch?q=map&f=json&target=arcgis&orgid=RhGiohBHzSBKt1MS)
+- [Search for 'map' from ArcGIS Online as well as from our Geoportal Server 2 demo site](https://geoss.esri.com/geoportal_264/opensearch?q=map&f=json&target=[{"key":"ArcGIS%20Online",%20"type":"portal","url":"https://www.arcgis.com/"},{"key":"Geoportal2","type":"geoportal","url":"https://geoss.esri.com/geoportal_264/elastic/metadata/item/_search"}])
 
 ### Installation
 * Deploy geoportal-search.war to a java application server such as Apache Tomcat 8.x by dropping the war file in the webapps folder

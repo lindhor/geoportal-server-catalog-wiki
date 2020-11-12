@@ -56,4 +56,6 @@ https://servername/arcgis_js_api/library/3.25/3.25/init.js
     "itemId": "6e03e8c26aad4b9c92a87c1063ddb0e3",       
 ```  
 
+   * Geoportal uses Spring Framework, you will need to download the Spring Framework XSDs (such as https://www.springframework.org/schema/context/spring-context.xsd, https://www.springframework.org/schema/beans/spring-beans.xsd, https://www.springframework.org/schema/beans/spring-beans-4.3.xsd, https://www.springframework.org/schema/tool/spring-tool-4.3.xsd, http://www.w3.org/2001/xml.xsd), host them locally, and do a search within geoportal and update the reference to the local XSDs.
+
 For instruction about configuring harvester for disconnected environment, please visit [Geoportal Harvester installation Wiki ](https://github.com/Esri/geoportal-server-harvester/wiki/Installation-guide).
