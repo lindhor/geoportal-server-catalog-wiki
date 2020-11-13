@@ -9,7 +9,9 @@ Following are the steps to add a hierarchical search facet to geoportal:  * Up
   * Open geoportal/src/main/resources/metadata/js/EvaluatorFor_ISO.js in an editor
   * Find  section about hierarchical configuration "/* hierarchical category */", there are some description about additional configuration options there.
   * Uncomment "//    G.evalProps(task,item,root,"src_category_cat","//gmd:MD_TopicCategoryCode");"
-  * If you are configuring a different metadata element field, please update to the correct field name and make sure it ends with "_cat"
+  * If you are configuring a different metadata element field, please update to the correct field name
+  * The hierarchy field name need to end with "_cat"
+  * If you are expecting values of this field to be edited by users later on, the field need to be prefix with "usr_" rather than "src_"
   * Save the update
 * Harvest ISO metadata
   * Create input broker that contain the desired metadata
@@ -17,7 +19,7 @@ Following are the steps to add a hierarchical search facet to geoportal:  * Up
   * Please note that the metadata need to be reharvested if the metadata is already in geoportal prior to this update in order to build the hierarchy
 * Configure hierarchy search facet
   * Open geoportal/app/main/templates/SearchPanel.html in a html editor 
-  * Find the following section, and update its property as needed. please visit [[Customize-search-panel]] on how to update the search facet
+  * Find the following section, and update its property as needed. the hierarchy field need to match with what is defined in EvaluatorFor_ISO.js, please visit [[Customize-search-panel]] on how to update the search facet
 
     ``
         <div class="g-filter-collapse" data-dojo-type="app/search/HierarchyTree"
@@ -54,7 +56,7 @@ In some cases, there might be situation that the metadata itself does not contai
   * Open Geoportal > login as an administrator
   * Find the record to be updated
   * Go to Options >   Set Field > Advanced
-  * Enter the hierarchy field whose value will be updated, e.g. src_category_cat
+  * Enter the hierarchy field whose value will be updated, e.g. usr_category_cat (field need to be prefixed with "usr_" and  match with what is defined in EvaluatorFor_ISO.js)
   * Enter the value for that field, e.g. Category|Human|Economy|Recreation
   * Select one of the update option > Update
 * Open geoportal to verify the hierarchy information has been updated for the record. 
@@ -62,7 +64,7 @@ In some cases, there might be situation that the metadata itself does not contai
 
 ## Frequently Asked Questions*
 * Can I use a different hierarchy separator such as "<" instead of "|"?
-  * Yes. By default, "|" is used as the separator, if other separator is desired, replace delimiter declaration in hierarchy_tokenizer and reverse_hierarchy_tokenizer within elastic-mappings.json and elastic-mappings-7.json, then recreate Elastic Search index.
+  * Yes. By default, "|" is used as the separator, if other separator is desired, replace delimiter declaration in hierarchy_tokenizer and reverse_hierarchy_tokenizer within elastic-mappings.json and elastic-mappings-7.json (geoportal/src/main/resources/config/), then recreate Elastic Search index.
 
 * Can I configure hierarchy to be similar to my WAF/UNC folder structure ?
   * Yes.
