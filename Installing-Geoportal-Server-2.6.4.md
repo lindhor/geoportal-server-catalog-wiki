@@ -17,7 +17,7 @@ The instruction for 2.6.4 is the same as 2.6.3.
   - Installation guide: https://tomcat.apache.org/tomcat-9.0-doc/setup.html
   - Geoportal was tested with Tomcat 9.0.29.
 
-We have built and tested Geoportal Server with the system environment above, it might work with other similar environment.
+We have built and tested Geoportal Server with the system environment above, it should work with other similar environments as well. It is found that the application does not work with Internet Explorer 11, please use newer versions or a different browser.
 
 # Deploy Geoportal Server
 
