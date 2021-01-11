@@ -71,7 +71,7 @@ In some cases, there might be situation that the metadata itself does not contai
   * Yes. By default, "|" is used as the separator, if other separator is desired, replace delimiter declaration in hierarchy_tokenizer and reverse_hierarchy_tokenizer within elastic-mappings.json and elastic-mappings-7.json (geoportal/src/main/resources/config/), then recreate Elastic Search index.
 
 * Can I configure hierarchy to be similar to my WAF/UNC folder structure?
-  * Yes.
+  * Yes. see Example 2 in geoportal/src/main/resources/metadata/js/EvaluatorFor_ISO.js
 
 * Can I manage/update the hierarchy after the metadata has been harvested?
   * Yes. See section 2 above
