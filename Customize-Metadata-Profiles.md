@@ -3,7 +3,7 @@ This topic describes how the geoportal web application supports its default meta
 > Note: this topic is still under development
 
 Steps to creating a new profile:
-- [Understand your metadata profile](understand_metadata_profiles)
+- [Understand your metadata profile](Understand-Your-Metadata-Profile)
 - Geoportal XML Editor (GXE) concepts
   - Introduction
   - Object-oriented approach
