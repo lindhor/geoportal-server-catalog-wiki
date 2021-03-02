@@ -8,8 +8,7 @@ Steps to creating a new profile:
   - Introduction
   - Object-oriented approach
   - XML vs User Interface elements
-- Creating a new profile
+- [Creating a new profile](Creating-a-metadata-profile)
   - Choose a base type
   - Create your root documents
   - Extend the base type (elements, attributes, namespaces)
-- 
