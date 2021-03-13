@@ -1,4 +1,4 @@
-==Introduction==
+** Introduction
 The CSW Clients bring geoportal discovery functionality into your ArcGIS Desktop applications. They enable searching [http://www.opengeospatial.org/standards/cat OGC Catalog Service for the Web](OGC CSW) catalogs directly from your favorite desktop GIS applications. Once resources are returned, they can be viewed or downloaded. Additionally, if the resources are live services they can be added to ArcGIS Pro or ArcMap. 
 
 '''Note:''' The CSW Client for ArcGIS Pro and for ArcMap are separate addins built specifically for those products.
