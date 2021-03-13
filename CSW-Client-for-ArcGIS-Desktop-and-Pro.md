@@ -1,5 +1,5 @@
 ## Introduction
-The CSW Clients bring geoportal discovery functionality into your ArcGIS Desktop applications. They enable searching [http://www.opengeospatial.org/standards/cat OGC Catalog Service for the Web](OGC CSW) catalogs directly from your favorite desktop GIS applications. Once resources are returned, they can be viewed or downloaded. Additionally, if the resources are live services they can be added to ArcGIS Pro or ArcMap. 
+The CSW Clients bring geoportal discovery functionality into your ArcGIS Desktop applications. They enable searching [OGC Catalog Service for the Web (CSW)](https://www.opengeospatial.org/standards/cat) catalogs directly from your favorite desktop GIS applications. Once resources are returned, they can be viewed or downloaded. Additionally, if the resources are live services they can be added to ArcGIS Pro or ArcMap. 
 
 ```Note:``` The CSW Client for ArcGIS Pro and for ArcMap are separate addins built specifically for those products.
 
@@ -129,9 +129,9 @@ Look closely at what information is being transferred in this piece of code. Eac
 
 ```Note:``` There can be additional parameters in this generic xml for spatial extent, ISO Topic Category, and Modified Date. The parameters for ISO Topic and Modified Date are for use within the geoportal web application alone, and do not need to be specified for use with the CSW Clients.
 
-- The CSW Clients interpret the generic XML, and applies a transformation according to the GetRecords_Request.xslt that translates the generic XML into a CS-W GetRecordsRequest so the catalog service can interpret the search criteria.
+- The CSW Clients interpret the generic XML, and applies a transformation according to the GetRecords_Request.xslt that translates the generic XML into a CSW GetRecordsRequest so the catalog service can interpret the search criteria.
 - The transformed xml is passed as a GetRecordsRequest to the catalog service.
-- The catalog service responds with a list of records that match the search criteria, formatted in CS-W syntax.
+- The catalog service responds with a list of records that match the search criteria, formatted in CSW syntax.
 - The CSW Client applies the GetRecords_Response.xslt to translate the catalog service response into resulting records for display by the CSW Client interface. Abstract, Footprint information for the Footprint buttons, and if the records are Live Data are also returned for each record.
 
 #### View Metadata and Download Metadata buttons
@@ -181,7 +181,7 @@ http://serverName/geoportal/csw/discovery?Request=GetCapabilities&Service=CSW&Ve
 If you want to register a catalog service that does not use one of the profiles that the CSW Clients provide by default, then you will need to author the three xslt's used for retrieving the search results and extracting the URL used to add live data to the map. These three files were referenced in the How the CSW Clients Work section. After authoring these three xslt files, you must reference them with a new profile entry in the <tt>CSWProfiles.xml</tt> file. The section below provides details about how to author each xslt, and then how to add the reference to the <tt>CSWProfiles.xml</tt> file.
 
 ### Author the GetRecords_Request.xslt
-Remember that the CSW Clients apply a transformation that translates the generic XML from the CSW Clients user interface into a CS-W GetRecordsRequest that the catalog service can interpret. The code snippet below shows a generic GetRecords_Request.xslt with annotation in the commented sections describing details for important parts of the file. Copy this text into a text editor such as Notepad, and make the adjustments described in the comments.
+Remember that the CSW Clients apply a transformation that translates the generic XML from the CSW Clients user interface into a CSW GetRecordsRequest that the catalog service can interpret. The code snippet below shows a generic GetRecords_Request.xslt with annotation in the commented sections describing details for important parts of the file. Copy this text into a text editor such as Notepad, and make the adjustments described in the comments.
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -474,7 +474,7 @@ Remember that the CSW Clients apply a transformation that translates the catalog
 When you have finished editing the text, save the file as 'GetRecords_Response.xslt'.
 
 ### Author the GetRecordByID_Response.xslt
-Remember that the CSW Clients apply the GetRecordByID_Response.xslt to a GetRecordsByID response from the catalog service only to extract the URL that is used to display a live service in the interface. The code snippet below shows a generic GetRecordsByID_Response.xslt. The important part of customizing this is to identify where in the CS-W response information about a live service would be found. This should be defined in the ''<xsl:template>'' section with select statements. The example shown below is for a Dublin Core catalog service, and we see that the xpath to the service information can be found at the ''csw:record/dct:references'' element. For examples that use ArcIMS CS-W connectors or ISO 19139-based connectors, open other GetRecordByID_Response xslt's within the <tt>\\CSWClients\Data</tt> folder and look for an example that is similar to the standard that your catalog service uses.
+Remember that the CSW Clients apply the GetRecordByID_Response.xslt to a GetRecordsByID response from the catalog service only to extract the URL that is used to display a live service in the interface. The code snippet below shows a generic GetRecordsByID_Response.xslt. The important part of customizing this is to identify where in the CSW response information about a live service would be found. This should be defined in the ''<xsl:template>'' section with select statements. The example shown below is for a Dublin Core catalog service, and we see that the xpath to the service information can be found at the ''csw:record/dct:references'' element. For examples that use ArcIMS CSW connectors or ISO 19139-based connectors, open other GetRecordByID_Response xslt's within the <tt>\\CSWClients\Data</tt> folder and look for an example that is similar to the standard that your catalog service uses.
 
 ```
 <?xml version="1.0" encoding="UTF-8"?> 
@@ -560,7 +560,7 @@ After you have authored the three xslt's, you need to reference them in the <tt>
            <!-- 
              update with syntax appropriate for issuing a GetRecordById request
              to the type catalog service to which you want to connect. In this 
-             example, the service would use CS-W 2.0.2 protocol and the full set
+             example, the service would use CSW 2.0.2 protocol and the full set
              of metadata record elements from each source record that should be 
              presented in the response (ElementSetName)
            -->
@@ -575,16 +575,16 @@ After you have authored the three xslt's, you need to reference them in the <tt>
          </XSLTransformations>
        </GetRecordByID>
        <!-- 
-         update with True if the CS-W service supports returning queries defined by an extent
+         update with True if the CSW service supports returning queries defined by an extent
        -->
        <SupportSpatialQuery>True </SupportSpatialQuery> 
        <!-- 
-         update with True if the CS-W service supports returning the content 
+         update with True if the CSW service supports returning the content 
          type of a metadata record
        --> 
        <SupportContentTypeQuery> True </SupportContentTypeQuery> 
        <!-- 
-         update with True if the CS-W service supports returning bounding
+         update with True if the CSW service supports returning bounding
          box information
        -->
        <SupportSpatialBoundary> True </SupportSpatialBoundary>
