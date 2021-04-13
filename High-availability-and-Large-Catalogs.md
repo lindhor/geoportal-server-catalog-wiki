@@ -1,5 +1,3 @@
-## Introduction
-
 'High Availability' and 'Large' are used here to refer to geoportals that must meet a requirement for system failover, have large numbers of users (such as public-facing geoportals), and/or contain 500,000+ records.  If your organization plans to implement such a geoportal, then there are some things you can do to improve the performance and success of your implementation. This topic discusses architectural considerations and configuration setting to accommodate high availability and larger geoportals.
 
 Geoportal Server is a plain Java web application running in tomcat and there are many articles describing how to setup HA for tomcat. Some examples:
