@@ -17,7 +17,7 @@ The instruction for 2.6.4 is the same as 2.6.3.
   - Installation guide: https://tomcat.apache.org/tomcat-9.0-doc/setup.html
   - Geoportal was tested with Tomcat 9.0.29.
 
-We have built and tested Geoportal Server with the system environment above, it might work with other similar environment.
+We have built and tested Geoportal Server with the system environment above, it should work with other similar environments as well. It is found that the application does not work with Internet Explorer 11, please use newer versions or a different browser.
 
 # Deploy Geoportal Server
 
@@ -49,21 +49,21 @@ We have built and tested Geoportal Server with the system environment above, it 
 
 ## Main configuration file
 
-The main configuration file for setting the cluster and node name(s) for Elasticsearch cluster is [Tomcat8]/webapps/geoportal/WEB-INF/classes/config/app-context.xml. By default, Geoportal is configured to look on the localhost for a cluster named elasticsearch. If you need to change any of the Elasticsearch related configuration, please see [Elasticsearch configuration](https://github.com/Esri/geoportal-server-catalog/wiki/Elasticsearch-configuration).
+The main configuration file for setting the cluster and node name(s) for Elasticsearch cluster is webapps/geoportal/WEB-INF/classes/config/app-context.xml. By default, Geoportal is configured to look on the localhost for a cluster named elasticsearch. If you need to change any of the Elasticsearch related configuration, please see [Elasticsearch configuration](https://github.com/Esri/geoportal-server-catalog/wiki/Elasticsearch-configuration).
 
 ## Security configuration
-You can configure various authentication options such as simple, LDAP, OAuth2 in Geoportal. The main configuration file for security is  [Tomcat8]/webapps/geoportal/WEB-INF/classes/app-security.xml.
+You can configure various authentication options such as simple, LDAP, OAuth2 in Geoportal. The main configuration file for security is  webapps/geoportal/WEB-INF/classes/app-security.xml.
  * To configure geoportal to use simple authentication, see [Security configuration simple](https://github.com/Esri/geoportal-server-catalog/wiki/Security-configuration-Simple)
  * To configure geoportal to use LDAP authentication, see [Security configuration LDAP](https://github.com/Esri/geoportal-server-catalog/wiki/Security-configuration-LDAP)
  * To configure geoportal to use ArcGIS authentication, see [Security configuration ArcGIS](https://github.com/Esri/geoportal-server-catalog/wiki/Security-configuration-ArcGIS)
  
 ## Logging
-[Tomcat8]/webapps/geoportal/WEB-INF/classes/log4j.properties
+webapps/geoportal/WEB-INF/classes/log4j.properties
 Logging properties. You can modify the location of the log file by updating:
 log4j.appender.file.File
 
 Elasticsearch mappings for the "metadata" index
-[Tomcat8]/webapps/geoportal/WEB-INF/classes/config/elastic-mappings.xml
+webapps/geoportal/WEB-INF/classes/config/elastic-mappings.xml
 Contains the Elasticsearch mappings for the "metadata" index, used 
 when Geoportal auto-creates the "metadata" index.
 Whenever you create a "metadata" index within Elasticsearch, you'll 

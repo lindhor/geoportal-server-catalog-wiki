@@ -22,6 +22,7 @@ Welcome to the geoportal-server-catalog wiki!
 - How to install Geoportal Server Catalog - [Installation](https://github.com/Esri/geoportal-server-catalog/wiki/Installation).
 - How to migrate from Geportal Server 1.x to 2.x - [Upgrade from Geportal Server 1.x to 2.x](https://github.com/Esri/geoportal-server-catalog/wiki/Upgrade-from-Geportal-Server-1.x-to-2.x).
 - How to upgrade from Geportal Server 2.0.0 to 2.0.1 - [Upgrade to Geoportal Server 2.0.1](https://github.com/Esri/geoportal-server-catalog/wiki/Upgrade-to-Geoportal-Server-2.0.1).
+- How to setup [high-availability or work with very large catalogs](https://github.com/Esri/geoportal-server-catalog/wiki/High-availability-and-Large-Catalogs)
 
 
 ## Configuration and Customization

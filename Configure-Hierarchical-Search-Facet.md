@@ -14,7 +14,7 @@ Following are the steps to add a hierarchical search facet to geoportal:
   * Uncomment "//    G.evalProps(task,item,root,"src_category_cat","//gmd:MD_TopicCategoryCode");"
   * If you are configuring a different metadata element field, please update to the correct field name
   * The hierarchy field name need to end with "_cat"
-  * If you are expecting values of this field to be edited by users later on, the field need to be prefix with "usr_" rather than "src_"
+  * If you are expecting values of this field to be edited by users later on, the field need to be prefix with "user_" rather than "src_"
   * Save the update
 * Harvest ISO metadata
   * Create input broker that contain the desired metadata
@@ -60,7 +60,7 @@ In some cases, there might be situation that the metadata itself does not contai
   * Open Geoportal > login as an administrator
   * Find the record to be updated
   * Go to Options >   Set Field > Advanced
-  * Enter the hierarchy field whose value will be updated, e.g. usr_category_cat (field needs to be prefixed with "usr_" and  matches with what is defined in EvaluatorFor_ISO.js)
+  * Enter the hierarchy field whose value will be updated, e.g. user_category_cat (field needs to be prefixed with "user_" and  matches with what is defined in EvaluatorFor_ISO.js)
   * Enter the value for that field, e.g. Category|Human|Economy|Recreation
   * Select one of the update option > Update
 * Open geoportal to verify the hierarchy information has been updated for the record. 
@@ -71,7 +71,7 @@ In some cases, there might be situation that the metadata itself does not contai
   * Yes. By default, "|" is used as the separator, if other separator is desired, replace delimiter declaration in hierarchy_tokenizer and reverse_hierarchy_tokenizer within elastic-mappings.json and elastic-mappings-7.json (geoportal/src/main/resources/config/), then recreate Elastic Search index.
 
 * Can I configure hierarchy to be similar to my WAF/UNC folder structure?
-  * Yes.
+  * Yes. see "Example 2" in geoportal/src/main/resources/metadata/js/EvaluatorFor_ISO.js
 
 * Can I manage/update the hierarchy after the metadata has been harvested?
   * Yes. See section 2 above
