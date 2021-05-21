@@ -79,4 +79,5 @@ In some cases, there might be situation that the metadata itself does not contai
 * Can I configure hierarchy using fields in a database table?
   * Yes.
 
-
+* Can I configure hierarchy using a service that contain the mapping between the metadata and its categories?
+  * Yes.
