@@ -1,6 +1,6 @@
-For scenarios where a different set of search facets would be preferred based on the metadata collection user select. For example, if a user picks Landsat image catalog, they would perform search based on cloud cover, azimuth, sun elevation, etc. If he picks regular metadata, they would search on ISO category, organization, keywords, etc.
+Collections are used for scenarios where a different set of search facets would be preferred based on the metadata collection user select. For example, if a user picks Landsat image catalog, they would perform search based on cloud cover, azimuth, sun elevation, etc. If he picks regular metadata, they would search based on ISO category, organization, keywords, etc.
 
-The collection functionality is implemented with Geoportal Server 2.6.5. The functionality is 
+The collection functionality is implemented within Geoportal Server 2.6.5. The functionality is 
 
 * Configurable - functionality could be enabled or disabled as requested,
 * Ad hoc - collections could be added and deleted ad-hoc without elaborated configuration,
@@ -13,9 +13,8 @@ Following are the steps to enable collection in geoportal:
 * Edit app-context.xml configuration file in geoportal\WEB-INF\classes\config,
 * Locate supportsCollections property within the geoportalContext bean,
 * Change value of the property to true,
-* Save the update.
-
-
+* Save the update,
+* Restart the geoportal application.
 
 ## Configure facets available for each collection
 
