@@ -17,7 +17,8 @@ Following are the steps to enable collection in geoportal:
 
 
 
-## Configure facets available for each collection*
+## Configure facets available for each collection
+
 Each facet can be configured to react to the selection of the collection. It will appear or it will be removed from the screen depending how it is configured and which collection has been selected by the user.
 
 Configuration is done entirely through `SearchPanel.html`. Each facet is represented by any `<div>` element placed within parent <div> marked with `class="g-search-pane-left"`. Every facet is equipped with `data-dojo-props` property which is a comma separated list of configuration properties passed to facet object. In order to configure facet to react to user choice of collections, property named `allowedCollections` shall be added, for example:
@@ -69,7 +70,12 @@ allowedCollections: ['/d.+/i']
 ```
 This condition will react to any collection which name starts with the letter 'd' regardless whether it is lower or upper case.
 
-## Assign a set of records to a particular collection*
+## Assign records to a particular collection
+* Sign in to geoportal as an administrative user,
+* Search for records to be assigned,
+* Click on "Options" in one of the records > choose "Set collections",
+* Enter the collection name, use comma to separate them if multiple collections,
+* Choose one of the options to be applied, Click on "Update".
 
-
-## Harvest records to a particular collection*
+## Harvest records to a particular collection
+To be done
