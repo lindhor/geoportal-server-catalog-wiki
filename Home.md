@@ -37,7 +37,8 @@ Welcome to the geoportal-server-catalog wiki!
   * How to configure Geoportal Server to use Group Access - [Group-Access-Configuration](https://github.com/Esri/geoportal-server-catalog/wiki/Group-Access-Configuration).
   * [How to configure Geoportal Server for a disconnected environment](https://github.com/Esri/geoportal-server-catalog/wiki/Configure-geoportal-for-a-disconnected-environment).
   * [How to configure Geoportal Server to search other catalogs](https://github.com/Esri/geoportal-server-catalog/wiki/Configure-geoportal-to-search-other-catalogs).
-  * How to customize and use DCAT - [Customize-and-Use-DCAT](https://github.com/Esri/geoportal-server-catalog/wiki/Customize-and-Use-DCAT).    
+  * How to customize and use DCAT - [Customize-and-Use-DCAT](https://github.com/Esri/geoportal-server-catalog/wiki/Customize-and-Use-DCAT).   
+  * How to configure collections - [Configure-Collections](https://github.com/Esri/geoportal-server-catalog/wiki/Configure-Collections). 
   * How to configure Everything else for Geoportal Server - [Other-Configurations-For-Geoportal](https://github.com/Esri/geoportal-server-catalog/wiki/Other-Configurations-For-Geoportal).
 
   
