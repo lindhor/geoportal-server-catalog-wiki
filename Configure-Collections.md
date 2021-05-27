@@ -77,4 +77,10 @@ This condition will react to any collection which name starts with the letter 'd
 * Choose one of the options to be applied, Click on "Update".
 
 ## Harvest records to a particular collection
-To be done
+With Geoportal Harvester (https://github.com/Esri/geoportal-server-harvester), it is possible to harvest records into one particular or multiple collections in geoportal, following are the steps:
+* Define a geoportal 2.x output broker (Harvester > Brokers > Output brokers > Add),
+* For the "Collections" field, enter the name of the collection, use comma to separate them if multiple collections, 
+* For the "Collections field name", leave it empty if using default field "src_collections_s" or enter a custom field name,
+* Define a harvester task connecting an input broker and the defined output broker with collection information,
+* Click on "run" in the task panel to harvest the records,
+* In Geoportal interface, check the collections with matching records are harvested successfully. 
