@@ -12,6 +12,8 @@ Steps to creating a new profile:
   - Choose a base type
   - Create your root documents
   - Extend the base type (elements, attributes, namespaces)
-- Once this is done and you see your additional fields in the JSON for an item in the catalog, you can proceed to updating the search UI
+- Add any additional fields in the catalog item JSON
+  - [Select the proper JSON field type for the new field](https://github.com/Esri/geoportal-server-catalog/wiki/Index-Field-Types)
+- Update the search UI
   - [Select the proper facet type for the new field](https://github.com/Esri/geoportal-server-catalog/wiki/Facet-Types)
   - [Configure the search panel](https://github.com/Esri/geoportal-server-catalog/wiki/Customize-search-panel)
