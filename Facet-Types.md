@@ -18,7 +18,7 @@ For every filter there will be a basic set of HTML attributes to set on the ```d
   - pointField: '<elastic field name>' - used to aggregate numbers of items in the SpatialFilter facet, typically 'envelope_cen_pt'
   - allowAggregation: true|false,
   - open: true|false,
-  - label:'${i18n.search.criteria.map}'
-  - conditionallyDisabled: 
+  - label:'<text>' - the label to show on the page. Either hard-coded value or using the i18n capabilities e.g. ${i18n.search.criteria.map}
+  - conditionallyDisabled: true | false - enter expression that determines when facet is visible. Typically based on group-based access being enabled: !AppContext.geoportal.supportsGroupBasedAccess
 
             
