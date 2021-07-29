@@ -14,6 +14,7 @@ Steps to creating a new profile:
   - Extend the base type (elements, attributes, namespaces)
 - Add any additional fields in the catalog item JSON
   - [Select the proper JSON field type for the new field](https://github.com/Esri/geoportal-server-catalog/wiki/Index-Field-Types)
+  - Extract your new fields from the metadata using one of the [Evaluators](https://github.com/Esri/geoportal-server-catalog/wiki/Evaluators)
 - Update the search UI
   - [Select the proper facet type for the new field](https://github.com/Esri/geoportal-server-catalog/wiki/Facet-Types)
   - [Configure the search panel](https://github.com/Esri/geoportal-server-catalog/wiki/Customize-search-panel)
