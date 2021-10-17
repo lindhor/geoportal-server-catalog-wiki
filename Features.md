@@ -34,8 +34,8 @@ Following is a list of features for the Geoportal Server Catalog, for feature of
   * Allow administrator to add fields for custom use
   
 **3. Supported Metadata Formats:**
-  * ISO 19115
-  * ISO 19115-2
+  * ISO 19115/ISO 19115-2 with ISO 19139 encoding
+  * ISO 19115-1/-2 with ISO 19115-3 encoding
   * INSPIRE metadata 2.0.1
   * FGDC
   * Dublin Core
