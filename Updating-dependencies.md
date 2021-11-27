@@ -2,7 +2,7 @@ Geoportal Server Catalog includes various java libraries as dependencies. These 
 
 There are external parties actively testing many java libraries for vulnerabilities. This leads to frequent updates in the libraries, which then need to make their way into geoportal. This is controlled in the maven pom.xml file. Below is a basic process to keep Geoportal Server Catalog up to date.
 
-- run `mvn dependency:tree'.
+- run `mvn dependency:tree`.
   - the output of this can be captured in a text file that lists the dependencies explicitly mentioned in the pom.xml file, but also the dependencies of those dependencies, with versions.
 - run `mvn clean` to make sure current libraries in the target are removed
 - run `mvn install` to compile geoportal and build a .war file
