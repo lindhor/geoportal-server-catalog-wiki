@@ -47,7 +47,7 @@ Throughout the process, make sure you test geoportal, look for compiler warnings
 
 Note: libraries do deprecate operations now and then. This may mean an update to a library can only be made if you also update the geoportal code.
 
-Hack: if you do this manually, instead of 'mvn clean` you can also delete the `WEB-INF\lib` folder from the geoportal target. This will force maven to download updated versions of the libraries.
+Hack: if you do this manually, instead of `mvn clean` you can also delete the `WEB-INF\lib` folder from the geoportal target. This will force maven to download updated versions of the libraries.
 
 
 
