@@ -70,5 +70,27 @@ If you need to configure Geoportal to use secured Elasticsearch through x-pack, 
  * If using ssl, the ssl key, certificates and authority has to be from Elasticsearch
 
 
+### Configure Geoportal to use elastic back-end from AWS OpenSearch
+
+It is possible to use Geoportal Server with the AWS OpenSearch PAAS elastic service. This opens the possibility to scale your catalog while also minimizing the maintenance you need to do yourself of the elastic cluster.
+
+To configure Geoportal Server for use of AWS-based elastic you only need to get the configuration right. In `app-config.xml` set:
+
+```
+<beans:property name="httpPort" value="443" />
+<beans:property name="transportPort" value="9300" />
+<beans:property name="xpackUsername" value="your AWS username for elastic" />
+<beans:property name="xpackPassword" value="your AWS password for elastic" />
+<beans:property name="useHttps" value="true" />
+...
+<beans:property name="nodes">
+  <!-- The list of host names within the Elasticsearch cluster, one value element per host -->
+  <beans:list>
+    <beans:value>[the open search uri, something like abcdefg-123456.us-west-1.es.amazonaws.com]</beans:value>
+  </beans:list>
+</beans:property>
+
+```
+
 
 
