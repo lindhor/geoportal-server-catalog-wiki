@@ -20,7 +20,7 @@ Following are the steps to enable collection in geoportal:
 
 Each facet can be configured to react to the selection of the collection. It will appear or it will be removed from the screen depending how it is configured and which collection has been selected by the user.
 
-Configuration is done entirely through `SearchPanel.html`. Each facet is represented by any `<div>` element placed within parent <div> marked with `class="g-search-pane-left"`. Every facet is equipped with `data-dojo-props` property which is a comma separated list of configuration properties passed to facet object. In order to configure facet to react to user choice of collections, property named `allowedCollections` shall be added, for example:
+Configuration is done entirely through `SearchPanel.html` in geoportal\app\main\templates. Each facet is represented by any `<div>` element placed within parent <div> marked with `class="g-search-pane-left"`. Every facet is equipped with `data-dojo-props` property which is a comma separated list of configuration properties passed to facet object. In order to configure facet to react to user choice of collections, property named `allowedCollections` shall be added, for example:
 
 ```
 <div class="g-filter-collapse" data-dojo-type="app/search/TemporalFilter"
