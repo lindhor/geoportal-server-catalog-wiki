@@ -5,18 +5,17 @@ The client itself works quite the same between CSW 2.0.2 and OGC API Records.
 
 ## Adding an OGC API Records service
 
-First, go to the settings tab and add the catalog.
-Enter the link to the OGC API Records service. For the time being, use the ```/items``` URL
+To add an OGC API Records service:
+- Go to the settings tab and add the catalog.
+- Enter the link to the OGC API Records service. For the time being, use the ```/items``` URL
 
 ```
 https://demo.pygeoapi.io/master/collections/dutch-metadata/items
 ```
 
-Select Profile: 'OGC API: Records'
-
-Give the entry a name
-
-Click the 'save' button (yep, the floppy disk)
+- Select Profile: 'OGC API: Records'
+- Give the entry a name
+- Click the 'save' button (yep, the floppy disk)
 
 ## Searching the OGC API Records service
 on the Find tab:
