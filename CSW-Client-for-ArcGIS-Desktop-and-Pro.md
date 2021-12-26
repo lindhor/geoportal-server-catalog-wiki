@@ -3,7 +3,7 @@ The CSW Clients bring geoportal discovery functionality into your ArcGIS Desktop
 
 ```Note:``` The CSW Client for ArcGIS Pro and for ArcMap are separate addins built specifically for those products.
 
-```Note:``` The CSW Client for ArcGIS Pro supports [OGC API Records](OGC API Records).
+```Note:``` The CSW Client for ArcGIS Pro supports [OGC API Records](OGC_API_Records).
 
 ## Install the CSW Clients for ArcGIS
 ### Steps to install
