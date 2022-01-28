@@ -8,7 +8,7 @@
    * Ensure the init.js is set as the default file for the virtual directory for the JS API. For IIS, the instructions are [online](https://support.microsoft.com/en-us/help/320051/how-to-configure-the-default-document-in-internet-information-services).
    * It is suggested to use version 3.25.
  * Update geoportal\app\context\AppContext.js
-   * Get the lastest AppContext.js from github (https://github.com/Esri/geoportal-server-catalog/blob/master/geoportal/src/main/webapp/app/context/AppContext.js) and copy it to ...\geoportal\app\context\
+   * Get the latest AppContext.js from github (https://github.com/Esri/geoportal-server-catalog/blob/master/geoportal/src/main/webapp/app/context/AppContext.js) and copy it to ...\geoportal\app\context\
  * Update geoportal\app\context\app-config.js  
    * Open app-config.js, update value for "basemap" to a local ArcGIS map service url, for example: 
  ```    
