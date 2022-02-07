@@ -6,6 +6,10 @@ Geoportal Server includes search widgets for ArcGIS Web AppBuilder and ArcGIS Ex
 
 # ArcGIS Experience Builder Widgets
 
+## GeoportalSearch Widget
+This widget enable user to search Geoportal Server, OGC CSW, ArcGIS Portal, and ArcGIS Online metadata repositories within an Experience Builder application, display the search results, view metadata, preview and add ArcGIS Rest and OGC WMS services to the map.
+
+
 # ArcGIS Web AppBuilder Widgets
 
 ## GeoportalSearch Widget
