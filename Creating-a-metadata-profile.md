@@ -4,5 +4,15 @@ Now that you understand the high-level concepts of GXE, you can start creating a
 - Extend the base type (elements, attributes, namespaces)
 
 ## Choose a base type
+
+TODO
+
+
 ## Create your root documents
+
+TODO
+
+
 ## Extend the base type (elements, attributes, namespaces)
+
+TODO
