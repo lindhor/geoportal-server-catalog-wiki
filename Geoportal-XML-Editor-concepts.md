@@ -1,1 +1,9 @@
-TO DO
+The Geoportal Server XML Editor (GXE) provides a powerful framework for configuring custom metadata profiles for use in Geoportal Server.
+
+One of the key concepts to understand is the object-oriented approach to the editor. Once a component has been defined (for example the address information or date elements), those can be reused as pieces in other components without having to recreate them (for example in distributor, lineage, citation, etc). The default profiles include the necessary elements for the supported standards, but may be overwritten by modifying only that what needs to be different while continuing to 'inherit' that was is the same between your profile and the base.
+
+A second key concept to understand is the distinction between user interface and metadata content. GXE includes components that allow you to build editor pages using tabs, grouping of elements, attributes, coded value domains, time periods, drop-down values, multi-select options, repeating complex components, making choices between components, etc. Through dojo attributes on the components in the editor, you can control their default state (open/close), obligation (optional/mandatory), read-only/read-write, etc. And since the GXE is essentially HTML/JavaScript (using dojo), you have opportunity to make specific style changes using CSS (referenced or inline) or code behavior using JavaScript.
+
+Validation in GXE is by definition built into the editor itself. However, that does not prevent you from also forcing schema validation to your XML or from implementing advanced validation such as conditional validation of content in completely different parts of the metadata. This last form of validation is defined in the editor itself using JavaScript.
+
+ 
