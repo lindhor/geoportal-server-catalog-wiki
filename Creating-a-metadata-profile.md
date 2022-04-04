@@ -12,8 +12,33 @@ GXE includes several metadata 'types' that can form the basis of your custom edi
 * inspire - INSPIRE is the metadata type used across the European Union in support of the INSPIRE Spatial Data Infrastructure. INSPIRE metadata is a profile of ISO 19115/19119/19139 metadata.
 * iso - ISO represents a family of metadata specifications designed by International Organization for Standardization (ISO) Technical Committee 211 (ISO/TC 211) and includes content standards such as ISO 19110, ISO 19115, ISO 19119, ISO 19115-1/19115-2 and XML encoding standards such as ISO 19139 and ISO 19115-3. Content standards and XML encoding standards are to be used in specific combinations (19115 + 19139, 19115-1 + 19115-3, etc). INSPIRE 
 
-Every allowable type has a unique identifier, defined in [metadata-editor.js](https://github.com/Esri/geoportal-server-catalog/blob/master/geoportal/src/main/webapp/app/context/metadata-editor.js):
+Every allowable type has a unique identifier, defined in [metadata-editor.js](https://github.com/Esri/geoportal-server-catalog/blob/master/geoportal/src/main/webapp/app/context/metadata-editor.js). For every enabled type, a `typeDefinition` is given, for example for INSPIRE dataset metadata (type key `inspire2-iso-19115`):
 
+```
+    {
+      key: "inspire2-iso-19115",
+      requiredPath: "app/gxe/types/inspire2/base/DataDocumentType",
+      interrogationRules: [
+        {
+          path: "/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification",
+          must: true
+        },
+        {
+          path: "/gmd:MD_Metadata/gmd:metadataStandardName/gco:CharacterString",
+          value: "INSPIRE Metadata Implementing Rules"
+        },
+        {
+          path: "/gmd:MD_Metadata/gmd:metadataStandardVersion/gco:CharacterString",
+          value: "Technical Guidelines based on EN ISO 19115 and EN ISO 19119 (Version 2.0)"
+        }
+      ]
+    },
+```
+
+where:
+* key = the unique key for this metadata type
+* requiredPath = path to the main editor entry file (*.js). This is the file from which the editor definition starts
+* interrogationRules = list of xpath expression (`path`) and obligation (`must`) that will be used to match an XML document to this particular metadata type. It is important to understand that Geoportal Server interprets the metadata types in the order in which they are defined in metadata-editor.js in the list `gxeContext.allowedTypeKeys`. The first matching type is assumed to apply to the XML document.
 
 ## Create your root documents
 
