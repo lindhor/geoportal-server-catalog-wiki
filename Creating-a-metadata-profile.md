@@ -89,6 +89,20 @@ When you do, there are certain properties of the type that may be shared between
 
 **`DataDocumentType` and `ServiceDocumentType` override the `MyProfileDocumentType` class!**
 
+The common `MyProfileDocumentType` class includes some of the type attributes (although these will be overriden in the specific data/service document type classes), but also shows some behavioral capabilities of GXE. 
+
+You can set behavior and default of the editor elements and attributes in the DocumentType classes through these functions:
+- `beforeInitializeAttribute: function(gxeDocument, attribute)`
+- `beforeInitializeElement: function(gxeDocument, element)`
+- `afterInitializeAttribute: function(gxeDocument, element)`
+- `afterInitializeElement: function(gxeDocument, element)`
+
+Within these typical actions may include:
+- changing the optionality of an element:
+  - `element.minOccurs` sets the minimum number of elements that need to be present: 0 means the element is optional, 1 means the element is mandatory
+  - `element.maxOccurs` sets the upper limit: 1 means at most 1 element may be entered, 'unbounded' means the element may repeat many times
+- changing the choices for an attribute:
+  - `attribute.optionsFilter` sets the values in the options for an attribute
 
 
 ## Extend the base type 
