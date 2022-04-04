@@ -56,6 +56,8 @@ Apart from the definition of individual types, `metadata-editor.js` also is wher
 
 ## Create your root documents
 
+### Basics and Folder structure
+
 The starting point of the actual editor is the file identified by the `requiredPath` setting in the `typeDefinitions` list for your type defined in `metadata-editor.js`. This documentation uses the sample profile defined in [`xx-metadata-editor-example.js`](https://github.com/Esri/geoportal-server-catalog/blob/master/geoportal/src/main/webapp/app/context/xx-metadata-editor-example.js). For this type (which is a profile of ISO 19115/19139):
 ```
 requiredPath: "app/gxe/types/myprofile/base/DataDocumentType"
@@ -63,7 +65,30 @@ requiredPath: "app/gxe/types/myprofile/base/DataDocumentType"
 
 When starting a new type, it is important to think ahead how to organize the files for the type. While technically all could be in a single folder, it is best practice to group related files together, for example how is done in the ISO types, where each namespace gets its own sub-folder:
 
-![image](https://user-images.githubusercontent.com/394890/161645960-19067260-751b-46c9-a8f2-6f55e28005a9.png)
+![image](https://user-images.githubusercontent.com/394890/161646481-98b30799-5cc8-4609-b895-a404a20c8e7e.png)
+
+There are typically 2 folders always present: `base` and `nls`. The first is the base of the metadata type, the second holds the localization files for this metadata type.
+
+### DocumentType
+
+In the case of the sample profile, the `requiredPath` points to a JavaScript file [DataDocumentType.js](https://github.com/Esri/geoportal-server-catalog/blob/master/geoportal/src/main/webapp/app/gxe/types/myprofile/base/DataDocumentType.js). This file defines literally the base of the metadata type, by setting such parameters as:
+* caption: i18nMyProfile.documentTypes.data.caption,
+* description: i18nMyProfile.documentTypes.data.description,
+* key: "myprofile-iso-19115",
+* isService: false,
+* metadataStandardName: "MyProfile",
+* metadataStandardVersion: "1.0"
+
+Value `key` is mandatory and needs to match the value for `key` for this type in the list of allowable types mentioned above. Values such `metadataStandardName` and `metadataStandardVersion` are optional, but may be useful if you need to reference the name and version across different parts of the editor. The `caption` and `description` values use localized strings as per the Dojo internationalization approach ([i18n](https://dojotoolkit.org/reference-guide/1.9/dojo/i18n.html)).
+
+Typically (but this depends on the metadata type) you may have a DocumentType for data and services:
+- [DataDocumentType](https://github.com/Esri/geoportal-server-catalog/blob/master/geoportal/src/main/webapp/app/gxe/types/myprofile/base/DataDocumentType.js)
+- [ServiceDocumentType](https://github.com/Esri/geoportal-server-catalog/blob/master/geoportal/src/main/webapp/app/gxe/types/myprofile/base/ServiceDocumentType.js)
+
+When you do, there are certain properties of the type that may be shared between data and service metadata. A good practice is to extract those into a separate dojo class and use the inheritance capabilities to merge common and specific aspects. In the sample type, this does lead to a [`MyProfileDocumentType`](https://github.com/Esri/geoportal-server-catalog/blob/master/geoportal/src/main/webapp/app/gxe/types/myprofile/base/MyProfileDocumentType.js) class.
+
+**`DataDocumentType` and `ServiceDocumentType` override the `MyProfileDocumentType` class!**
+
 
 
 ## Extend the base type 
