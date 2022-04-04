@@ -45,7 +45,6 @@ where:
 * `requiredPath` = path to the main editor entry file (*.js). This is the file from which the editor definition starts
 * `interrogationRules` = list of xpath expression (`path`) and obligation (`must`) that will be used to match an XML document to this particular metadata type. It is important to understand that Geoportal Server interprets the metadata types in the order in which they are defined in `metadata-editor.js` in the list `gxeContext.allowedTypeKeys`. The first matching type is assumed to apply to the XML document.
 
-
 Apart from the definition of individual types, `metadata-editor.js` also is where you make some generic GXE settings. For example
 * `editable` - Editing documents that were harvested into Geoportal Server Catalog may be edited in GXE if they are of one of the defined types and if their type is listed in `editable.geoportalTypes`. The setting `editable.allowNonGxeDocs` controls whether only documents created in GXE (in another catalog for example) or also non-GXE documents may be edited. If a document is created in a non-GXE editor, it is not known if there are additions or modifications to the metadata standard/profile that were implemented in that other editor. Then editing such a document in GXE may result in loss of information if those additions or modifications were not also implemented in GXE.
 * `gxeContext.basemap` - set the basemap for the map used in GXE to one of the named ArcGIS Online basemaps
@@ -57,7 +56,14 @@ Apart from the definition of individual types, `metadata-editor.js` also is wher
 
 ## Create your root documents
 
+The starting point of the actual editor is the file identified by the `requiredPath` setting in the `typeDefinitions` list for your type defined in `metadata-editor.js`. This documentation uses the sample profile defined in [`xx-metadata-editor-example.js`](https://github.com/Esri/geoportal-server-catalog/blob/master/geoportal/src/main/webapp/app/context/xx-metadata-editor-example.js). For this type (which is a profile of ISO 19115/19139):
+```
+requiredPath: "app/gxe/types/myprofile/base/DataDocumentType"
+```
 
+When starting a new type, it is important to think ahead how to organize the files for the type. While technically all could be in a single folder, it is best practice to group related files together, for example how is done in the ISO types, where each namespace gets its own sub-folder:
+
+![image](https://user-images.githubusercontent.com/394890/161645960-19067260-751b-46c9-a8f2-6f55e28005a9.png)
 
 
 ## Extend the base type 
