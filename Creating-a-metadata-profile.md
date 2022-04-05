@@ -104,6 +104,11 @@ Within these typical actions may include:
 - changing the choices for an attribute:
   - `attribute.optionsFilter` sets the values in the options for an attribute
 
+many of the settings will work on a specific element or attribute via its `gxePath`. This value is an xpath expression to the element or attribute you are trying to modify, for example:
+```
+var p = element.gxePath;
+if (p === "/gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty/gmd:contactInfo/gmd:CI_Contact/gmd:address/gmd:CI_Address/gmd:electronicMailAddress") {...}
+```
 
 ## Extend the base type 
 
