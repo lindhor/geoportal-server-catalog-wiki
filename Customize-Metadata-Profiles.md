@@ -8,10 +8,11 @@ Steps to creating a new profile:
   - Introduction
   - Object-oriented approach
   - XML vs User Interface elements
-- [Creating a new profile](Creating-a-metadata-profile)
+- [Create a New Metadata Type](Create-a-New-Metadata-Type)
   - Choose a base type
+  - Define the new type
   - Create your root documents
-  - Extend the base type (elements, attributes, namespaces)
+- [Extend the New Type](Extend-the-New-Type)
 - Add any additional fields in the catalog item JSON
   - [Select the proper JSON field type for the new field](https://github.com/Esri/geoportal-server-catalog/wiki/Index-Field-Types)
   - Extract your new fields from the metadata using one of the [Evaluators](https://github.com/Esri/geoportal-server-catalog/wiki/Evaluators)
