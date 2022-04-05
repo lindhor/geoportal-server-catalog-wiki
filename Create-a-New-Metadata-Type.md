@@ -2,6 +2,7 @@ Now that you understand the high-level concepts of GXE, you can start creating a
 - [Choose a base type](#choose-a-base-type)
 - [Define the new type](#define-the-new-type)
 - [Create your root documents](#create-your-root-documents)
+  - [Updating Type Element and Attribute Behavior](#updating-type-element-and-attribute-behavior)
 
 ## Choose a base type
 
@@ -89,6 +90,9 @@ When you do, there are certain properties of the type that may be shared between
 **`DataDocumentType` and `ServiceDocumentType` override the `MyProfileDocumentType` class!**
 
 The common `MyProfileDocumentType` class includes some of the type attributes (although these will be overriden in the specific data/service document type classes), but also shows some behavioral capabilities of GXE. 
+
+
+### Updating Type Element and Attribute Behavior
 
 You can set behavior and default of the editor elements and attributes in the DocumentType classes through these functions:
 - `beforeInitializeAttribute: function(gxeDocument, attribute)`
