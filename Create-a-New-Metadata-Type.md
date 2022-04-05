@@ -2,6 +2,8 @@ Now that you understand the high-level concepts of GXE, you can start creating a
 - [Choose a base type](#choose-a-base-type)
 - [Define the new type](#define-the-new-type)
 - [Create your root documents](#create-your-root-documents)
+  - [Basics and Folder structure](#basics-and-folder-structure)
+  - [DocumentType](#documenttype)
   - [Updating Type Element and Attribute Behavior](#updating-type-element-and-attribute-behavior)
 
 ## Choose a base type
