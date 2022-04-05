@@ -2,7 +2,6 @@ Now that you understand the high-level concepts of GXE, you can start creating a
 - [Choose a base type](#choose-a-base-type)
 - [Define the new type](#define-the-new-type)
 - [Create your root documents](#create-your-root-documents)
-- [Extend the base type](#extend-the-base-type)
 
 ## Choose a base type
 
@@ -110,6 +109,3 @@ var p = element.gxePath;
 if (p === "/gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty/gmd:contactInfo/gmd:CI_Contact/gmd:address/gmd:CI_Address/gmd:electronicMailAddress") {...}
 ```
 
-## Extend the base type 
-
-TODO
