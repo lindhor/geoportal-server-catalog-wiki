@@ -35,6 +35,6 @@ If you are using authentication-simple.xml to manage user access, you can use "a
 
 ### Configure group access for ArcGIS authentication 
 
- * If you are using authentication-arcgis.xml to manage user access, the application will use the groups within Portal for ArcGIS or ArcGIS Online to control access, please note that the administrator has to be in the group in order for the administrator to be able to make the metadata private to that group. An administrator might setup a group that contain all users if you want some metadata to be accessible to all logged-in users but not public.
+ * If you are using authentication-arcgis.xml to manage user access, the application will use the groups within Portal for ArcGIS or ArcGIS Online to control access. The administrator has to be a member of the group to allow the administrator to make the metadata private to that group. An LDAP administrator may setup a group that contains all Geoportal users if you want some metadata to be discoverable to all logged-in users, but not discoverable by anonymous users.
 
 
