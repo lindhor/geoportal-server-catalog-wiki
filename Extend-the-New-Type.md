@@ -59,6 +59,7 @@ the Element class has a number of dojo properties (`data-dojo-props`):
 - target: the target XML element (include namespace prefix if applicable), 
 - minOccurs: minimum number of occurrences of the element. Setting this to 1 means the element is mandatory, 0 means it is optional,
 - maxOccurs: maximum number of occurrences of the element. When set to greater than 1 (could be "unbounded") the UI will include a control that can be used to add, remove, and navigate between the occurrences of the element.
+- readOnly: makes the input element value read-only when set to true. Typical use is for the metadata standard name/version.
 - matchTopNode: when this is used it includes a filter for a path (xpath), value, and mode (optionality) that will be used when loading a metadata document into the editor and determines where/what content will be displayed in the editor. Example (see [ClassConformanceReport.html](https://github.com/Esri/geoportal-server-catalog/blob/master/geoportal/src/main/webapp/app/gxe/types/inspire2/srv/dataQuality/templates/ClassConformanceReport.html)).
 - preferOpen: determines whether the elements is open (true) or closed (false) by default for optional elements (minOccurs=1),
 - showHeader: determines whether to show a header for the element,
