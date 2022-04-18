@@ -1,5 +1,10 @@
 Extending a metadata type means defining what information needs to be added (XML elements and attributes), how the user will enter this information (user interface elements), and what validation rules apply (form validation, XML Schema validation, or XML Schematron validation). We will discuss this using one specific element of ISO 19115 metadata: MD_Distribution.
 
+On this page:
+- [Inspect the Metadata Information Model](#inspect-the-metadata-information-model)
+- [Create the Element Class and Template](#create-the-element-class-and-template)
+
+
 ## Inspect the Metadata Information Model
 
 Start with looking up the information model for your metadata standard. Below is the diagram for ISO 19115 MD_Distribution. 
@@ -66,5 +71,42 @@ the Element class has a number of dojo properties (`data-dojo-props`):
 - **useTabs**: when using repeatable items, these typically show as small tabs in the UI. setting `useTabs` to false results in the individual items to be displayed below each other.
 
 
+### Metadata Class File
 
+In the metadata class, you define the dependencies of the metadata element on other elements via references to other metadata class files. Look for example at MD_Format.js:
+
+```
+define(["dojo/_base/declare",
+        "dojo/_base/lang",
+        "dojo/has",
+        "../../base/Descriptor",
+        "esri/dijit/metadata/form/iso/AbstractObject",
+        "esri/dijit/metadata/form/iso/ObjectReference",
+        "./formatDistributor",
+        "./TransferOptions",
+        "dojo/text!./templates/MD_Format.html"],
+function(declare, lang, has, Descriptor, AbstractObject, ObjectReference, formatDistributor, TransferOptions, template) {
+
+  var oThisClass = declare(Descriptor, {
+
+    templateString : template
+
+  });
+
+  return oThisClass;
+});
+```
+
+Apart from some regular 'contextual' declarations (declar/lang/has), the Descriptor reference (which creates methods for creation/destruction of the editor of this type), the class references `AbstractObject` and `ObjectReference` from the JS API, and then has 2 local classes: `formatDistributor`, and `MD_Format` (the template for the MD_Format class).
+
+`formatDistributor` represents the instance of MD_Distributor as one of the properties of MD_Format (see the UML diagram above). `MD_Format` is the template corresponding to the MD_Format(.js) class. The class itself is not much more than the declaration of these dependencies (think inheritance/composition). Notice (in the template) that the reference to the formatDistributor is encapsulated in an ObjectReference:
+
+```
+<div data-dojo-type="esri/dijit/metadata/form/iso/ObjectReference"
+     data-dojo-props="target:'gmd:formatDistributor',minOccurs:0,label:'Format Distributor'">
+  <div data-dojo-type="app/gxe/types/inspire2/gmd/distribution/formatDistributor"></div>
+</div>
+```
+
+`AbstractObject` is typically used if an object is materialized using one of a number of types of concrete sub-classes. For example, in the resource constraints aspect of ISO metadata, there may be `gmd:MD_Constraints` that can be of type `gmd:MD_SecurityConstraints`, `gmd:LegalConstraints`.
 
