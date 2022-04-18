@@ -99,7 +99,7 @@ function(declare, lang, has, Descriptor, AbstractObject, ObjectReference, format
 
 Apart from some regular 'contextual' declarations (declar/lang/has), the Descriptor reference (which creates methods for creation/destruction of the editor of this type), the class references `AbstractObject` and `ObjectReference` from the JS API, and then has 2 local classes: `formatDistributor`, and `MD_Format` (the template for the MD_Format class).
 
-`formatDistributor` represents the instance of MD_Distributor as one of the properties of MD_Format (see the UML diagram above). `MD_Format` is the template corresponding to the MD_Format(.js) class. The class itself is not much more than the declaration of these dependencies (think inheritance/composition). Notice (in the template) that the reference to the formatDistributor is encapsulated in an ObjectReference:
+`formatDistributor` represents the instance of `MD_Distributor` as one of the properties of `MD_Format` (see the UML diagram above). `MD_Format` is the template corresponding to the MD_Format(.js) class. The class itself is not much more than the declaration of these dependencies (think inheritance/composition). Notice (in the template) that the reference to the `formatDistributor` is encapsulated in an `ObjectReference`:
 
 ```
 <div data-dojo-type="esri/dijit/metadata/form/iso/ObjectReference"
