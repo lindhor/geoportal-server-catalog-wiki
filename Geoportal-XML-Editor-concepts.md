@@ -30,10 +30,12 @@ The editor itself displays a series of tabs with each tab corresponding to the m
 
 On a page (Metadata > Identifier in the above screenshot) you will find input fields and controls, such as:
 
-| control| typical use | example |
-| ------ | -----------| ------- |
-| single line of input | free text elements such as title or identifier | ![image](https://user-images.githubusercontent.com/394890/164054096-d74ea424-0d5d-4f86-ada7-dc5eaee19b4d.png) |
-| multi-line input | free text elements such as description, purpose that are more verbose than what fits on a single line | ![image](https://user-images.githubusercontent.com/394890/164054389-6238bc29-bf8d-4c13-ad49-2fbcad7fdbcd.png) |
-| drop-down list | information elements with a fixed list of possible values | ![image](https://user-images.githubusercontent.com/394890/164053914-ebc62d35-4a45-4e4e-a133-ddbe71237ac7.png) |
-| toggle button |for optional elements, such as Hierarchy Level Name in the above example|![image](https://user-images.githubusercontent.com/394890/164052701-8ba76acf-e549-4b9f-a1ad-cfccffc73328.png)|
-| repeaters | for elements that may have more than one occurrence | ![image](https://user-images.githubusercontent.com/394890/164052550-3762a60d-ebf5-402a-898a-0d9040399b0e.png) |
+| control| typical use | dojo type | example |
+| ------ | ----------- | --------- | ------- |
+| single line of input | free text elements such as title or identifier | esri/dijit/metadata/form/iso/GcoElement | ![image](https://user-images.githubusercontent.com/394890/164054096-d74ea424-0d5d-4f86-ada7-dc5eaee19b4d.png) |
+| multi-line input | free text elements such as description, purpose that are more verbose than what fits on a single line | | ![image](https://user-images.githubusercontent.com/394890/164054389-6238bc29-bf8d-4c13-ad49-2fbcad7fdbcd.png) |
+| drop-down list | information elements with a fixed list of possible values | | ![image](https://user-images.githubusercontent.com/394890/164053914-ebc62d35-4a45-4e4e-a133-ddbe71237ac7.png) |
+| date control  | for date values. the control includes direct entry as well as a calendar widget and an option to set the data to the current date ('now') | esri/dijit/metadata/form/InputDate | ![image](https://user-images.githubusercontent.com/394890/164055657-9a0b0d8d-fea9-4d15-8e51-352fb627d016.png) |
+| toggle button |for optional elements, such as Hierarchy Level Name in the above example | |![image](https://user-images.githubusercontent.com/394890/164052701-8ba76acf-e549-4b9f-a1ad-cfccffc73328.png)|
+| repeaters | for elements that may have more than one occurrence | | ![image](https://user-images.githubusercontent.com/394890/164052550-3762a60d-ebf5-402a-898a-0d9040399b0e.png) |
+| element choice | when an element is of one of a number of potential classes | esri/dijit/metadata/form/ElementChoice | ![image](https://user-images.githubusercontent.com/394890/164055444-e762ee0c-8f64-4ae0-84d3-2133183c78b4.png) |
