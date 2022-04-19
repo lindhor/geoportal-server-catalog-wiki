@@ -5,7 +5,6 @@ This topic describes how the geoportal web application supports its default meta
 Steps to creating a new profile:
 - [Understand your metadata profile](Understand-Your-Metadata-Profile)
 - [Geoportal XML Editor (GXE) concepts](Geoportal-XML-Editor-concepts)
-  - Introduction
   - Object-oriented approach
   - XML vs User Interface elements
 - [Create a New Metadata Type](Create-a-New-Metadata-Type)
