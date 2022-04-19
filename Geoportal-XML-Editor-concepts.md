@@ -26,9 +26,38 @@ The top of the editor shows tabs for viewing the XML and editing the XML. In add
 - saving the metadata (which will initiate validation)
 - closing the editor (with option to save or discard changes)
 
+### Editor Structure
+
 The editor itself displays a series of tabs with each tab corresponding to the main metadata sections. Inside a tab, there may be more tabs, corresponding to sub-sections, or a tab may contain a single page of metadata content elements. The user interface follows the structure of the metadata specification.
 
-On a page (Metadata > Identifier in the above screenshot) you will find input fields and controls, such as:
+For example, for the INSPIRE v2 editor, you may see the following tabs in DataRoot.html:
+
+```
+    <div data-dojo-type="esri/dijit/metadata/form/Tabs">
+      <div data-dojo-type="app/gxe/types/inspire2/gmd/metadataEntity/MetadataSection"
+        data-dojo-props="label:'${i18nIso.sections.metadata}'"></div>
+        
+      <div data-dojo-type="app/gxe/types/inspire2/gmd/identification/DataIdentification"
+        data-dojo-props="label:'${i18nIso.sections.identification}'"></div>
+      
+      <div data-dojo-type="app/gxe/types/inspire2/gmd/distribution/Distribution"
+        data-dojo-props="label:'${i18nIso.sections.distribution}'"></div>
+        
+      <div data-dojo-type="app/gxe/types/inspire2/gmd/dataQuality/Quality"
+        data-dojo-props="label:'${i18nIso.sections.quality}'"></div>
+    </div>
+```
+
+these tabs translate into the following layout:
+![image](https://user-images.githubusercontent.com/394890/164119411-6cd5cfef-7931-4c55-9187-15e4161b8353.png)
+
+Within the Metadata tab (`app/gxe/types/inspire2/gmd/metadataEntity/MetadataSection`) you will see another level of tabs as defined in the template [`MetadataSection.html`](https://github.com/Esri/geoportal-server-catalog/blob/master/geoportal/src/main/webapp/app/gxe/types/inspire2/gmd/metadataEntity/templates/MetadataSection.html).
+
+This pattern may repeat in other sections until you get down to an individual page within a section that is not further divided into tabs. At that point you switch to the page design.
+
+### Page Design
+
+On an individual page you will find input fields and controls, such as:
 
 | control| typical use | dojo type | example |
 | ------ | ----------- | --------- | ------- |
