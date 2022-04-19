@@ -17,7 +17,7 @@ A second key concept to understand is the distinction between user interface and
 
 The user interface of any metadata type defined in GXE will look similar:
 
-![image](https://user-images.githubusercontent.com/394890/164052318-578839e0-c139-4d73-8941-cf9e66ad204d.png)
+<p align="center"><img src="https://user-images.githubusercontent.com/394890/164052318-578839e0-c139-4d73-8941-cf9e66ad204d.png" width="600px"/></p>
 
 The top of the editor shows tabs for viewing the XML and editing the XML. In addition the top row includes options to:
 - download the metadata as XML
