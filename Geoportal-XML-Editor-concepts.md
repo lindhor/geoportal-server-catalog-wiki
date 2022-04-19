@@ -29,11 +29,11 @@ The top of the editor shows tabs for viewing the XML and editing the XML. In add
 The editor itself displays a series of tabs with each tab corresponding to the main metadata sections. Inside a tab, there may be more tabs, corresponding to sub-sections, or a tab may contain a single page of metadata content elements. The user interface follows the structure of the metadata specification.
 
 On a page (Metadata > Identifier in the above screenshot) you will find input fields and controls, such as:
-- single line of input
-- drop-down list
-- toggle button (for optional elements, such as Hierarchy Level Name in the above example)
-- repeaters for elements that may have more than one occurrence: ![image](https://user-images.githubusercontent.com/394890/164052550-3762a60d-ebf5-402a-898a-0d9040399b0e.png)
 
-
-
- 
+| control| typical use | example |
+| ------ | -----------| ------- |
+| single line of input | free text elements such as title or identifier | ![image](https://user-images.githubusercontent.com/394890/164054096-d74ea424-0d5d-4f86-ada7-dc5eaee19b4d.png) |
+| multi-line input | free text elements such as description, purpose that are more verbose than what fits on a single line | ![image](https://user-images.githubusercontent.com/394890/164054389-6238bc29-bf8d-4c13-ad49-2fbcad7fdbcd.png) |
+| drop-down list | information elements with a fixed list of possible values | ![image](https://user-images.githubusercontent.com/394890/164053914-ebc62d35-4a45-4e4e-a133-ddbe71237ac7.png) |
+| toggle button |for optional elements, such as Hierarchy Level Name in the above example|![image](https://user-images.githubusercontent.com/394890/164052701-8ba76acf-e549-4b9f-a1ad-cfccffc73328.png)|
+| repeaters | for elements that may have more than one occurrence | ![image](https://user-images.githubusercontent.com/394890/164052550-3762a60d-ebf5-402a-898a-0d9040399b0e.png) |
