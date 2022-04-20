@@ -71,7 +71,7 @@ An individual page may still include references to other metadata classes, as is
 </div>
 ```
 
-The next level of detail is the design of the UI for an individual class, such as `MetadataHierarchy` (see template [MetadataHierarchy.html](https://github.com/Esri/geoportal-server-catalog/blob/master/geoportal/src/main/webapp/app/gxe/types/inspire2/gmd/metadataEntity/templates/MetadataHierarchy.html)):
+The next level of detail is the design of the UI for an individual class, such as `MetadataHierarchy` (see template [`MetadataHierarchy.html`](https://github.com/Esri/geoportal-server-catalog/blob/master/geoportal/src/main/webapp/app/gxe/types/inspire2/gmd/metadataEntity/templates/MetadataHierarchy.html)):
 
 ```
 <div data-dojo-attach-point="containerNode">
