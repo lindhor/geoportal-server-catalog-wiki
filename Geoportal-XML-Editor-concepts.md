@@ -57,6 +57,41 @@ This pattern may repeat in other sections until you get down to an individual pa
 
 ### Page Design
 
+An individual page may still include references to other metadata classes, as is the case in the `MetadataIdentifier` page shown above that is define in template [`MetadataIdentifier.html`](https://github.com/Esri/geoportal-server-catalog/blob/master/geoportal/src/main/webapp/app/gxe/types/inspire2/gmd/metadataEntity/templates/MetadataIdentifier.html).
+
+```
+<div data-dojo-attach-point="containerNode">
+
+  <div data-dojo-type="esri/dijit/metadata/types/iso/gmd/metadataEntity/MetadataFileIdentifier"></div>
+  
+  <div data-dojo-type="app/gxe/types/inspire2/gmd/metadataEntity/MetadataLanguage"></div>
+  
+  <div data-dojo-type="app/gxe/types/inspire2/gmd/metadataEntity/MetadataHierarchy"></div>
+    
+</div>
+```
+
+The next level of detail is the design of the UI for an individual class, such as `MetadataHierarchy` (see template [MetadataHierarchy.html](https://github.com/Esri/geoportal-server-catalog/blob/master/geoportal/src/main/webapp/app/gxe/types/inspire2/gmd/metadataEntity/templates/MetadataHierarchy.html)):
+
+```
+<div data-dojo-attach-point="containerNode">
+
+  <div data-dojo-type="esri/dijit/metadata/form/iso/CodeListReference"
+    data-dojo-props="target:'gmd:hierarchyLevel',
+      label:'${i18nIso.MD_Metadata.hierarchyLevel}',minOccurs:1">
+    <div data-dojo-type="esri/dijit/metadata/types/iso/gmd/maintenance/MD_ScopeCode"></div>
+  </div>
+  
+  <div data-dojo-type="esri/dijit/metadata/form/Element"
+    data-dojo-props="target:'gmd:hierarchyLevelName',minOccurs:0,maxOccurs:'unbounded',
+      label:'${i18nIso.MD_Metadata.hierarchyLevelName}'">
+    <div data-dojo-type="esri/dijit/metadata/form/iso/GcoElement"
+      data-dojo-props="target:'gco:CharacterString'"></div>
+  </div>
+    
+</div>
+```
+
 On an individual page you will find input fields and controls, such as:
 
 | control| typical use | dojo type | example |
