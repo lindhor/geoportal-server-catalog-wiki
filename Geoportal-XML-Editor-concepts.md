@@ -103,3 +103,5 @@ On an individual page you will find input fields and controls, such as:
 | toggle button |for optional elements, such as Hierarchy Level Name in the above example | esri/dijit/metadata/form/Element with data-dojo-props="minOccurs:0" |![image](https://user-images.githubusercontent.com/394890/164052701-8ba76acf-e549-4b9f-a1ad-cfccffc73328.png)|
 | repeaters | for elements that may have more than one occurrence | esri/dijit/metadata/form/Element with data-dojo-props="maxOccurs:'unbounded'" | ![image](https://user-images.githubusercontent.com/394890/164052550-3762a60d-ebf5-402a-898a-0d9040399b0e.png) |
 | element choice | when an element is of one of a number of potential classes | esri/dijit/metadata/form/ElementChoice | ![image](https://user-images.githubusercontent.com/394890/164055444-e762ee0c-8f64-4ae0-84d3-2133183c78b4.png) |
+
+For more details on how to create a metadata element class, see: [Create the Element Class and Template](https://github.com/Esri/geoportal-server-catalog/wiki/Extend-the-New-Type#create-the-element-class-and-template).
