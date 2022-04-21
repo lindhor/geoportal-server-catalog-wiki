@@ -9,12 +9,12 @@ For instruction about configuring geoportal server harvester for disconnected en
 * Install a local web server to host external resources normally available online.
 * Setup a local ArcGIS Enterprise (including a ArcGIS Server and Portal for ArcGIS) instance. Geoportal has been verified to work with version 10.9.1.
 
-  * Publish a ArcGIS Server service to be used as basemap
-  * Configure Portal for ArcGIS to use the locally published basemap as default.
-  * Look up the following parameters required for the configuration. This information can be retrieved via the ArcGIS Services Directory <https://servername:6443/arcgis/rest/services>
+  * Create a ArcGIS Server service to be used as basemap (Publish a Web Map to the Portal via ArcGIS Pro)
+  * Configure Portal for ArcGIS to use the locally published basemap as default (this can be configured under Organization -> Settings -> Map -> Default Basemap).
+  * Look up the following parameters required for the configuration of Geoportal.
 
-    * URL to the basemap service
-    * Service Item ID of the published basemap service
+    * URL to the basemap service. This information can be retrieved via the ArcGIS Services Directory <https://servername:6443/arcgis/rest/services>. For Web Maps this is the URL to the Map Image Layer "*_MIL1" that can also be found in the ArcGIS Portal under Content -> View Item Details -> URL.
+    * Service Item ID of the published basemap Web Map (from ArcGIS Portal, as shown in the URL when editing the map under Content, i.e. xx in "?id=xx#settings")
     * Map type (tiled or dynamic) of the published basemap service
 
 * Install a Tomcat server and deploy Geoportal as described in [Installing Geoportal Server](Installing-Geoportal-Server-2.6.5.md)
@@ -91,12 +91,11 @@ Geoportal uses Spring Framework and some other resources, you will need to downl
   * Get the latest `AppContext.js` from [github](<https://raw.githubusercontent.com/Esri/geoportal-server-catalog/master/geoportal/src/main/webapp/app/context/AppContext.js>) and copy it to
     `...\webapps\geoportal\app\context\`
   * Modify the line `this.appConfig.searchMap.basemap = "geoportalCustom";`
-    and replace "geoportalCustom" with the name of your locally hosted basemap service
+    and replace "geoportalCustom" with the name of your locally hosted basemap service, for example SampleWorldCities or Map_MIL1
 
 * Update `...\webapps\geoportal\app\context\app-config.js`
 
-  * Update value for "searchmap" to a local ArcGIS map
-    service url, for example change from:
+  * Update value for "searchmap" to a local ArcGIS map service url, for example change from:
 
     ```javascript
     searchMap: {
@@ -230,9 +229,9 @@ Geoportal uses Spring Framework and some other resources, you will need to downl
 
   * Change the parameter "portalUrl" to point to the root of your local ArcGIS Portal instance
   * Change the parameter "map.portalUrl" to point to the root of your local ArcGIS Portal instance
-  * Replace value for "map.itemId" to use the selected basemap service id (as listed as "Service Item Id" for the map service in the ArcGIS Service Directory)
+  * Replace value for "map.itemId" to use the selected Web Map id (as shown in the URL when editing the map under Content, i.e. xx in "?id=xx#settings")
   * Change the parameter "geometryService" to point to a Geometry service locally published by ArcGIS Server, like the default `Utilities/Geometry`
-  * Change the parameter "httpProxy.url" setting to "https://servername:8443/geoportal/viewer/proxy.jsp" (or whatever port your Tomcat running Geoportal is using)
+  * Change the parameter "httpProxy.url" setting to "/geoportal/viewer/proxy.jsp" (or whatever port your Tomcat running Geoportal is using)
   * Change the parameter "useProxy" to "true"
 
   I.e. to something like this:
@@ -241,7 +240,7 @@ Geoportal uses Spring Framework and some other resources, you will need to downl
    "httpProxy": {
       "useProxy": true,
       "alwaysUseProxy": false,
-      "url": "https://servername:8443/geoportal/viewer/proxy.jsp",
+      "url": "/geoportal/viewer/proxy.jsp",
       "rules": []
    },
    "geometryService":  "https://servername:6443/arcgis/rest/services/Utilities/Geometry/GeometryServer",
